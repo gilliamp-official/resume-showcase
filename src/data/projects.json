@@ -1,0 +1,388 @@
+{
+  "projects": [
+    {
+      "id": "integrated-payments",
+      "title": "Integrated Payments Solution",
+      "company": "SmartMoving Software",
+      "period": "2024-2025",
+      "description": "Delivered an integrated payments solution that generated $1M in revenue through strategic product development and cross-functional collaboration.",
+      "longDescription": "Led the development of an end-to-end payments solution that seamlessly integrated with SmartMoving's SaaS platform, allowing moving companies to process payments directly within their workflow. This solution eliminated the need for third-party payment processors, improved cash flow for customers, and created a significant new revenue stream for the company.",
+      "image": "/logos/SmartMoving.png",
+      "role": "Senior Product Manager leading full product lifecycle from concept to market",
+      "challenges": [
+        "Navigating complex payment security compliance requirements",
+        "Building a solution that satisfied diverse customer payment workflows",
+        "Integrating with multiple payment processors while maintaining a unified experience"
+      ],
+      "achievements": [
+        "Generated $1M in revenue within first year of launch",
+        "Achieved 30% adoption rate among existing customers",
+        "Improved customer satisfaction scores by 15%"
+      ],
+      "skills": [
+        "Product Strategy",
+        "FinTech Integration",
+        "Cross-functional Leadership",
+        "Revenue Generation",
+        "Customer Research"
+      ],
+      "technologies": [
+        "Payment Gateways",
+        "API Integration",
+        "Security/Compliance",
+        "Financial Systems"
+      ],
+      "links": [
+        {
+          "text": "Solution Overview",
+          "url": "https://example.com/integrated-payments"
+        }
+      ]
+    },
+    {
+      "id": "openapi-platform",
+      "title": "OpenAPI Integration Platform",
+      "company": "SmartMoving Software",
+      "period": "2024",
+      "description": "Developed and launched OpenAPI platform for movers that generated $100K in revenue by enabling third-party integrations and ecosystem expansion.",
+      "longDescription": "Transformed SmartMoving from a standalone product into an extensible platform by implementing a robust OpenAPI specification with comprehensive documentation, developer portal, and OAuth-based authentication. The platform now supports dozens of integration partners, providing customers with a seamless ecosystem of connected services.",
+      "image": "/logos/SmartMoving.png",
+      "role": "Led cross-functional product team in defining API strategy, prioritizing endpoints, and creating developer experience",
+      "challenges": [
+        "Balancing security requirements with ease of implementation for partners",
+        "Ensuring backward compatibility while enabling new functionality",
+        "Creating comprehensive documentation for diverse technical audiences"
+      ],
+      "achievements": [
+        "Generated $100K in revenue through partnership fees and premium integrations",
+        "Enabled 15+ third-party integrations within first quarter",
+        "Increased customer retention by 12% through ecosystem expansion"
+      ],
+      "skills": [
+        "API Development",
+        "Product Strategy",
+        "Developer Experience",
+        "Platform Thinking",
+        "Technical Documentation"
+      ],
+      "technologies": [
+        "REST APIs",
+        "OAuth 2.0",
+        "Swagger/OpenAPI",
+        "API Gateway"
+      ],
+      "links": [
+        {
+          "text": "Developer Portal",
+          "url": "https://developer.smartmoving.com/"
+        }
+      ]
+    },
+    {
+      "id": "embedded-analytics",
+      "title": "Embedded Analytics Solution",
+      "company": "SmartMoving Software",
+      "period": "2024-2025",
+      "description": "Created embedded analytics solution with pre-launch commitments from 5 customers secured through direct product advocacy and relationship building.",
+      "longDescription": "Designed and implemented a comprehensive analytics platform that provides moving companies with actionable insights about their business operations, customer trends, and financial performance. The solution features customizable dashboards, automated reporting, and predictive analytics to help customers make data-driven decisions.",
+      "image": "/logos/SmartMoving.png",
+      "role": "Senior Product Manager responsible for concept, design, and go-to-market strategy",
+      "challenges": [
+        "Identifying key metrics that provide actionable value across diverse customer segments",
+        "Designing intuitive visualization components for non-technical users",
+        "Balancing performance with real-time data processing requirements"
+      ],
+      "achievements": [
+        "Secured pre-launch commitments from 5 customers representing significant MRR",
+        "Built solution based on direct customer feedback from 20+ monthly interviews",
+        "Created scalable analytics framework adaptable to future business needs"
+      ],
+      "skills": [
+        "Data Analytics",
+        "Customer Research",
+        "Product Development",
+        "B2B Solution Design",
+        "Pre-sales Support"
+      ],
+      "technologies": [
+        "Business Intelligence",
+        "Data Visualization",
+        "Predictive Analytics",
+        "Embedded Dashboards"
+      ],
+      "links": [
+        {
+          "text": "Analytics Platform Preview",
+          "url": "https://example.com/analytics-preview"
+        }
+      ]
+    },
+    {
+      "id": "automation-framework",
+      "title": "High-Adoption Automation Framework",
+      "company": "SmartMoving Software",
+      "period": "2024",
+      "description": "Implemented high-adoption automation framework achieving 20% initial adoption rate with 4.5/5 star customer satisfaction rating.",
+      "longDescription": "Developed an intelligent automation system that allows moving companies to create customized workflows for repetitive tasks, reducing manual effort and improving operational efficiency. The framework includes pre-built templates, a visual workflow builder, and AI-powered optimization suggestions.",
+      "image": "/logos/SmartMoving.png",
+      "role": "Senior Product Manager leading development from concept through implementation",
+      "challenges": [
+        "Creating an intuitive interface for building complex automation workflows",
+        "Balancing flexibility with ease-of-use for non-technical customers",
+        "Ensuring integrations with all necessary system components"
+      ],
+      "achievements": [
+        "Achieved 20% adoption rate within first month of release",
+        "Maintained 4.5/5 star customer satisfaction rating",
+        "Reduced customer manual tasks by an average of 30%"
+      ],
+      "skills": [
+        "Process Automation",
+        "User Experience Design",
+        "AI Integration",
+        "Customer Adoption",
+        "Product Metrics"
+      ],
+      "technologies": [
+        "Workflow Automation",
+        "AI-Assisted Tools",
+        "Visual Process Builder",
+        "System Integration"
+      ],
+      "links": [
+        {
+          "text": "Automation Framework",
+          "url": "https://example.com/automation"
+        }
+      ]
+    },
+    {
+      "id": "ai-inventory",
+      "title": "AI-Powered Retail Inventory Planning",
+      "company": "Zebra Technologies",
+      "period": "2022-2024",
+      "description": "Spearheaded development of innovative analytics platform that transformed raw data into actionable business intelligence for retail clients.",
+      "longDescription": "Developed a machine learning solution that combined historical sales data, seasonal trends, and external factors to provide accurate inventory forecasts for retail businesses. The system integrated with existing inventory management platforms through APIs and provided actionable recommendations through an intuitive dashboard.",
+      "image": "/logos/zebra.jpg",
+      "role": "Senior Product Manager responsible for product strategy, market analysis, and feature prioritization",
+      "challenges": [
+        "Integrating with diverse inventory management systems",
+        "Building machine learning models that accounted for seasonality and anomalies",
+        "Creating an interface that made complex AI recommendations accessible to non-technical users"
+      ],
+      "achievements": [
+        "Reduced stockouts by 31% for beta customers",
+        "Decreased excess inventory by 24%, improving cash flow",
+        "Delivered 92% forecast accuracy (15% improvement over industry standard)"
+      ],
+      "skills": [
+        "AI/ML Integration",
+        "Product Strategy",
+        "UX Design",
+        "Data Analytics",
+        "Market Analysis"
+      ],
+      "technologies": [
+        "Machine Learning",
+        "Predictive Analytics",
+        "API Integration",
+        "Data Visualization"
+      ],
+      "links": [
+        {
+          "text": "Solution Overview",
+          "url": "https://example.com/zebra-ai-inventory"
+        }
+      ]
+    },
+    {
+      "id": "product-operations",
+      "title": "Product Operations Framework",
+      "company": "Zebra Technologies",
+      "period": "2023",
+      "description": "Built and managed product operations framework for a new software business unit, optimizing agile workflows and release management.",
+      "longDescription": "Established comprehensive product operations processes for Zebra's new software division, including standardized development workflows, quality assurance protocols, and release management practices. This framework enabled consistent product delivery while maintaining flexibility for rapid innovation.",
+      "image": "/logos/zebra.jpg",
+      "role": "Senior Product Manager responsible for establishing product operations",
+      "challenges": [
+        "Creating scalable processes for a rapidly growing software team",
+        "Integrating with enterprise hardware development cycles",
+        "Balancing agility with enterprise compliance requirements"
+      ],
+      "achievements": [
+        "Reduced release cycle time by 40%",
+        "Improved cross-team collaboration efficiency by 25%",
+        "Established metrics framework that improved product quality signals"
+      ],
+      "skills": [
+        "Product Operations",
+        "Agile Methodologies",
+        "Process Optimization",
+        "Cross-functional Leadership",
+        "Organizational Design"
+      ],
+      "technologies": [
+        "Product Lifecycle Management",
+        "Agile Tools",
+        "Release Management",
+        "Quality Assurance"
+      ]
+    },
+    {
+      "id": "ad-platform",
+      "title": "Digital Advertising Network Portal",
+      "company": "Koddi",
+      "period": "2022",
+      "description": "Redesigned core platform interface based on user feedback, significantly improving customer satisfaction and adoption metrics.",
+      "longDescription": "Redesigned the core advertising management interface used by marketing professionals to create, optimize, and measure digital ad campaigns. The new portal simplified complex workflows, provided enhanced visualization of campaign performance, and introduced automated optimization recommendations.",
+      "image": "/logos/koddi.png",
+      "role": "Product manager for the entire redesign process, from user research to release",
+      "challenges": [
+        "Simplifying complex campaign setup workflows while maintaining advanced capabilities",
+        "Integrating real-time performance data from multiple sources",
+        "Balancing the needs of novice and expert users"
+      ],
+      "achievements": [
+        "Improved user satisfaction by 15% (measured through NPS)",
+        "Reduced campaign setup time by 45%",
+        "Reduced system complexity by 20% through strategic refactoring"
+      ],
+      "skills": [
+        "UX Design",
+        "Product Strategy",
+        "Process Automation",
+        "User Research",
+        "Digital Advertising"
+      ],
+      "technologies": [
+        "React",
+        "Data Visualization",
+        "API Integration",
+        "Marketing Analytics"
+      ],
+      "links": [
+        {
+          "text": "Case Study",
+          "url": "https://example.com/koddi-case-study"
+        }
+      ]
+    },
+    {
+      "id": "transportation",
+      "title": "Alternative Transportation Platform",
+      "company": "First Student",
+      "period": "2021-2022",
+      "description": "Led product strategy and roadmap development for new business vertical, securing $1M in funding for platform expansion.",
+      "longDescription": "Created an end-to-end solution for school districts to manage their alternative transportation needs for students with special requirements. The platform incorporated routing algorithms, driver management, parent communication tools, and real-time tracking capabilities to ensure reliable and efficient transportation services.",
+      "image": "/logos/first-student.jpg",
+      "role": "Product lead directing a team of 40+ across product, design, and engineering",
+      "challenges": [
+        "Addressing complex routing requirements for special needs transportation",
+        "Ensuring compliance with varying regulatory requirements across districts",
+        "Creating interfaces for multiple stakeholders (administrators, drivers, parents)"
+      ],
+      "achievements": [
+        "Secured $1M in funding for platform expansion",
+        "Orchestrated development of multiple web and mobile applications",
+        "Designed intuitive user experiences for complex operational challenges"
+      ],
+      "skills": [
+        "Product Strategy",
+        "Team Leadership",
+        "AI Solutions",
+        "UX Design",
+        "Logistics Management"
+      ],
+      "technologies": [
+        "Routing Algorithms",
+        "AI-powered routing",
+        "Mobile Applications",
+        "Real-time Analytics"
+      ],
+      "links": [
+        {
+          "text": "Platform Overview",
+          "url": "https://example.com/transportation-platform"
+        }
+      ]
+    },
+    {
+      "id": "insurance-marketplace",
+      "title": "Insurance Integration Marketplace",
+      "company": "EZLynx",
+      "period": "2020-2021",
+      "description": "Developed and scaled third-party insurance integration marketplace that significantly improved platform value proposition.",
+      "longDescription": "Established an ecosystem approach for the EZLynx insurance platform by developing a marketplace that allowed third-party developers to offer integrated solutions to EZLynx's insurance agency customers. This included developing API standards, creating a partner onboarding process, and building the marketplace user interface.",
+      "image": "/logos/ezlynx.png",
+      "role": "Senior Business Analyst leading requirements gathering and implementation planning",
+      "challenges": [
+        "Creating standardized API interfaces across diverse insurance products",
+        "Establishing partner vetting and quality assurance processes",
+        "Mentoring junior team members and managing requirements across multiple engineering teams"
+      ],
+      "achievements": [
+        "Attracted 30+ integration partners within six months of launch",
+        "Increased platform stickiness with 68% of customers using at least one integration",
+        "Created product operations pipeline in PowerBI, Jira, Freshdesk, and Salesforce"
+      ],
+      "skills": [
+        "API Integration",
+        "Business Analysis",
+        "Product Operations",
+        "UX Design",
+        "Partner Management"
+      ],
+      "technologies": [
+        "API Gateway",
+        "Partner Portal",
+        "Authentication Systems",
+        "PowerBI"
+      ],
+      "links": [
+        {
+          "text": "Marketplace",
+          "url": "https://example.com/insurance-marketplace"
+        }
+      ]
+    },
+    {
+      "id": "geo-ai",
+      "title": "Geo-spatial AI for Route Optimization",
+      "company": "ALC Schools (Everdriven)",
+      "period": "2019-2020",
+      "description": "Optimized transportation management platform to reduce operations overhead by 31% through innovative technical solutions.",
+      "longDescription": "Implemented advanced machine learning algorithms that analyzed historical transportation data, traffic patterns, and geographic information to optimize student transportation routes. The system provided automated route recommendations and predictive analytics to improve operational efficiency and reduce costs.",
+      "image": "/logos/everdriven.jpg",
+      "role": "Business Innovation Product Manager leading the proof-of-concept and pilot implementation",
+      "challenges": [
+        "Acquiring and normalizing geo-spatial data from diverse sources",
+        "Developing algorithms that balanced multiple optimization factors (time, distance, vehicle capacity)",
+        "Creating visualization tools to explain AI recommendations to operations teams"
+      ],
+      "achievements": [
+        "Reduced operations overhead by 31% through efficient routing",
+        "Improved quote accuracy by 24%, enhancing business predictability",
+        "Established new product management division after demonstrating need to executive leadership"
+      ],
+      "skills": [
+        "AI/ML Integration",
+        "Product Innovation",
+        "Data Analytics",
+        "Operations Optimization",
+        "Geo-spatial Technology"
+      ],
+      "technologies": [
+        "Machine Learning",
+        "GIS",
+        "Predictive Analytics",
+        "Route Optimization"
+      ],
+      "links": [
+        {
+          "text": "Case Study",
+          "url": "https://example.com/routing-ai-case-study"
+        }
+      ]
+    }
+  ]
+}

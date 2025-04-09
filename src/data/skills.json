@@ -1,0 +1,514 @@
+{
+  "categories": [
+    {
+      "id": "product",
+      "name": "Product Management",
+      "description": "Core product management skills, including strategy, roadmapping, and product lifecycle management",
+      "icon": "chart-line",
+      "skills": [
+        {
+          "name": "Product Strategy",
+          "level": 95,
+          "description": "Developing and executing strategic product vision and roadmaps that drive business growth and user adoption",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "innovation", "technical"],
+          "keywords": ["Product Vision", "Strategic Roadmaps", "Product Road Mapping", "Product Development"],
+          "achievements": [
+            "Drove $1M in revenue through strategic product development at SmartMoving",
+            "Created OpenAPI platform generating $100K in revenue through ecosystem expansion",
+            "Secured $1M in funding for new business vertical at First Student"
+          ]
+        },
+        {
+          "name": "Product-Led Growth",
+          "level": 90,
+          "description": "Driving acquisition, activation, and expansion through product features and user experience, focusing on metrics-driven decision making",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "innovation", "technical"],
+          "keywords": ["Product Led Growth", "Go-to-Market Strategy", "New Product Release"],
+          "achievements": [
+            "Implemented high-adoption automation framework achieving 20% initial adoption rate",
+            "Secured pre-launch commitments from 5 customers for embedded analytics solution",
+            "Improved user satisfaction by 15% through platform redesign at Koddi"
+          ]
+        },
+        {
+          "name": "Product Discovery",
+          "level": 88,
+          "description": "Identifying market opportunities and validating product concepts through customer research and market analysis",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent"],
+          "keywords": ["Product Concept", "Product Discovery", "Market Research"],
+          "achievements": [
+            "Conducted 20+ customer interviews monthly to drive product decisions at SmartMoving",
+            "Led extensive user research at Zebra Technologies to identify market opportunities",
+            "Created deep analytical feedback loops that informed roadmap priorities"
+          ]
+        },
+        {
+          "name": "Go-to-Market Strategy",
+          "level": 85,
+          "description": "Planning and executing product launches and adoption strategies that maximize market penetration and revenue generation",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx", "innovation"],
+          "keywords": ["Go-to-Market Strategy", "Product Marketing", "New Product Release"],
+          "achievements": [
+            "Collaborated with sales and marketing teams at Zebra to develop compelling product positioning",
+            "Launched OpenAPI platform with successful partner onboarding strategy",
+            "Created embedded analytics solution with effective pre-launch customer engagement"
+          ]
+        },
+        {
+          "name": "Product Requirements",
+          "level": 92,
+          "description": "Defining detailed product requirements and specifications that translate customer needs into actionable development tasks",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx", "innovation", "technical"],
+          "keywords": ["Product Requirements", "Product Specifications", "User Stories"],
+          "achievements": [
+            "Designed AI-powered workflows that enhanced user experience at SmartMoving",
+            "Defined requirements for innovative analytics platform at Zebra Technologies",
+            "Improved requirements consistency by 15% through standardized documentation at EZLynx"
+          ]
+        },
+        {
+          "name": "Product Operations",
+          "level": 88,
+          "description": "Establishing processes, tools, and metrics to scale product development and ensure efficient delivery",
+          "usedAt": ["smartmoving", "zebra", "koddi", "ezlynx"],
+          "keywords": ["Product Operations", "Process Improvement", "Operations Management"],
+          "achievements": [
+            "Built and managed product operations framework for new software business unit at Zebra",
+            "Implemented standardized product operations pipeline at Koddi",
+            "Created product operations pipeline in PowerBI, Jira, Freshdesk, and Salesforce at EZLynx"
+          ]
+        },
+        {
+          "name": "Portfolio Management",
+          "level": 82,
+          "description": "Managing multiple products across different lifecycle stages to maximize overall business impact",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent"],
+          "keywords": ["Portfolio Management", "Product Portfolio"],
+          "achievements": [
+            "Led development of multiple web and mobile applications at First Student",
+            "Managed suite of products at SmartMoving including payments, analytics, and automation",
+            "Balanced portfolio of features and enhancements across product lifecycle at Zebra"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "technical",
+      "name": "Technical Skills",
+      "description": "Technical competencies including AI integration, API development, and data platforms",
+      "icon": "code",
+      "skills": [
+        {
+          "name": "API Development",
+          "level": 85,
+          "description": "Designing and implementing RESTful APIs for system integration and platform extensibility",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx", "innovation", "technical"],
+          "keywords": ["REST APIs", "API Integration", "OpenAPI"],
+          "achievements": [
+            "Developed OpenAPI platform for movers that generated $100K in revenue",
+            "Created third-party insurance integration marketplace at EZLynx",
+            "Designed API-based AI forecasting capabilities at Zebra Technologies"
+          ]
+        },
+        {
+          "name": "AI/ML Integration",
+          "level": 88,
+          "description": "Incorporating machine learning models and AI-driven features into products to solve business problems and enhance user experience",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "innovation"],
+          "keywords": ["Artificial Intelligence (AI)", "Machine Learning", "AI Solutions", "Azure Cognitive Services"],
+          "achievements": [
+            "Designed and integrated AI-powered workflows at SmartMoving using Azure Cognitive Services",
+            "Developed AI-driven retail inventory planning system at Zebra Technologies",
+            "Implemented geo-spatial AI algorithms for route optimization at ALC Schools"
+          ]
+        },
+        {
+          "name": "Software Development",
+          "level": 75,
+          "description": "Understanding software development principles and practices to effectively lead technical teams and make architectural decisions",
+          "usedAt": ["zebra", "koddi", "firststudent", "ezlynx", "innovation", "technical"],
+          "keywords": ["Software Development", "C#", "Software Product Management"],
+          "achievements": [
+            "Reduced system complexity by 20% through strategic refactoring at Koddi",
+            "Orchestrated development of multiple web and mobile applications at First Student",
+            "Implemented RESTful API frameworks at SmartMoving"
+          ]
+        },
+        {
+          "name": "Cloud Platforms",
+          "level": 80,
+          "description": "Working with cloud infrastructure and services to build scalable, secure, and high-performance solutions",
+          "usedAt": ["smartmoving", "zebra", "firststudent", "ezlynx"],
+          "keywords": ["Amazon Web Services (AWS)", "Microsoft Azure", "Cloud Infrastructure"],
+          "achievements": [
+            "Utilized Microsoft Azure's Cognitive Services for AI-powered automation workflows",
+            "Implemented cloud-based solutions across hybrid infrastructures",
+            "Optimized distributed computing environments for high-performance"
+          ]
+        },
+        {
+          "name": "Data Analytics",
+          "level": 85,
+          "description": "Analyzing data to inform product decisions, track performance, and generate actionable business intelligence",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx", "innovation", "technical"],
+          "keywords": ["Data Analytics", "Marketing Analytics", "Microsoft Power BI", "Microsoft SQL Server"],
+          "achievements": [
+            "Created embedded analytics solution with pre-launch commitments from 5 customers",
+            "Developed analytics platform that transformed raw data into actionable business intelligence at Zebra",
+            "Built product operations pipeline in PowerBI at EZLynx"
+          ]
+        },
+        {
+          "name": "DevOps & Automation",
+          "level": 80,
+          "description": "Streamlining development and deployment processes to increase efficiency and reliability",
+          "usedAt": ["smartmoving", "zebra", "koddi"],
+          "keywords": ["Automation", "Continuous Integration", "Deployment Pipelines"],
+          "achievements": [
+            "Implemented high-adoption automation framework at SmartMoving",
+            "Optimized agile workflows and release management at Zebra",
+            "Streamlined product releases by reducing complexity 20% at Koddi"
+          ]
+        },
+        {
+          "name": "GPU Virtualization & AI Infrastructure",
+          "level": 75,
+          "description": "Experience with high-performance computing environments for AI workloads and optimization",
+          "usedAt": ["zebra"],
+          "keywords": ["GPU Virtualization", "Machine Learning Infrastructure", "AI Optimization"],
+          "achievements": [
+            "Optimized machine learning models for improved performance while maintaining accuracy at Zebra",
+            "Worked with data scientists to enhance AI acceleration techniques for complex computational workloads",
+            "Gained deep insights into the challenges and opportunities of large-scale AI infrastructure"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "name": "Design & User Experience",
+      "description": "Skills related to user experience design, research, and customer-centric development",
+      "icon": "palette",
+      "skills": [
+        {
+          "name": "User Experience Design",
+          "level": 88,
+          "description": "Creating intuitive, user-centered product experiences that drive adoption and satisfaction",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx", "innovation"],
+          "keywords": ["User Experience (UX)", "User Experience Design (UED)", "User Interface Design"],
+          "achievements": [
+            "Achieved 4.5/5 star customer satisfaction rating for automation framework at SmartMoving",
+            "Improved user satisfaction by 15% through platform redesign at Koddi",
+            "Designed intuitive user experiences for complex operational challenges at First Student"
+          ]
+        },
+        {
+          "name": "Design Thinking",
+          "level": 90,
+          "description": "Applying human-centered design methodology to solve complex product and business challenges",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx", "innovation", "technical"],
+          "keywords": ["Design Thinking", "Human-Centered Design"],
+          "achievements": [
+            "Created interface that made complex AI recommendations accessible to non-technical users at Zebra",
+            "Developed visualization tools to explain AI recommendations to operations teams at ALC Schools",
+            "Simplified complex campaign setup workflows while maintaining advanced capabilities at Koddi"
+          ]
+        },
+        {
+          "name": "Customer Research",
+          "level": 92,
+          "description": "Conducting user interviews and gathering customer feedback to inform product decisions and validate concepts",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "innovation"],
+          "keywords": ["User Research", "Customer Interviews", "Usability Testing"],
+          "achievements": [
+            "Conducted 20+ customer interviews monthly at SmartMoving",
+            "Created deep analytical feedback loops that informed roadmap priorities",
+            "Traveled to meet with school districts to empathize with needs at ALC Schools"
+          ]
+        },
+        {
+          "name": "UI Prototyping",
+          "level": 80,
+          "description": "Creating wireframes and interactive prototypes to validate designs before development",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent"],
+          "keywords": ["Figma (Software)", "Prototyping", "Wireframing"],
+          "achievements": [
+            "Designed new advertisement setup portal at Koddi",
+            "Created interactive prototypes for embedded analytics dashboards at SmartMoving",
+            "Developed user interface mockups for AI-driven retail inventory planning at Zebra"
+          ]
+        },
+        {
+          "name": "Personalization",
+          "level": 85,
+          "description": "Designing customized user experiences based on user data and preferences to increase engagement and value",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx", "innovation", "technical"],
+          "keywords": ["Personalization", "User Segmentation", "Customization"],
+          "achievements": [
+            "Developed customizable automation workflows at SmartMoving",
+            "Created personalized analytics dashboards based on user roles and needs",
+            "Implemented AI-driven recommendation features at Koddi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leadership",
+      "name": "Leadership & Management",
+      "description": "Team and stakeholder leadership capabilities for driving product success",
+      "icon": "users",
+      "skills": [
+        {
+          "name": "Team Leadership",
+          "level": 90,
+          "description": "Building and leading high-performing product and engineering teams to achieve business objectives",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx", "innovation", "technical"],
+          "keywords": ["Team Leadership", "Team Management", "People Management"],
+          "achievements": [
+            "Built and managed high-performing product triad teams at SmartMoving",
+            "Led team of 40+ to develop multiple software products at First Student",
+            "Mentored junior team members at EZLynx and improved team effectiveness"
+          ]
+        },
+        {
+          "name": "Stakeholder Management",
+          "level": 88,
+          "description": "Aligning expectations across executive, technical, and business stakeholders to ensure product success",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx", "innovation"],
+          "keywords": ["Stakeholder Management", "Executive Presentations"],
+          "achievements": [
+            "Presented product vision and technical strategy to executive leadership at First Student",
+            "Collaborated with sales and marketing teams at Zebra Technologies",
+            "Demonstrated need for new product management division to executive leadership at ALC Schools"
+          ]
+        },
+        {
+          "name": "Agile Methodologies",
+          "level": 95,
+          "description": "Implementing and optimizing agile processes for efficient product development and rapid iteration",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx", "innovation"],
+          "keywords": ["Agile Methodologies", "Scrum", "Kanban", "Jira", "Confluence", "Asana"],
+          "achievements": [
+            "Built and managed product operations framework optimizing agile workflows at Zebra",
+            "Managed development across three scrum engineering teams at EZLynx",
+            "Implemented scalable processes for product triad teams at SmartMoving"
+          ]
+        },
+        {
+          "name": "Cross-functional Collaboration",
+          "level": 92,
+          "description": "Working effectively across product, design, engineering, and business teams to deliver integrated solutions",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx", "innovation", "technical"],
+          "keywords": ["Cross-functional Collaboration", "Engineering Collaboration"],
+          "achievements": [
+            "Delivered integrated payments solution through cross-functional collaboration at SmartMoving",
+            "Collaborated with analytics and engineering teams at Zebra Technologies",
+            "Coordinated go-to-market strategies with sales and marketing teams"
+          ]
+        },
+        {
+          "name": "Project Management",
+          "level": 85,
+          "description": "Planning, executing, and delivering complex projects on time and within scope",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx", "innovation", "technical"],
+          "keywords": ["Project Management", "Project Implementation"],
+          "achievements": [
+            "Orchestrated development of multiple web and mobile applications at First Student",
+            "Led development of OpenAPI platform from concept to market at SmartMoving",
+            "Managed product redesign process from user research to release at Koddi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business",
+      "name": "Business & Market Expertise",
+      "description": "Business acumen and market analysis capabilities for driving strategic product decisions",
+      "icon": "briefcase",
+      "skills": [
+        {
+          "name": "Market Analysis",
+          "level": 85,
+          "description": "Evaluating market trends, competition, and opportunities to inform product strategy",
+          "usedAt": ["zebra", "koddi", "firststudent", "ezlynx", "innovation", "technical"],
+          "keywords": ["Market Analysis", "Market Research", "Competitive Analysis"],
+          "achievements": [
+            "Conducted extensive user research to identify market opportunities at Zebra",
+            "Identified key transportation market needs through district visits at First Student",
+            "Evaluated competitive landscape for API integrations at SmartMoving"
+          ]
+        },
+        {
+          "name": "Revenue Generation",
+          "level": 90,
+          "description": "Identifying and executing on product opportunities that directly contribute to business growth",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx"],
+          "keywords": ["Revenue Growth", "Monetization Strategy", "Business Impact"],
+          "achievements": [
+            "Generated $1M in revenue through integrated payments solution at SmartMoving",
+            "Delivered $100K in revenue through OpenAPI platform",
+            "Secured pre-launch commitments from 5 customers for embedded analytics solution"
+          ]
+        },
+        {
+          "name": "Data-driven Decision Making",
+          "level": 90,
+          "description": "Using data and analytics to inform strategic choices and measure business impact",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx", "innovation"],
+          "keywords": ["Data-driven Decision Making", "Analytical Skills"],
+          "achievements": [
+            "Created deep analytical feedback loops that informed roadmap priorities at SmartMoving",
+            "Delivered 92% forecast accuracy for AI-driven inventory planning at Zebra",
+            "Reduced operations overhead by 31% through data-driven optimizations at ALC Schools"
+          ]
+        },
+        {
+          "name": "SaaS Business Models",
+          "level": 85,
+          "description": "Understanding subscription-based software business dynamics and optimization strategies",
+          "usedAt": ["smartmoving", "zebra", "koddi"],
+          "keywords": ["Software as a Service (SaaS)", "Subscription Models"],
+          "achievements": [
+            "Increased platform stickiness with 68% of customers using integrations at EZLynx",
+            "Achieved 20% initial adoption rate for premium features at SmartMoving",
+            "Improved customer retention by 12% through ecosystem expansion"
+          ]
+        },
+        {
+          "name": "B2B Domain Knowledge",
+          "level": 88,
+          "description": "Understanding business-to-business product and sales dynamics across multiple industries",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx", "innovation", "technical"],
+          "keywords": ["Business-to-Business (B2B)", "Enterprise Software"],
+          "achievements": [
+            "Developed compelling product positioning for enterprise buyers at Zebra",
+            "Created B2B solutions for moving companies, retailers, and educational institutions",
+            "Enhanced platform value proposition for insurance agency customers at EZLynx"
+          ]
+        },
+        {
+          "name": "Logistics Management",
+          "level": 85,
+          "description": "Managing transportation and logistics operations and technology to optimize efficiency",
+          "usedAt": ["firststudent", "innovation", "technical"],
+          "keywords": ["Logistics Management", "Transportation Management", "Routing"],
+          "achievements": [
+            "Implemented AI-powered routing algorithms at First Student",
+            "Reduced operations overhead by 31% through efficient routing at ALC Schools",
+            "Improved quote accuracy by 24% through geo-spatial AI algorithms"
+          ]
+        },
+        {
+          "name": "Retail Technology",
+          "level": 78,
+          "description": "Applying technology solutions to retail business challenges for improved operations and customer experience",
+          "usedAt": ["zebra"],
+          "keywords": ["Retail", "Inventory Planning", "Retail Technology"],
+          "achievements": [
+            "Reduced stockouts by 31% for beta customers of AI inventory planning at Zebra",
+            "Decreased excess inventory by 24%, improving cash flow for retail clients",
+            "Integrated with diverse inventory management systems across retail environments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soft",
+      "name": "Core Skills",
+      "description": "Essential professional capabilities that apply across roles and drive overall effectiveness",
+      "icon": "star",
+      "skills": [
+        {
+          "name": "Problem Solving",
+          "level": 95,
+          "description": "Identifying and resolving complex product and business challenges through analytical thinking and innovation",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx", "innovation", "technical"],
+          "keywords": ["Problem Solving", "Critical Thinking"],
+          "achievements": [
+            "Reduced operations overhead by 31% through innovative technical solutions at ALC Schools",
+            "Reduced system complexity by 20% through strategic refactoring at Koddi",
+            "Designed AI-powered solutions for complex business challenges across multiple industries"
+          ]
+        },
+        {
+          "name": "Communication",
+          "level": 92,
+          "description": "Clearly articulating complex ideas to diverse audiences, from technical teams to executive stakeholders",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx", "innovation", "technical"],
+          "keywords": ["Communication", "Presentation Skills"],
+          "achievements": [
+            "Presented product vision and technical strategy to executive leadership at First Student",
+            "Secured $1M in funding through effective communication of business value",
+            "Mentored junior team members on effective communication practices"
+          ]
+        },
+        {
+          "name": "Organization Skills",
+          "level": 88,
+          "description": "Managing multiple workstreams and priorities effectively to ensure consistent delivery and quality",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "ezlynx", "innovation", "technical"],
+          "keywords": ["Organization Skills", "Time Management", "Prioritization"],
+          "achievements": [
+            "Led development across multiple product lines simultaneously at SmartMoving",
+            "Managed team of 40+ contractors across multiple projects at First Student",
+            "Maintained consistent delivery schedules while balancing competing priorities"
+          ]
+        },
+        {
+          "name": "Strategic Thinking",
+          "level": 90,
+          "description": "Developing long-term vision and plans to achieve business goals and create sustainable competitive advantage",
+          "usedAt": ["smartmoving", "zebra", "koddi", "firststudent", "innovation"],
+          "keywords": ["Strategic Thinking", "Vision"],
+          "achievements": [
+            "Established new product management division at ALC Schools through strategic vision",
+            "Transformed SmartMoving from standalone product to extensible platform",
+            "Secured $1M in funding for platform expansion through strategic planning"
+          ]
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Master of Business Administration (MBA)",
+      "issuer": "Quantic School of Business and Technology",
+      "date": "December 2023",
+      "description": "Focused on business strategy, technology management, and entrepreneurship"
+    },
+    {
+      "name": "LEAP (Leadership Acceleration Program) Manager Training",
+      "issuer": "Professional Development",
+      "date": "2021",
+      "description": "Intensive leadership training program focusing on high-performance team management"
+    },
+    {
+      "name": "Texas DECA 2025 State CDC Volunteer",
+      "issuer": "DECA",
+      "date": "2025",
+      "description": "Supporting student business competitions and entrepreneurship education"
+    }
+  ],
+  "tools": [
+    {
+      "category": "Product Management",
+      "items": ["Jira", "Confluence", "Aha!", "ProductBoard", "Miro", "Figma", "Asana"]
+    },
+    {
+      "category": "Analytics",
+      "items": ["PowerBI", "Tableau", "Google Analytics", "Mixpanel", "Amplitude", "Microsoft SQL Server"]
+    },
+    {
+      "category": "Development",
+      "items": ["Azure DevOps", "GitHub", "Postman", "Swagger", "OpenAPI", "REST APIs"]
+    },
+    {
+      "category": "AI & Data",
+      "items": ["Microsoft Azure Cognitive Services", "TensorFlow", "Python", "SQL", "Machine Learning"]
+    },
+    {
+      "category": "Business",
+      "items": ["Salesforce", "Freshdesk", "Microsoft Office", "Google Workspace", "Slack", "Teams"]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+version: '3'
+
+networks:
+  frontend:
+    external: true
+
+services:
+  portfolio:
+    hostname: resume
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    networks:
+      - frontend
