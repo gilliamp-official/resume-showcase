@@ -351,8 +351,8 @@ const SkillsVisualization = () => {
                   {category.skills.map((skill) => (
                     <div key={skill.name} className="cursor-pointer" onClick={() => setSelectedSkill({...skill, category: category.id})}>
                       <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium">{skill.name}</span>
-                        <span className="text-sm font-medium">{skill.level}%</span>
+                        <span className="text-sm font-medium text-gray-800">{skill.name}</span>
+                        <span className="text-sm font-medium text-gray-600">{skill.level}%</span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2.5">
                         <div
@@ -405,8 +405,8 @@ const SkillsVisualization = () => {
                         {categoryIcons[skill.category]}
                       </div>
                       <div>
-                        <h4 className="font-medium">{skill.name}</h4>
-                        <p className="text-sm text-gray-500">
+                        <h4 className="font-medium text-gray-800">{skill.name}</h4>
+                        <p className="text-sm text-gray-600">
                           {skill.description.substring(0, 80)}
                           {skill.description.length > 80 ? '...' : ''}
                         </p>
@@ -441,12 +441,12 @@ const SkillsVisualization = () => {
           transition={{ duration: 0.5 }}
           className="bg-white rounded-lg shadow-lg p-4"
         >
-          <h3 className="text-xl font-bold mb-4 text-center">Top Skills Radar</h3>
+          <h3 className="text-xl font-bold mb-4 text-center text-gray-800">Top Skills Radar</h3>
           <ResponsiveContainer width="100%" height={400}>
             <RadarChart outerRadius={150} data={topSkillsData}>
               <PolarGrid />
-              <PolarAngleAxis dataKey="subject" />
-              <PolarRadiusAxis angle={30} domain={[0, 100]} />
+              <PolarAngleAxis dataKey="subject" tick={{ fill: '#1F2937', fontSize: 12 }} />
+              <PolarRadiusAxis angle={30} domain={[0, 100]} tick={{ fill: '#4B5563' }} />
               <Radar
                 name="Skill Level"
                 dataKey="A"
@@ -465,7 +465,7 @@ const SkillsVisualization = () => {
           transition={{ duration: 0.5 }}
           className="bg-white rounded-lg shadow-lg p-4"
         >
-          <h3 className="text-xl font-bold mb-4 text-center">Proficiency Levels</h3>
+          <h3 className="text-xl font-bold mb-4 text-center text-gray-800">Proficiency Levels</h3>
           <ResponsiveContainer width="100%" height={400}>
             <BarChart
               data={barChartData}
@@ -473,8 +473,8 @@ const SkillsVisualization = () => {
               margin={{ top: 5, right: 30, left: 60, bottom: 5 }}
             >
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis type="number" domain={[0, 100]} />
-              <YAxis type="category" dataKey="name" width={150} />
+              <XAxis type="number" domain={[0, 100]} tick={{ fill: '#4B5563' }} />
+              <YAxis type="category" dataKey="name" width={150} tick={{ fill: '#1F2937', fontSize: 12 }} />
               <Tooltip />
               <Bar
                 dataKey="Proficiency"
@@ -496,7 +496,7 @@ const SkillsVisualization = () => {
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">Professional Skills</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-900">Professional Skills</h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
           Combining technical expertise and business acumen to drive product success and innovation
         </p>
@@ -513,11 +513,11 @@ const SkillsVisualization = () => {
       {selectedSkill && renderSkillDetail()}
       
       <div className="mt-16">
-        <h3 className="text-2xl font-bold mb-4">Tools & Technologies</h3>
+        <h3 className="text-2xl font-bold mb-6 text-gray-900">Tools & Technologies</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {skillsData.tools && skillsData.tools.map((toolCategory) => (
             <div key={toolCategory.category} className="bg-white rounded-lg shadow p-4">
-              <h4 className="font-bold mb-3">{toolCategory.category}</h4>
+              <h4 className="font-bold mb-3 text-gray-800">{toolCategory.category}</h4>
               <div className="flex flex-wrap gap-2">
                 {toolCategory.items.map((tool, idx) => (
                   <span key={idx} className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">
@@ -531,11 +531,11 @@ const SkillsVisualization = () => {
       </div>
       
       <div className="mt-16">
-        <h3 className="text-2xl font-bold mb-4">Certifications</h3>
+        <h3 className="text-2xl font-bold mb-6 text-gray-900">Certifications</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillsData.certifications && skillsData.certifications.map((cert) => (
             <div key={cert.name} className="bg-white rounded-lg shadow p-4">
-              <h4 className="font-bold mb-1">{cert.name}</h4>
+              <h4 className="font-bold mb-1 text-gray-800">{cert.name}</h4>
               <p className="text-gray-600 text-sm mb-2">
                 {cert.issuer} | {cert.date}
               </p>

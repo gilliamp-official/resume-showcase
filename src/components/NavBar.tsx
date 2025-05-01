@@ -38,13 +38,14 @@ export default function Navbar() {
     </svg>
   );
 
-  // Navigation links
+  // Navigation links - fixed the error by removing the JSX element from the array
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
     { href: '/experience', label: 'Experience' },
-    { href: '/skills', label: 'Skills' },
+    { href: '/skills', label: 'Skills' }, // Changed this from JSX element to object
     { href: '/projects', label: 'Projects' },
+    { href: 'https://theproductpipeline.substack.com/', label: 'Substack' },
     { href: '/contact', label: 'Contact' },
   ];
 

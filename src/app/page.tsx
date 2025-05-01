@@ -67,7 +67,10 @@ export default function Home() {
       {/* Quick About Preview */}
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl font-bold text-center mb-16">About Me</h2>
+          {/* Updated header styling */}
+          <h2 className="text-3xl font-bold text-center mb-16 text-gray-900 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-blue-600">
+            About Me
+          </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
@@ -114,7 +117,10 @@ export default function Home() {
       <section className="py-20 px-6 bg-gray-50">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Current Role</h2>
+            {/* Updated header styling */}
+            <h2 className="text-3xl font-bold mb-4 text-gray-900 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-600">
+              Current Role
+            </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               A glimpse at my most recent professional experience
             </p>
@@ -170,7 +176,10 @@ export default function Home() {
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Core Competencies</h2>
+            {/* Updated header styling */}
+            <h2 className="text-3xl font-bold mb-4 text-gray-900 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-600">
+              Core Competencies
+            </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               My unique combination of skills allows me to bridge the gap between 
               technical implementation, product strategy, and business objectives.
@@ -227,7 +236,10 @@ export default function Home() {
       <section className="py-20 px-6 bg-gray-50">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
+            {/* Updated header styling */}
+            <h2 className="text-3xl font-bold mb-4 text-gray-900 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-600">
+              Featured Projects
+            </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Highlighting some of my most impactful work
             </p>
@@ -267,7 +279,10 @@ export default function Home() {
       {/* Call to Action */}
       <section className="py-16 px-6 bg-blue-700 text-white">
         <div className="container mx-auto max-w-5xl text-center">
-          <h2 className="text-3xl font-bold mb-6">Let&apos;s Connect</h2>
+          {/* Updated header styling - lighter underline for contrast on dark background */}
+          <h2 className="text-3xl font-bold mb-6 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-300">
+            Let&apos;s Connect
+          </h2>
           <p className="text-blue-100 mb-10 max-w-xl mx-auto">
             Interested in working together or learning more about my experience?
             I&apos;m always open to discussing new projects and opportunities.

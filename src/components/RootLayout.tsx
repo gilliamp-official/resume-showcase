@@ -3,6 +3,7 @@ import React, { useState, useEffect, ReactNode } from 'react';
 import Link from 'next/link';
 import { Menu, X, Linkedin, Mail, FileText } from 'lucide-react';
 import profileData from '@/data/profile.json';
+import { downloadResume } from '@/utils/downloadUtils';
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -77,6 +78,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <Link href="/#projects" className={`transition-colors ${scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-gray-700 hover:text-blue-600'}`}>
                 Projects
               </Link>
+              <Link href="https://theproductpipeline.substack.com/" className={`transition-colors ${scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-gray-700 hover:text-blue-600'}`}>
+                Substack
+              </Link>
               <Link href="/#contact" className={`transition-colors ${scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-gray-700 hover:text-blue-600'}`}>
                 Contact
               </Link>
@@ -148,6 +152,15 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   );
                 }
               })}
+              {/* Resume Download Button */}
+              <button 
+                onClick={downloadResume}
+                className={`transition-colors ${scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-gray-700 hover:text-blue-600'}`}
+                aria-label="Download Resume"
+                title="Download Resume"
+              >
+                <FileText className="w-5 h-5" />
+              </button>
             </div>
 
             {/* Mobile menu button */}
@@ -179,6 +192,17 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   <Link href="/#contact" className="text-gray-700 hover:text-blue-600" onClick={() => setIsMenuOpen(false)}>
                     Contact
                   </Link>
+                  {/* Add Resume download to mobile menu */}
+                  <button 
+                    onClick={() => {
+                      downloadResume();
+                      setIsMenuOpen(false);
+                    }}
+                    className="text-left text-gray-700 hover:text-blue-600 flex items-center"
+                  >
+                    <span>Resume</span>
+                    <FileText className="w-4 h-4 ml-2" />
+                  </button>
                 </nav>
 
                 <div className="flex space-x-4 mt-6">
@@ -279,14 +303,15 @@ export default function RootLayout({ children }: RootLayoutProps) {
                     );
                   }
                 })}
-                <a 
-                  href="/resume.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="text-gray-400 hover:text-white transition-colors"
+                {/* Resume Download Button in Footer */}
+                <button 
+                  onClick={downloadResume}
+                  className="text-gray-400 hover:text-white transition-colors cursor-pointer"
+                  aria-label="Download Resume"
+                  title="Download Resume"
                 >
                   <FileText className="w-5 h-5" />
-                </a>
+                </button>
               </div>
             </div>
             
