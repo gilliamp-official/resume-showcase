@@ -14,9 +14,13 @@ export default function Navbar() {
   // Handle scroll effect for sticky header
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 10); // Reduced threshold to catch smaller scrolls
     };
     window.addEventListener('scroll', handleScroll);
+    
+    // Check scroll position on mount to handle page refresh
+    handleScroll();
+    
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -38,29 +42,34 @@ export default function Navbar() {
     </svg>
   );
 
-  // Navigation links - fixed the error by removing the JSX element from the array
+  // Navigation links
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
     { href: '/experience', label: 'Experience' },
-    { href: '/skills', label: 'Skills' }, // Changed this from JSX element to object
+    { href: '/skills', label: 'Skills' },
     { href: '/projects', label: 'Projects' },
     { href: 'https://theproductpipeline.substack.com/', label: 'Substack' },
     { href: '/contact', label: 'Contact' },
   ];
 
-  // The key fix: Add a base text color that's visible regardless of scroll position
+  // Fixed the text color logic to prioritize homepage state
   const getTextColor = (isActive: boolean) => {
-    if (isActive) return 'text-blue-600 font-medium';
-    if (scrolled || pathname !== '/') return 'text-gray-700 hover:text-blue-600';
-    return 'text-gray-100 hover:text-white'; // Lighter text on hero section that's still visible
+    // For homepage with no scrolling, always use white/light text
+    if (pathname === '/' && !scrolled) {
+      return isActive ? 'text-white font-medium' : 'text-gray-100 hover:text-white';
+    }
+    
+    // For other pages or when scrolled
+    return isActive ? 'text-blue-600 font-medium' : 'text-gray-700 hover:text-blue-600';
   };
 
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled || pathname !== '/' ? 'bg-white shadow-md py-2' : 'bg-blue-600/80 backdrop-blur-sm py-4'
+        scrolled || pathname !== '/' ? 'bg-white shadow-md py-2' : 'bg-blue-600/90 backdrop-blur-sm py-4'
       }`}
+      style={{ margin: 0, padding: '0.5rem 0' }} // Ensure no unexpected margins
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2">

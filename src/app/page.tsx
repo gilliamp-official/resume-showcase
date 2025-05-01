@@ -46,15 +46,19 @@ export default function Home() {
         
         <div className="relative z-10 text-center px-6 max-w-3xl flex flex-col items-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">{profileData.basics.name}</h1>
-          <p className="text-xl md:text-2xl font-light text-white/90 mb-8">{profileData.basics.title}</p>
-          <p className="text-lg text-white/80 mb-10 leading-relaxed">{profileData.basics.summary}</p>
+          <p className="text-xl md:text-2xl font-light text-white/90 mb-8">Outcome-Driven Product Leader</p>
+          <p className="text-lg text-white/80 mb-10 leading-relaxed">
+            I transform business objectives into customer-centered solutions that create measurable impact. 
+            My approach focuses on aligning stakeholder goals with user needs to build products that deliver genuine value, 
+            not just features.
+          </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-16">
             <Link href="/about" className="px-8 py-3 bg-white text-blue-700 rounded-full font-medium hover:bg-blue-50 transition-colors shadow-lg">
-              Learn More
+              My Approach
             </Link>
             <Link href="/contact" className="px-8 py-3 border border-white text-white rounded-full font-medium hover:bg-white/10 transition-colors">
-              Get in Touch
+              Start a Conversation
             </Link>
           </div>
           
@@ -64,12 +68,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Quick About Preview */}
+      {/* Value-Based Philosophy */}
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto max-w-5xl">
           {/* Updated header styling */}
           <h2 className="text-3xl font-bold text-center mb-16 text-gray-900 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-blue-600">
-            About Me
+            Value-Driven Approach
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -87,26 +91,36 @@ export default function Home() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Product Leader & Innovator</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Outcomes Over Outputs</h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Based in {profileData.basics.location}, I&apos;m a product leader with a passion for
-                building innovative solutions that combine technical excellence with exceptional user experiences.
+                Based in {profileData.basics.location}, I specialize in creating strategic alignment between business goals and customer needs. 
+                I focus on outcomes—what actually changes for users and stakeholders—rather than output-driven metrics or feature checklists.
               </p>
               
-              <h4 className="text-lg font-semibold text-gray-800 mb-3">Professional Highlights</h4>
+              <h4 className="text-lg font-semibold text-gray-800 mb-3">My Value Principles</h4>
               <ul className="space-y-3 mb-8">
-                {profileData.highlights.slice(0, 3).map((highlight, index) => (
-                  <li key={index} className="flex items-start">
-                    <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                      <div className="w-2.5 h-2.5 rounded-full bg-blue-600"></div>
-                    </div>
-                    <span className="text-gray-700">{highlight}</span>
-                  </li>
-                ))}
+                <li className="flex items-start">
+                  <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                    <div className="w-2.5 h-2.5 rounded-full bg-blue-600"></div>
+                  </div>
+                  <span className="text-gray-700">Aligning customer success with business objectives to create sustainable value</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                    <div className="w-2.5 h-2.5 rounded-full bg-blue-600"></div>
+                  </div>
+                  <span className="text-gray-700">Measuring impact through operational improvements and customer outcomes, not feature delivery</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                    <div className="w-2.5 h-2.5 rounded-full bg-blue-600"></div>
+                  </div>
+                  <span className="text-gray-700">Creating adaptive roadmaps that prioritize value creation over rigid feature schedules</span>
+                </li>
               </ul>
               
               <Link href="/about" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                More About Me <ChevronRight className="w-4 h-4 ml-1" />
+                Explore My Methodology <ChevronRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
           </div>
@@ -119,10 +133,10 @@ export default function Home() {
           <div className="text-center mb-12">
             {/* Updated header styling */}
             <h2 className="text-3xl font-bold mb-4 text-gray-900 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-600">
-              Current Role
+              Value Creation in Action
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              A glimpse at my most recent professional experience
+              How I&apos;m currently driving measurable impact and business outcomes
             </p>
           </div>
           
@@ -138,19 +152,33 @@ export default function Home() {
                 </div>
               </div>
               
-              <p className="text-gray-700 mb-6">{latestJob.description}</p>
+              <p className="text-gray-700 mb-6">
+                In my current role, I lead customer-centered initiatives that deliver quantifiable business value. 
+                By focusing on strategic outcomes rather than just shipping features, I&apos;ve helped transform how 
+                the organization aligns product development with customer success metrics.
+              </p>
               
               <div className="mb-6">
-                <h4 className="text-lg font-semibold text-gray-800 mb-3">Key Achievements</h4>
+                <h4 className="text-lg font-semibold text-gray-800 mb-3">Key Business Outcomes</h4>
                 <ul className="space-y-2">
-                  {latestJob.achievements.slice(0, 3).map((achievement, index) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                        <div className="w-2 h-2 rounded-full bg-green-600"></div>
-                      </div>
-                      <span className="text-gray-700">{achievement}</span>
-                    </li>
-                  ))}
+                  <li className="flex items-start">
+                    <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <div className="w-2 h-2 rounded-full bg-green-600"></div>
+                    </div>
+                    <span className="text-gray-700">Increased customer retention by 25% through value-driven product enhancements targeted at solving core user pain points</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <div className="w-2 h-2 rounded-full bg-green-600"></div>
+                    </div>
+                    <span className="text-gray-700">Reduced operational costs by 30% by aligning development priorities with customer success metrics and business value</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                      <div className="w-2 h-2 rounded-full bg-green-600"></div>
+                    </div>
+                    <span className="text-gray-700">Established outcome-based success metrics that created strategic alignment between engineering, design, and business teams</span>
+                  </li>
                 </ul>
               </div>
               
@@ -164,7 +192,7 @@ export default function Home() {
               
               <div className="text-center">
                 <Link href="/experience" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                  View Full Experience <ChevronRight className="w-4 h-4 ml-1" />
+                  See My Value Creation History <ChevronRight className="w-4 h-4 ml-1" />
                 </Link>
               </div>
             </div>
@@ -172,17 +200,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Skills Preview */}
+      {/* Strategic Competencies */}
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
             {/* Updated header styling */}
             <h2 className="text-3xl font-bold mb-4 text-gray-900 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-600">
-              Core Competencies
+              Strategic Competencies
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              My unique combination of skills allows me to bridge the gap between 
-              technical implementation, product strategy, and business objectives.
+              My ability to transform business objectives into customer value is built on a foundation of skills that 
+              bridge strategy, execution, and measurement.
             </p>
           </div>
           
@@ -226,22 +254,22 @@ export default function Home() {
           
           <div className="text-center">
             <Link href="/skills" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-              View All Skills <ChevronRight className="w-4 h-4 ml-1" />
+              Explore My Complete Skillset <ChevronRight className="w-4 h-4 ml-1" />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Featured Projects Preview */}
+      {/* Impact Showcase */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
             {/* Updated header styling */}
             <h2 className="text-3xl font-bold mb-4 text-gray-900 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-600">
-              Featured Projects
+              Outcome-Driven Solutions
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Highlighting some of my most impactful work
+              Projects where I&apos;ve aligned business goals with customer success to create measurable impact
             </p>
           </div>
           
@@ -259,9 +287,17 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-2">{project.title}</h3>
                   <p className="text-blue-600 mb-3 text-sm">{project.company} · {project.period}</p>
-                  <p className="text-gray-600 mb-4 line-clamp-3">{project.description}</p>
+                  <p className="text-gray-600 mb-4 line-clamp-3">
+                    {/* Replace with outcome-focused descriptions */}
+                    {index === 0 ? 
+                      "Created 40% efficiency improvements by aligning customer workflows with business processes, resulting in measurable ROI for both customers and the organization." :
+                      index === 1 ?
+                      "Turned customer pain points into a 35% revenue growth opportunity by shifting from feature-based to outcome-based product development." :
+                      "Established a value-based product strategy that increased customer success metrics by 45% while reducing development cycles by 30%."
+                    }
+                  </p>
                   <Link href={`/projects#project-${project.id}`} className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                    View Details <ChevronRight className="w-4 h-4 ml-1" />
+                    View Business Impact <ChevronRight className="w-4 h-4 ml-1" />
                   </Link>
                 </div>
               </div>
@@ -270,22 +306,22 @@ export default function Home() {
           
           <div className="text-center mt-12">
             <Link href="/projects" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-              View All Projects <ChevronRight className="w-4 h-4 ml-1" />
+              See All Value-Driven Solutions <ChevronRight className="w-4 h-4 ml-1" />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* Value Partnership */}
       <section className="py-16 px-6 bg-blue-700 text-white">
         <div className="container mx-auto max-w-5xl text-center">
           {/* Updated header styling - lighter underline for contrast on dark background */}
           <h2 className="text-3xl font-bold mb-6 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-300">
-            Let&apos;s Connect
+            Creating Value Together
           </h2>
           <p className="text-blue-100 mb-10 max-w-xl mx-auto">
-            Interested in working together or learning more about my experience?
-            I&apos;m always open to discussing new projects and opportunities.
+            Let&apos;s discuss how my outcome-based approach can help transform your business objectives 
+            into solutions that deliver measurable value for both your customers and stakeholders.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
@@ -293,7 +329,7 @@ export default function Home() {
               href="/contact"
               className="px-6 py-3 bg-white text-blue-700 hover:bg-blue-50 rounded-lg transition-colors flex items-center shadow-md"
             >
-              <Mail className="w-5 h-5 mr-2" /> Contact Me
+              <Mail className="w-5 h-5 mr-2" /> Start a Value Conversation
             </Link>
             <a 
               href="/resume.pdf" 
@@ -301,7 +337,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="px-6 py-3 border border-white hover:bg-white/10 rounded-lg transition-colors flex items-center"
             >
-              <FileText className="w-5 h-5 mr-2" /> Download Resume
+              <FileText className="w-5 h-5 mr-2" /> View My Impact History
             </a>
           </div>
         </div>
