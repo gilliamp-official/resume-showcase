@@ -55,7 +55,7 @@ export default function ProjectsPage() {
             <div>
               <h2 className="text-3xl font-bold text-gray-800 mb-6">Outcomes Over Outputs</h2>
               <p className="text-gray-700 mb-4">
-                I believe that successful software isn't about delivering features—it's about creating 
+                I believe that successful software isn&apos;t about delivering features—it&apos;s about creating 
                 meaningful outcomes that transform how businesses operate and how customers achieve their goals. 
                 My approach focuses on the impact of technology, not just its implementation.
               </p>
@@ -251,8 +251,8 @@ export default function ProjectsPage() {
                     <h3 className="text-xl font-bold text-gray-800 mb-3">Value Measurement & Iteration</h3>
                     <p className="text-gray-600">
                       I establish clear metrics to measure the actual outcomes being achieved, not just features delivered.
-                      This data-driven approach enables us to continuously refine our strategies, amplify what's working, and
-                      pivot from what isn't—maximizing the overall value created.
+                      This data-driven approach enables us to continuously refine our strategies, amplify what&apos;s working, and
+                      pivot from what isn&apos;t—maximizing the overall value created.
                     </p>
                   </div>
                 </div>
@@ -267,7 +267,7 @@ export default function ProjectsPage() {
         <div className="container mx-auto max-w-5xl text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Create Meaningful Outcomes?</h2>
           <p className="text-blue-100 mb-10 max-w-xl mx-auto">
-            Let's discuss how we can align your business objectives with customer success to create 
+                          Let&apos;s discuss how we can align your business objectives with customer success to create 
             software that delivers genuine value and transforms how your organization operates.
           </p>
           
