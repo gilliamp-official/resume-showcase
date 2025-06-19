@@ -1,50 +1,52 @@
 {
-    "basics": {
-      "name": "Paul Gilliam",
-      "title": "Senior Product Leader",
-      "location": "Dallas, Texas, United States",
-      "email": "gilliamp2@protonmail.com",
-      "phone": "719-322-1477",
-      "website": "https://paul.gilliamclan.com",
-      "summary": "Product leader with expertise across technical development, marketing strategy, and user experience design. Passionate about creating solutions that drive business growth while delighting users. Proven track record of building high-performance product teams and delivering customer-centric features for SaaS platforms, AI-driven solutions, and digital transformation initiatives."
+  "basics": {
+    "name": "Paul Gilliam",
+    "title": "Senior Product Manager - AI & Revenue Growth",
+    "location": "Dallas, Texas, United States",
+    "email": "gilliamp2@protonmail.com",
+    "phone": "719-322-1477",
+    "website": "https://paul.gilliamclan.com",
+    "summary": "Senior Product Manager with 8+ years delivering $5M+ in product revenue through AI-powered B2B SaaS solutions. I own products end-to-end from technical architecture to business strategy, translating customer needs into scalable, profitable solutions. Proven ability to build and scale high-performing teams while driving measurable business outcomes through data-driven product decisions."
+  },
+  "social": [
+    {
+      "network": "LinkedIn",
+      "username": "pgilliam2",
+      "url": "https://linkedin.com/in/pgilliam2"
     },
-    "social": [
-      {
-        "network": "LinkedIn",
-        "username": "yourprofile",
-        "url": "https://linkedin.com/in/pgilliam2"
-      },
-      {
-        "network": "GitHub",
-        "username": "gilliamp20",
-        "url": "https://github.com/gilliamp-official"
-      }
-    ],
-    "highlights": [
-      "Led product-led growth initiatives for multiple SaaS platforms, focusing on user acquisition and revenue expansion",
-      "Directed AI-driven solutions in retail inventory planning and transportation optimization",
-      "Built and managed high-performing product teams using the triad model (product, design, engineering)",
-      "Developed comprehensive API strategies enabling third-party integrations and platform expansion",
-      "Implemented data-driven decision making processes that improved product performance by 15-30%",
-      "Presented to executive teams and boards for organizations with 70,000+ employees"
-    ],
-    "keywords": [
-      "Product Strategy",
-      "SaaS",
-      "AI/ML Integration",
-      "Product-Led Growth",
-      "UX Design",
-      "Team Leadership",
-      "API Development",
-      "Data Analytics",
-      "Agile Methodologies",
-      "B2B Software"
-    ],
-    "interests": [
-      "Emerging Technology Trends",
-      "Product Design",
-      "AI Applications",
-      "User Psychology",
-      "Data Visualization"
-    ]
-  }
+    {
+      "network": "GitHub",
+      "username": "gilliamp20",
+      "url": "https://github.com/gilliamp-official"
+    }
+  ],
+  "highlights": [
+    "Delivered $2M revenue ACH payments product in 8 months, becoming fastest-growing revenue stream",
+    "Built $350K ARR OpenAPI platform enabling ecosystem expansion and third-party integrations", 
+    "Launched AI-driven inventory planning system achieving 45% improvement in planning accuracy",
+    "Scaled special needs transportation platform from $1M to $20M projected revenue over 3 years",
+    "Conduct 20+ monthly customer interviews, creating data-driven roadmaps that increase adoption",
+    "Lead cross-functional product triads owning technical architecture through business strategy"
+  ],
+  "keywords": [
+    "Revenue Growth",
+    "AI/ML Integration", 
+    "Product Strategy",
+    "B2B SaaS",
+    "API Development",
+    "Payment Systems",
+    "Cross-Functional Leadership",
+    "Customer Research",
+    "Technical Architecture",
+    "Business Strategy",
+    "Product Operations",
+    "Data-Driven Decisions"
+  ],
+  "interests": [
+    "AI-Powered Product Innovation",
+    "Revenue Optimization",
+    "Customer-Centric Design",
+    "Technical Product Strategy",
+    "Product-Led Growth"
+  ]
+}

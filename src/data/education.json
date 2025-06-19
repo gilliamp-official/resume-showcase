@@ -1,0 +1,109 @@
+{
+    "education": [
+      {
+        "id": "quantic-mba",
+        "institution": "Quantic School of Business and Technology",
+        "degree": "MBA",
+        "field": "Business" ,
+        "startDate": "Nov 2022",
+        "endDate": "Dec 2023",
+        "duration": "1 yr 2 mos",
+        "location": "Online",
+        "type": "Graduate",
+        "status": "Completed",
+        "description": "Executive MBA program focused on modern business strategy, data-driven decision making, and technology leadership.",
+        "relevantCoursework": [
+          "Strategic Management",
+          "Data Analytics for Business",
+          "Product Strategy & Innovation",
+          "Technology Leadership",
+          "Financial Analysis"
+        ],
+        "skills": [
+          "Strategic Planning",
+          "Business Strategy",
+          "Data Analysis",
+          "Financial Modeling",
+          "Leadership"
+        ]
+      },
+      {
+        "id": "uccs-bs",
+        "institution": "University of Colorado, Colorado Springs",
+        "degree": "B.S.",
+        "field": "Information Systems",
+        "startDate": "Aug 2016",
+        "endDate": "Dec 2018",
+        "duration": "2 yrs 5 mos",
+        "location": "Colorado Springs, CO",
+        "type": "Undergraduate",
+        "status": "Completed",
+        "gpa": "4.0",
+        "honors": [
+          "Summa Cum Laude",
+          "Dean's Top Student Award",
+          "International Collegiate DECA Finalist"
+        ],
+        "description": "Comprehensive program combining technical systems knowledge with business applications, emphasizing software development, database management, and business process optimization.",
+        "relevantCoursework": [
+          "Software Development",
+          "Database Management Systems",
+          "Business Process Analysis",
+          "Systems Architecture",
+          "Project Management",
+          "Information Security"
+        ],
+        "skills": [
+          "Software Development",
+          "Database Design",
+          "Systems Analysis",
+          "Business Process Optimization",
+          "Technical Documentation"
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "id": "leap-manager",
+        "name": "LEAP (Leadership Acceleration Program) Manager Training",
+        "issuer": "Leadership Development Organization",
+        "dateIssued": "2023",
+        "status": "Active",
+        "description": "Advanced leadership training program focused on accelerating management capabilities and cross-functional team leadership."
+      },
+      {
+        "id": "texas-deca",
+        "name": "Texas DECA 2025 State CDC Volunteer",
+        "issuer": "Texas DECA",
+        "dateIssued": "2025",
+        "status": "Active",
+        "description": "Volunteer certification for state-level business competition coordination and mentorship."
+      }
+    ],
+    "achievements": [
+      {
+        "title": "International Collegiate DECA Finalist",
+        "category": "Business Competition",
+        "year": "2018",
+        "description": "Advanced to international finals in collegiate business competition"
+      },
+      {
+        "title": "International DECA Winner Award",
+        "category": "Entrepreneurship Series",
+        "year": "2014",
+        "description": "National-level recognition for entrepreneurship and business innovation (pre-college)"
+      },
+      {
+        "title": "Ronald Reagan Leadership Award Winner",
+        "category": "Leadership",
+        "year": "2014", 
+        "description": "Prestigious leadership award recognizing outstanding leadership potential and community impact (pre-college)"
+      },
+      {
+        "title": "Colorado DECA State Champion",
+        "category": "Business Competition",
+        "year": "2015",
+        "description": "State-level champion in business and marketing competition (pre-college)"
+      }
+    ]
+  }

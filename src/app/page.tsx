@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowDown, FileText, Mail, ChevronRight } from 'lucide-react';
@@ -8,27 +7,13 @@ import { ArrowDown, FileText, Mail, ChevronRight } from 'lucide-react';
 // Import JSON data
 import profileData from '@/data/profile.json';
 import experienceData from '@/data/experience.json';
-import skillsData from '@/data/skills.json';
-import projectsData from '@/data/projects.json';
+
+
 
 export default function Home() {
   // Get latest job
   const latestJob = experienceData.experience[0];
   
-  // Get top featured projects (first 3)
-  const featuredProjects = projectsData.projects.slice(0, 3);
-
-  // For featured skills section
-  const [activeSkillCategory, setActiveSkillCategory] = useState('product');
-  
-  // Get featured skills (top 3 skills from selected category)
-  const getFeaturedSkills = () => {
-    const category = skillsData.categories.find(cat => cat.id === activeSkillCategory);
-    if (!category) return [];
-    
-    // Sort by level and take top 3
-    return [...category.skills].sort((a, b) => b.level - a.level).slice(0, 3);
-  };
 
   return (
     <>
@@ -44,21 +29,20 @@ export default function Home() {
           }}></div>
         </div>
         
-        <div className="relative z-10 text-center px-6 max-w-3xl flex flex-col items-center">
+        <div className="relative z-10 text-center px-6 max-w-4xl flex flex-col items-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">{profileData.basics.name}</h1>
-          <p className="text-xl md:text-2xl font-light text-white/90 mb-8">Outcome-Driven Product Leader</p>
+          <p className="text-xl md:text-2xl font-light text-white/90 mb-8">AI Product Leader - $5M+ Revenue Growth</p>
           <p className="text-lg text-white/80 mb-10 leading-relaxed">
-            I transform business objectives into customer-centered solutions that create measurable impact. 
-            My approach focuses on aligning stakeholder goals with user needs to build products that deliver genuine value, 
-            not just features.
+            I lead AI-powered product strategies that deliver measurable business impact for Fortune 500 companies. 
+            Specializing in custom ML solutions, LLM integration, and transforming enterprise operations through intelligent automation.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-16">
             <Link href="/about" className="px-8 py-3 bg-white text-blue-700 rounded-full font-medium hover:bg-blue-50 transition-colors shadow-lg">
-              My Approach
+              View My Impact
             </Link>
             <Link href="/contact" className="px-8 py-3 border border-white text-white rounded-full font-medium hover:bg-white/10 transition-colors">
-              Start a Conversation
+              Let&apos;s Talk Revenue
             </Link>
           </div>
           
@@ -68,12 +52,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Value-Based Philosophy */}
+      {/* Revenue Impact Overview */}
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto max-w-5xl">
-          {/* Updated header styling */}
           <h2 className="text-3xl font-bold text-center mb-16 text-gray-900 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-blue-600">
-            Value-Driven Approach
+            Proven Revenue Results
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -91,52 +74,51 @@ export default function Home() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Outcomes Over Outputs</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">$5M+ in Product Revenue</h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Based in {profileData.basics.location}, I specialize in creating strategic alignment between business goals and customer needs. 
-                I focus on outcomes—what actually changes for users and stakeholders—rather than output-driven metrics or feature checklists.
+                Based in {profileData.basics.location}, I specialize in building AI-powered B2B SaaS products that generate substantial revenue growth. 
+                My approach combines deep technical expertise with customer-centric development to deliver solutions that solve real business problems.
               </p>
               
-              <h4 className="text-lg font-semibold text-gray-800 mb-3">My Value Principles</h4>
+              <h4 className="text-lg font-semibold text-gray-800 mb-3">Recent Revenue Achievements</h4>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
-                  <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                    <div className="w-2.5 h-2.5 rounded-full bg-blue-600"></div>
+                  <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                    <div className="w-2.5 h-2.5 rounded-full bg-green-600"></div>
                   </div>
-                  <span className="text-gray-700">Aligning customer success with business objectives to create sustainable value</span>
+                  <span className="text-gray-700"><strong>$2M ACH payments product</strong> delivered in 8 months at SmartMoving</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                    <div className="w-2.5 h-2.5 rounded-full bg-blue-600"></div>
+                  <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                    <div className="w-2.5 h-2.5 rounded-full bg-green-600"></div>
                   </div>
-                  <span className="text-gray-700">Measuring impact through operational improvements and customer outcomes, not feature delivery</span>
+                  <span className="text-gray-700"><strong>$350K ARR OpenAPI platform</strong> enabling ecosystem expansion</span>
                 </li>
                 <li className="flex items-start">
-                  <div className="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                    <div className="w-2.5 h-2.5 rounded-full bg-blue-600"></div>
+                  <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                    <div className="w-2.5 h-2.5 rounded-full bg-green-600"></div>
                   </div>
-                  <span className="text-gray-700">Creating adaptive roadmaps that prioritize value creation over rigid feature schedules</span>
+                  <span className="text-gray-700"><strong>$1M→$5M revenue scale</strong> for transportation platform at First Student</span>
                 </li>
               </ul>
               
-              <Link href="/about" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                Explore My Methodology <ChevronRight className="w-4 h-4 ml-1" />
+              <Link href="/experience" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                View Complete Revenue History <ChevronRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Latest Experience Preview */}
+      {/* Current Role Impact */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
-            {/* Updated header styling */}
             <h2 className="text-3xl font-bold mb-4 text-gray-900 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-600">
-              Value Creation in Action
+              Current Impact at SmartMoving
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              How I&apos;m currently driving measurable impact and business outcomes
+              Leading product strategy for high-growth B2B SaaS platform, driving revenue through AI-powered solutions
             </p>
           </div>
           
@@ -153,32 +135,20 @@ export default function Home() {
               </div>
               
               <p className="text-gray-700 mb-6">
-                In my current role, I lead customer-centered initiatives that deliver quantifiable business value. 
-                By focusing on strategic outcomes rather than just shipping features, I&apos;ve helped transform how 
-                the organization aligns product development with customer success metrics.
+                {latestJob.description}
               </p>
               
               <div className="mb-6">
-                <h4 className="text-lg font-semibold text-gray-800 mb-3">Key Business Outcomes</h4>
+                <h4 className="text-lg font-semibold text-gray-800 mb-3">Key Revenue Achievements</h4>
                 <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                      <div className="w-2 h-2 rounded-full bg-green-600"></div>
-                    </div>
-                    <span className="text-gray-700">Increased customer retention by 25% through value-driven product enhancements targeted at solving core user pain points</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                      <div className="w-2 h-2 rounded-full bg-green-600"></div>
-                    </div>
-                    <span className="text-gray-700">Reduced operational costs by 30% by aligning development priorities with customer success metrics and business value</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                      <div className="w-2 h-2 rounded-full bg-green-600"></div>
-                    </div>
-                    <span className="text-gray-700">Established outcome-based success metrics that created strategic alignment between engineering, design, and business teams</span>
-                  </li>
+                  {latestJob.achievements.map((achievement, index) => (
+                    <li key={index} className="flex items-start">
+                      <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                        <div className="w-2 h-2 rounded-full bg-green-600"></div>
+                      </div>
+                      <span className="text-gray-700">{achievement}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
               
@@ -192,7 +162,7 @@ export default function Home() {
               
               <div className="text-center">
                 <Link href="/experience" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                  See My Value Creation History <ChevronRight className="w-4 h-4 ml-1" />
+                  See Complete Experience History <ChevronRight className="w-4 h-4 ml-1" />
                 </Link>
               </div>
             </div>
@@ -200,128 +170,163 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Strategic Competencies */}
+      {/* AI Leadership Expertise */}
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
-            {/* Updated header styling */}
             <h2 className="text-3xl font-bold mb-4 text-gray-900 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-600">
-              Strategic Competencies
+              AI Product Leadership
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              My ability to transform business objectives into customer value is built on a foundation of skills that 
-              bridge strategy, execution, and measurement.
+              Leading AI-powered product strategies that deliver measurable business impact and revenue growth
             </p>
           </div>
           
-          {/* Skill category tabs */}
-          <div className="flex flex-wrap justify-center mb-10">
-            {skillsData.categories.map(category => (
-              <button
-                key={category.id}
-                onClick={() => setActiveSkillCategory(category.id)}
-                className={`px-4 py-2 m-2 rounded-full transition-colors ${
-                  activeSkillCategory === category.id 
-                    ? 'bg-blue-600 text-white' 
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                {category.name}
-              </button>
-            ))}
-          </div>
-          
-          {/* Featured skills cards */}
+          {/* Top 3 AI skills cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            {getFeaturedSkills().map(skill => (
-              <div key={skill.name} className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="flex justify-between items-center mb-4">
-                  <h3 className="text-xl font-semibold text-gray-800">{skill.name}</h3>
-                  <span className="text-sm font-medium px-2 py-1 bg-blue-100 text-blue-800 rounded-full">
-                    {skill.level}%
-                  </span>
-                </div>
-                <p className="text-gray-600 mb-4">{skill.description}</p>
-                <div className="w-full bg-gray-200 rounded-full h-1.5 mb-1">
-                  <div 
-                    className="bg-blue-600 h-1.5 rounded-full" 
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
-                </div>
-              </div>
-            ))}
+            <div className="relative bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-blue-200">
+              <span className="absolute top-4 right-4 px-3 py-0.5 text-xs font-semibold bg-blue-600 text-white rounded-full leading-tight max-w-fit">
+                3+ years
+              </span>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">AI/ML Strategy & Implementation</h3>
+              <p className="text-gray-600 mb-4">Leading AI-powered product initiatives that deliver measurable business impact</p>
+              <div className="text-sm text-blue-700 font-medium mb-1">Key Achievement:</div>
+              <p className="text-sm text-gray-600">45% improvement in inventory planning through AI implementation</p>
+            </div>
+
+            <div className="relative bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-blue-200">
+              <span className="absolute top-4 right-4 px-3 py-0.5 text-xs font-semibold bg-blue-600 text-white rounded-full leading-tight max-w-fit">
+                3+ years
+              </span>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">AI Product Operations & Integration</h3>
+              <p className="text-gray-600 mb-4">Operationalizing AI solutions and integrating them into existing product ecosystems</p>
+              <div className="text-sm text-blue-700 font-medium mb-1">Key Achievement:</div>
+              <p className="text-sm text-gray-600">Custom ML pipeline architecture for retail forecasting</p>
+            </div>
+
+            <div className="relative bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-blue-200">
+              <span className="absolute top-4 right-4 px-3 py-0.5 text-xs font-semibold bg-blue-600 text-white rounded-full leading-tight max-w-fit">
+                2+ years
+              </span>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">LLMs & Generative AI</h3>
+              <p className="text-gray-600 mb-4">Practical application of LLMs and generative AI in product development</p>
+              <div className="text-sm text-blue-700 font-medium mb-1">Key Achievement:</div>
+              <p className="text-sm text-gray-600">AI-powered automation workflows with 30% adoption</p>
+            </div>
           </div>
           
           <div className="text-center">
             <Link href="/skills" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-              Explore My Complete Skillset <ChevronRight className="w-4 h-4 ml-1" />
+              Explore All AI & Technical Capabilities <ChevronRight className="w-4 h-4 ml-1" />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Impact Showcase */}
+      {/* Featured AI Case Study */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
-            {/* Updated header styling */}
             <h2 className="text-3xl font-bold mb-4 text-gray-900 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-600">
-              Outcome-Driven Solutions
+              AI Product Leadership in Action
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Projects where I&apos;ve aligned business goals with customer success to create measurable impact
+              Transforming Fortune 500 retail operations through custom AI/ML solutions and strategic product leadership
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {featuredProjects.map((project, index) => (
-              <div key={project.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="relative h-48">
-                  <Image 
-                    src={project.image || `/images/project-placeholder-${index + 1}.jpg`}
-                    alt={project.title}
-                    fill
-                    style={{ objectFit: 'cover' }}
-                  />
+          {/* Highlight the top AI case study */}
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 border border-blue-200">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+              <div className="p-8 lg:p-10">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">Featured AI Case Study</span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">Fortune 500</span>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{project.title}</h3>
-                  <p className="text-blue-600 mb-3 text-sm">{project.company} · {project.period}</p>
-                  <p className="text-gray-600 mb-4 line-clamp-3">
-                    {/* Replace with outcome-focused descriptions */}
-                    {index === 0 ? 
-                      "Created 40% efficiency improvements by aligning customer workflows with business processes, resulting in measurable ROI for both customers and the organization." :
-                      index === 1 ?
-                      "Turned customer pain points into a 35% revenue growth opportunity by shifting from feature-based to outcome-based product development." :
-                      "Established a value-based product strategy that increased customer success metrics by 45% while reducing development cycles by 30%."
-                    }
+                
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">AI-Driven Inventory Planning Revolution</h3>
+                <p className="text-gray-600 mb-4 text-sm">Zebra Technologies · Nov 2022 – Jan 2024</p>
+                
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  Led the development of custom ML forecasting systems that eliminated spreadsheet-based planning for Fortune 500 retailers, 
+                  implementing LLM-powered insights and automated data pipelines.
+                </p>
+                
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="text-center p-4 bg-blue-50 rounded-lg border border-blue-200">
+                    <div className="text-2xl font-bold text-blue-600">45%</div>
+                    <div className="text-sm text-gray-600">Planning Accuracy</div>
+                  </div>
+                  <div className="text-center p-4 bg-green-50 rounded-lg border border-green-200">
+                    <div className="text-2xl font-bold text-green-600">$4M</div>
+                    <div className="text-sm text-gray-600">Client Savings</div>
+                  </div>
+                </div>
+                
+                <div className="mb-6">
+                  <h4 className="text-sm font-semibold text-gray-800 mb-2">AI/ML Technologies Used:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Custom ML Pipelines</span>
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">LLM Integration</span>
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">YAML ETL</span>
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Predictive Analytics</span>
+                  </div>
+                </div>
+                
+                <Link href="/projects#project-ai-inventory-planning" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                  View Complete AI Case Study <ChevronRight className="w-4 h-4 ml-1" />
+                </Link>
+              </div>
+              
+              <div className="bg-gradient-to-br from-blue-600 to-blue-700 p-8 lg:p-10 text-white">
+                <h4 className="text-lg font-semibold mb-6">AI Product Management Impact</h4>
+                
+                <div className="space-y-4 mb-6">
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 rounded-full bg-white mt-2 mr-3 flex-shrink-0"></div>
+                    <p className="text-sm">Conducted deep customer discovery with retail planners to identify AI automation opportunities</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 rounded-full bg-white mt-2 mr-3 flex-shrink-0"></div>
+                    <p className="text-sm">Designed custom ML pipeline architecture tailored to Fortune 500 data patterns</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 rounded-full bg-white mt-2 mr-3 flex-shrink-0"></div>
+                    <p className="text-sm">Integrated LLMs to bridge complex data interpretation with human decision-making</p>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-2 h-2 rounded-full bg-white mt-2 mr-3 flex-shrink-0"></div>
+                    <p className="text-sm">Delivered measurable ROI through 80% reduction in manual planning time</p>
+                  </div>
+                </div>
+                
+                <div className="border-t border-white/20 pt-4">
+                  <p className="text-xs text-white/80 italic">
+                    &ldquo;This project showcases the strategic intersection of AI technology and product management, 
+                    delivering enterprise value through customer-centric ML solutions.&rdquo;
                   </p>
-                  <Link href={`/projects#project-${project.id}`} className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                    View Business Impact <ChevronRight className="w-4 h-4 ml-1" />
-                  </Link>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
           
           <div className="text-center mt-12">
             <Link href="/projects" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-              See All Value-Driven Solutions <ChevronRight className="w-4 h-4 ml-1" />
+              View All AI & Product Innovation Case Studies <ChevronRight className="w-4 h-4 ml-1" />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Value Partnership */}
-      <section className="py-16 px-6 bg-blue-700 text-white">
+      {/* Call to Action */}
+      <section className="py-16 px-6 bg-gradient-to-r from-blue-700 to-blue-800 text-white">
         <div className="container mx-auto max-w-5xl text-center">
-          {/* Updated header styling - lighter underline for contrast on dark background */}
           <h2 className="text-3xl font-bold mb-6 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-300">
-            Creating Value Together
+            Ready to Scale with AI Product Leadership?
           </h2>
           <p className="text-blue-100 mb-10 max-w-xl mx-auto">
-            Let&apos;s discuss how my outcome-based approach can help transform your business objectives 
-            into solutions that deliver measurable value for both your customers and stakeholders.
+            Let&apos;s discuss how my proven AI/ML expertise and $5M+ in product revenue can transform your business 
+            through intelligent automation, custom ML solutions, and strategic product innovation.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
@@ -329,7 +334,7 @@ export default function Home() {
               href="/contact"
               className="px-6 py-3 bg-white text-blue-700 hover:bg-blue-50 rounded-lg transition-colors flex items-center shadow-md"
             >
-              <Mail className="w-5 h-5 mr-2" /> Start a Value Conversation
+              <Mail className="w-5 h-5 mr-2" /> Discuss Revenue Opportunities
             </Link>
             <a 
               href="/resume.pdf" 
@@ -337,7 +342,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="px-6 py-3 border border-white hover:bg-white/10 rounded-lg transition-colors flex items-center"
             >
-              <FileText className="w-5 h-5 mr-2" /> View My Impact History
+              <FileText className="w-5 h-5 mr-2" /> Download Resume
             </a>
           </div>
         </div>

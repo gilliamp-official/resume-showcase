@@ -4,6 +4,7 @@ import React from 'react';
 import { Mail, Linkedin, FileText } from 'lucide-react';
 import Link from 'next/link';
 import profileData from '@/data/profile.json';
+import { downloadResume } from '@/utils/downloadUtils';
 
 export default function ContactPage() {
   return (
@@ -75,14 +76,13 @@ export default function ContactPage() {
                   <p className="text-gray-600 mb-4 text-sm">
                     Download my resume for a detailed overview of my experience.
                   </p>
-                  <a 
-                    href="/resume.pdf" 
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    type="button"
+                    onClick={downloadResume}
                     className="text-blue-600 hover:underline text-sm"
                   >
-                    Download Resume →
-                  </a>
+                    Download Resume &rarr;
+                  </button>
                 </div>
               </div>
             </div>

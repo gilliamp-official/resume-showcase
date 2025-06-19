@@ -1,289 +1,283 @@
 'use client'
+import React, { useState } from 'react';
+import type { JSX } from 'react';
+import { ChevronLeft, ChevronRight, DollarSign, Zap, Users, Brain, Target, TrendingUp } from 'lucide-react';
+import caseStudiesData from '@/data/projects.json';
 
-import React from 'react';
-import ProjectShowcase from '@/components/ProjectShowcase';
-import projectsData from '@/data/projects.json';
+interface CaseStudyMetric {
+  metric: string;
+  description: string;
+}
 
-export default function ProjectsPage() {
+interface CaseStudySection {
+  title: string;
+  description: string;
+  keyProblems?: string[];
+  methodology?: string[];
+  keyFeatures?: string[];
+}
+
+interface CaseStudyResults {
+  primaryMetrics?: CaseStudyMetric[];
+  businessImpact?: string;
+  customerFeedback?: string;
+}
+
+interface CaseStudy {
+  id: string;
+  title: string;
+  subtitle: string;
+  company: string;
+  industry: string;
+  timeline: string;
+  duration: string;
+  heroMetric: string;
+  heroDescription: string;
+  skills?: string[];
+  impactType?: string[];
+  challenge?: CaseStudySection;
+  approach?: CaseStudySection;
+  solution?: CaseStudySection;
+  results?: CaseStudyResults;
+  learnings?: string[];
+  technologies?: string[];
+  featured?: boolean;
+}
+
+interface FilterOptions {
+  skills?: string[];
+  industries?: string[];
+  impactTypes?: string[];
+}
+
+interface Summary {
+  totalRevenue?: string;
+  totalProjects?: string | number;
+  aiMlProjects?: string | number;
+  yearsExperience?: string;
+}
+
+interface ProjectsData {
+  caseStudies: CaseStudy[];
+  filterOptions?: FilterOptions;
+  summary?: Summary;
+}
+
+// Type assertion for imported JSON data  
+const typedCaseStudiesData = caseStudiesData as unknown as ProjectsData;
+
+export default function ProjectsPage(): JSX.Element {
+  const [currentSlide, setCurrentSlide] = useState<number>(0);
+  const caseStudies: CaseStudy[] = typedCaseStudiesData?.caseStudies || [];
+
+  const nextSlide = (): void => {
+    setCurrentSlide(prev => (prev + 1) % caseStudies.length);
+  };
+
+  const prevSlide = (): void => {
+    setCurrentSlide(prev => (prev - 1 + caseStudies.length) % caseStudies.length);
+  };
+
+  const goToSlide = (index: number): void => {
+    setCurrentSlide(index);
+  };
+
+  const getImpactIcon = (impactType: string): JSX.Element => {
+    switch (impactType) {
+      case 'Revenue Generation': 
+        return <DollarSign className="w-4 h-4" />;
+      case 'Operational Efficiency': 
+        return <Zap className="w-4 h-4" />;
+      case 'Customer Experience': 
+        return <Users className="w-4 h-4" />;
+      case 'Strategic Innovation': 
+        return <Brain className="w-4 h-4" />;
+      default: 
+        return <Target className="w-4 h-4" />;
+    }
+  };
+
+  if (caseStudies.length === 0) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">No Projects Available</h2>
+          <p className="text-gray-600">Check your data configuration.</p>
+        </div>
+      </div>
+    );
+  }
+
+  const currentProject: CaseStudy = caseStudies[currentSlide];
+
   return (
-    <>
-      {/* Page Header */}
-      <section className="relative py-20 px-6 bg-blue-700 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0" style={{ 
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}></div>
+    <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <div className="bg-blue-600 text-white py-8">
+        <div className="container mx-auto px-6 text-center">
+          <h1 className="text-3xl md:text-4xl font-bold mb-2">Project Case Studies</h1>
+          <p className="text-blue-100">AI-driven product solutions delivering measurable impact</p>
         </div>
-        
-        <div className="container mx-auto max-w-5xl relative z-10 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Outcomes-Driven Solutions</h1>
-          <p className="text-blue-100 max-w-2xl mx-auto">
-            I build software that creates measurable impact by aligning business objectives with customer needs,
-            focusing on the outcomes that truly matter rather than just delivering features.
-          </p>
-        </div>
-      </section>
+      </div>
 
-      {/* Value Metrics & Business Impact */}
-      <section className="py-12 px-6 bg-white">
-        <div className="container mx-auto max-w-5xl">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div className="p-6 border border-blue-100 rounded-lg shadow-sm bg-gradient-to-br from-blue-50 to-white">
-              <div className="text-4xl font-bold text-blue-600 mb-2">{projectsData.projects.length}+</div>
-              <div className="text-gray-600">Value-Driven Solutions</div>
-            </div>
-            <div className="p-6 border border-green-100 rounded-lg shadow-sm bg-gradient-to-br from-green-50 to-white">
-              <div className="text-4xl font-bold text-green-600 mb-2">$1M+</div>
-              <div className="text-gray-600">Customer Value Created</div>
-            </div>
-            <div className="p-6 border border-purple-100 rounded-lg shadow-sm bg-gradient-to-br from-purple-50 to-white">
-              <div className="text-4xl font-bold text-purple-600 mb-2">30%</div>
-              <div className="text-gray-600">Business Growth Enabled</div>
-            </div>
-            <div className="p-6 border border-amber-100 rounded-lg shadow-sm bg-gradient-to-br from-amber-50 to-white">
-              <div className="text-4xl font-bold text-amber-600 mb-2">4.5/5</div>
-              <div className="text-gray-600">Customer Success Rating</div>
-            </div>
+      {/* Navigation */}
+      <div className="bg-white border-b py-4">
+        <div className="container mx-auto px-6 flex items-center justify-between">
+          <div className="flex gap-2">
+            {caseStudies.map((_: CaseStudy, index: number) => (
+              <button
+                key={index}
+                onClick={() => goToSlide(index)}
+                className={`w-3 h-3 rounded-full transition-colors ${
+                  index === currentSlide ? 'bg-blue-600' : 'bg-gray-300 hover:bg-gray-400'
+                }`}
+              />
+            ))}
+          </div>
+          <div className="text-sm text-gray-600">
+            {currentSlide + 1} of {caseStudies.length}
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Outcomes-Based Philosophy */}
-      <section className="py-12 px-6 bg-gray-50">
-        <div className="container mx-auto max-w-5xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">Outcomes Over Outputs</h2>
-              <p className="text-gray-700 mb-4">
-                I believe that successful software isn&apos;t about delivering features—it&apos;s about creating 
-                meaningful outcomes that transform how businesses operate and how customers achieve their goals. 
-                My approach focuses on the impact of technology, not just its implementation.
-              </p>
-              <p className="text-gray-700">
-                Each project begins by identifying the core business objectives and customer needs, 
-                then carefully aligning them to create solutions that deliver genuine value for all 
-                stakeholders. This outcomes-driven methodology ensures that every line of code contributes 
-                to measurable business success and customer satisfaction.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-2 gap-4">
-              <div className="p-5 bg-white rounded-lg shadow-md border-l-4 border-blue-600">
-                <h3 className="font-semibold text-gray-800 mb-2">Value Creation</h3>
-                <p className="text-gray-600 text-sm">Focusing on business outcomes that generate measurable ROI and strategic advantage.</p>
-              </div>
-              
-              <div className="p-5 bg-white rounded-lg shadow-md border-l-4 border-green-600">
-                <h3 className="font-semibold text-gray-800 mb-2">Customer Success</h3>
-                <p className="text-gray-600 text-sm">Prioritizing solutions that help customers achieve their goals more effectively.</p>
-              </div>
-              
-              <div className="p-5 bg-white rounded-lg shadow-md border-l-4 border-purple-600">
-                <h3 className="font-semibold text-gray-800 mb-2">Strategic Alignment</h3>
-                <p className="text-gray-600 text-sm">Connecting business objectives with customer needs to create aligned incentives.</p>
-              </div>
-              
-              <div className="p-5 bg-white rounded-lg shadow-md border-l-4 border-amber-600">
-                <h3 className="font-semibold text-gray-800 mb-2">Adaptability</h3>
-                <p className="text-gray-600 text-sm">Evolving solutions based on real-world impact rather than rigid feature roadmaps.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Main Content - Slide View */}
+      <div className="container mx-auto px-6 py-8">
+        <div className="max-w-6xl mx-auto relative">
+          {/* Navigation Arrows */}
+          <button
+            onClick={prevSlide}
+            disabled={caseStudies.length <= 1}
+            className="absolute -left-16 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          >
+            <ChevronLeft className="w-5 h-5 text-gray-600" />
+          </button>
 
-      {/* Value-Driven Categories */}
-      <section className="py-12 px-6 bg-white">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl font-bold text-center mb-12">Value Creation Areas</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-b from-blue-50 to-white p-6 rounded-lg shadow-md border border-blue-100">
-              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Operational Excellence</h3>
-              <p className="text-gray-600 mb-4">
-                Solutions that transform business operations by eliminating inefficiencies, enhancing productivity, 
-                and creating measurable improvements in organizational performance.
-              </p>
-              <ul className="text-gray-600 space-y-1 text-sm">
-                <li>• 40% average process efficiency gains</li>
-                <li>• 60% reduction in manual workflows</li>
-                <li>• 25% improvement in resource utilization</li>
-              </ul>
-            </div>
-            
-            <div className="bg-gradient-to-b from-green-50 to-white p-6 rounded-lg shadow-md border border-green-100">
-              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Customer Experience</h3>
-              <p className="text-gray-600 mb-4">
-                Initiatives that enhance how customers interact with products and services, creating 
-                loyalty, advocacy, and sustainable growth through exceptional experiences.
-              </p>
-              <ul className="text-gray-600 space-y-1 text-sm">
-                <li>• 35% increase in user engagement</li>
-                <li>• 45% higher customer retention</li>
-                <li>• 3x improvement in satisfaction scores</li>
-              </ul>
-            </div>
-            
-            <div className="bg-gradient-to-b from-purple-50 to-white p-6 rounded-lg shadow-md border border-purple-100">
-              <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Strategic Innovation</h3>
-              <p className="text-gray-600 mb-4">
-                Forward-looking solutions that create new market opportunities, establish competitive 
-                advantages, and position organizations for long-term growth and relevance.
-              </p>
-              <ul className="text-gray-600 space-y-1 text-sm">
-                <li>• 5 new revenue streams created</li>
-                <li>• 20% market share expansion</li>
-                <li>• $500K+ in new annual revenue</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+          <button
+            onClick={nextSlide}
+            disabled={caseStudies.length <= 1}
+            className="absolute -right-16 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-lg border border-gray-200 flex items-center justify-center hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          >
+            <ChevronRight className="w-5 h-5 text-gray-600" />
+          </button>
 
-      {/* Project Showcase */}
-      <section className="py-20 px-6 bg-gray-50">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl font-bold text-center mb-16">Impact Showcase</h2>
-          <ProjectShowcase projects={projectsData.projects} />
-        </div>
-      </section>
-
-      {/* Outcome-Based Methodology */}
-      <section className="py-16 px-6 bg-white">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl font-bold text-center mb-12">My Outcome-Based Approach</h2>
-          
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-blue-200 transform md:-translate-x-1/2"></div>
-            
-            <div className="space-y-12">
-              {/* Phase 1 */}
-              <div className="relative flex flex-col md:flex-row items-center">
-                <div className="flex items-center justify-center md:w-1/2 md:justify-end md:pr-8 mb-4 md:mb-0">
-                  <div className="w-8 h-8 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center z-10">1</div>
-                </div>
-                <div className="md:w-1/2 md:pl-8">
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-bold text-gray-800 mb-3">Business Objective Mapping</h3>
-                    <p className="text-gray-600">
-                      I start by identifying the key business metrics and objectives that matter most to stakeholders.
-                      This includes establishing clear success criteria, understanding financial targets, and defining
-                      strategic priorities that will guide the entire project.
-                    </p>
+          {/* Project Card */}
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            {/* Header */}
+            <div className="bg-gradient-to-r from-blue-50 to-blue-100 p-8 border-b">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+                <div className="lg:col-span-2">
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                      {currentProject.company}
+                    </span>
+                    <span className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">
+                      {currentProject.industry}
+                    </span>
+                    <span className="text-gray-500 text-sm">{currentProject.timeline}</span>
                   </div>
+                  <h2 className="text-3xl font-bold text-gray-900 mb-3">{currentProject.title}</h2>
+                  <p className="text-lg text-gray-600 leading-relaxed">{currentProject.subtitle}</p>
                 </div>
-              </div>
-              
-              {/* Phase 2 */}
-              <div className="relative flex flex-col md:flex-row items-center">
-                <div className="order-1 md:order-2 flex items-center justify-center md:w-1/2 md:justify-start md:pl-8 mb-4 md:mb-0">
-                  <div className="w-8 h-8 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center z-10">2</div>
-                </div>
-                <div className="order-2 md:order-1 md:w-1/2 md:pr-8">
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-bold text-gray-800 mb-3">Customer Outcome Research</h3>
-                    <p className="text-gray-600">
-                      I conduct deep research into customer needs, goals, and pain points to understand what success
-                      looks like from their perspective. This involves user interviews, journey mapping, and behavioral
-                      analysis to identify the outcomes that will drive genuine customer value.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Phase 3 */}
-              <div className="relative flex flex-col md:flex-row items-center">
-                <div className="flex items-center justify-center md:w-1/2 md:justify-end md:pr-8 mb-4 md:mb-0">
-                  <div className="w-8 h-8 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center z-10">3</div>
-                </div>
-                <div className="md:w-1/2 md:pl-8">
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-bold text-gray-800 mb-3">Strategic Alignment</h3>
-                    <p className="text-gray-600">
-                      I identify where business objectives and customer outcomes naturally align, then design solutions
-                      that serve both simultaneously. This creates a virtuous cycle where helping customers achieve their
-                      goals directly contributes to business success and stakeholder value.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Phase 4 */}
-              <div className="relative flex flex-col md:flex-row items-center">
-                <div className="order-1 md:order-2 flex items-center justify-center md:w-1/2 md:justify-start md:pl-8 mb-4 md:mb-0">
-                  <div className="w-8 h-8 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center z-10">4</div>
-                </div>
-                <div className="order-2 md:order-1 md:w-1/2 md:pr-8">
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-bold text-gray-800 mb-3">Adaptive Implementation</h3>
-                    <p className="text-gray-600">
-                      Rather than rigidly following a predetermined feature list, I employ an adaptive approach that
-                      continuously evaluates our progress against the desired outcomes. This means prioritizing initiatives
-                      based on their impact, not just their complexity or scope.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Phase 5 */}
-              <div className="relative flex flex-col md:flex-row items-center">
-                <div className="flex items-center justify-center md:w-1/2 md:justify-end md:pr-8 mb-4 md:mb-0">
-                  <div className="w-8 h-8 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center z-10">5</div>
-                </div>
-                <div className="md:w-1/2 md:pl-8">
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-bold text-gray-800 mb-3">Value Measurement & Iteration</h3>
-                    <p className="text-gray-600">
-                      I establish clear metrics to measure the actual outcomes being achieved, not just features delivered.
-                      This data-driven approach enables us to continuously refine our strategies, amplify what&apos;s working, and
-                      pivot from what isn&apos;t—maximizing the overall value created.
-                    </p>
+                <div className="text-center lg:text-right">
+                  <div className="bg-white rounded-lg p-6 shadow-md border border-blue-200">
+                    <div className="text-3xl font-bold text-blue-600 mb-1">{currentProject.heroMetric}</div>
+                    <div className="text-gray-600 text-sm">Key Impact</div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Call to Action */}
-      <section className="py-16 px-6 bg-blue-700 text-white">
-        <div className="container mx-auto max-w-5xl text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Create Meaningful Outcomes?</h2>
-          <p className="text-blue-100 mb-10 max-w-xl mx-auto">
-                          Let&apos;s discuss how we can align your business objectives with customer success to create 
-            software that delivers genuine value and transforms how your organization operates.
-          </p>
-          
-          <div className="flex flex-wrap justify-center gap-4">
-            <a 
-              href="/contact" 
-              className="px-6 py-3 bg-white text-blue-700 hover:bg-blue-50 rounded-lg transition-colors flex items-center shadow-md"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-              </svg>
-              Start a Value Conversation
-            </a>
+            {/* Content Grid */}
+            <div className="p-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* Left Column */}
+                <div className="space-y-6">
+                  {/* Skills */}
+                  {currentProject.skills && (
+                    <div>
+                      <h3 className="text-lg font-bold text-blue-600 mb-3">Core Skills</h3>
+                      <div className="flex flex-wrap gap-2">
+                        {currentProject.skills.map((skill: string) => (
+                          <span key={skill} className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Impact Areas */}
+                  {currentProject.impactType && (
+                    <div>
+                      <h3 className="text-lg font-bold text-blue-600 mb-3">Impact Areas</h3>
+                      <div className="space-y-2">
+                        {currentProject.impactType.map((impact: string) => (
+                          <div key={impact} className="flex items-center gap-2">
+                            {getImpactIcon(impact)}
+                            <span className="text-gray-700">{impact}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                {/* Right Column */}
+                <div className="space-y-6">
+                  {/* Key Metrics */}
+                  {currentProject.results?.primaryMetrics && (
+                    <div>
+                      <h3 className="text-lg font-bold text-blue-600 mb-3">Key Results</h3>
+                      <div className="space-y-3">
+                        {currentProject.results.primaryMetrics.slice(0, 3).map((metric: CaseStudyMetric, index: number) => (
+                          <div key={index} className="bg-gray-50 rounded-lg p-4">
+                            <div className="text-2xl font-bold text-gray-900">{metric.metric}</div>
+                            <div className="text-sm text-gray-600">{metric.description}</div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Technologies */}
+                  {currentProject.technologies && (
+                    <div>
+                      <h3 className="text-lg font-bold text-blue-600 mb-3">Tech Stack</h3>
+                      <div className="flex flex-wrap gap-2">
+                        {currentProject.technologies.slice(0, 6).map((tech: string) => (
+                          <span key={tech} className="bg-gray-100 text-gray-700 px-3 py-1 rounded text-sm">
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Summary */}
+              <div className="mt-8 pt-6 border-t border-gray-200">
+                <p className="text-gray-700 leading-relaxed">{currentProject.heroDescription}</p>
+              </div>
+            </div>
           </div>
+
         </div>
-      </section>
-    </>
+      </div>
+
+      {/* CTA */}
+      <div className="bg-blue-600 text-white py-12">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-2xl font-bold mb-4">Ready to discuss your next challenge?</h2>
+          <a 
+            href="/contact" 
+            className="inline-flex items-center gap-2 px-6 py-3 bg-white text-blue-600 hover:bg-blue-50 rounded-lg transition-colors font-medium"
+          >
+            <TrendingUp className="w-4 h-4" />
+            Get in touch
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }
