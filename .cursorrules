@@ -1,0 +1,278 @@
+# Paul Gilliam Personal Website - Cursor Rules
+
+## Project Overview
+This is a Next.js-based personal website for Paul Gilliam, a Senior Product Manager with expertise in AI, B2B SaaS, and customer-driven product development. The site showcases his professional experience, skills, and projects.
+
+## Project Structure Guidelines
+
+### File Organization
+- **Pages**: Located in `src/app/` using Next.js 13+ app router
+- **Components**: Reusable UI components in `src/components/`
+- **Data**: JSON files in `src/data/` containing structured content
+- **Assets**: Images and logos in `public/`
+
+### Data Structure Standards
+
+#### Profile Data (`src/data/profile.json`)
+```json
+{
+  "name": "Paul Gilliam",
+  "title": "Senior Product Manager - B2B SaaS",
+  "location": "McKinney, TX",
+  "email": "gilliamp2@protonmail.com",
+  "phone": "719-322-1477",
+  "linkedin": "LinkedIn Profile URL",
+  "summary": "Professional summary text...",
+  "education": [
+    {
+      "institution": "School Name",
+      "degree": "Degree Type",
+      "field": "Field of Study",
+      "graduationDate": "Month Year",
+      "honors": "Any honors or GPA info"
+    }
+  ]
+}
+```
+
+#### Experience Data (`src/data/experience.json`)
+```json
+{
+  "positions": [
+    {
+      "company": "Company Name",
+      "position": "Job Title",
+      "location": "City, State",
+      "startDate": "Month Year",
+      "endDate": "Month Year" | "Present",
+      "duration": "X months/years",
+      "logo": "/logos/company-logo.jpg",
+      "achievements": [
+        "Achievement with specific metrics and impact",
+        "Another quantified achievement"
+      ],
+      "technologies": ["Tech1", "Tech2"],
+      "keySkills": ["Skill1", "Skill2"]
+    }
+  ]
+}
+```
+
+#### Skills Data (`src/data/skills.json`)
+```json
+{
+  "categories": [
+    {
+      "name": "Category Name",
+      "skills": [
+        {
+          "name": "Skill Name",
+          "level": 1-5,
+          "description": "Brief description",
+          "yearsExperience": number
+        }
+      ]
+    }
+  ],
+  "highlights": [
+    "Key skill or achievement highlight"
+  ]
+}
+```
+
+#### Projects Data (`src/data/projects.json`)
+```json
+{
+  "projects": [
+    {
+      "title": "Project Name",
+      "description": "Project description",
+      "company": "Associated Company",
+      "impact": "Quantified business impact",
+      "technologies": ["Tech1", "Tech2"],
+      "metrics": {
+        "revenue": "$X",
+        "adoption": "X%",
+        "satisfaction": "X/5 stars"
+      },
+      "category": "AI/Product/Integration/etc"
+    }
+  ]
+}
+```
+
+## TypeScript Guidelines
+
+### Component Types
+Always define proper TypeScript interfaces for props:
+
+```typescript
+interface ExperienceItemProps {
+  company: string;
+  position: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  achievements: string[];
+  logo?: string;
+}
+```
+
+### Data Import Types
+Create type definitions for JSON data:
+
+```typescript
+interface Profile {
+  name: string;
+  title: string;
+  location: string;
+  email: string;
+  phone: string;
+  linkedin: string;
+  summary: string;
+}
+```
+
+## Content Guidelines
+
+### Professional Tone
+- Focus on quantifiable achievements and business impact
+- Use action verbs: "Delivered", "Spearheaded", "Implemented", "Optimized"
+- Include specific metrics: revenue generated, adoption rates, satisfaction scores
+- Emphasize AI/ML expertise and customer-driven approach
+
+### Key Themes to Highlight
+1. **AI/ML Integration**: Experience with AI-powered solutions and workflows
+2. **Customer-Centric Development**: 20+ monthly customer interviews, feedback loops
+3. **Revenue Impact**: Specific dollar amounts and growth metrics
+4. **Cross-Functional Leadership**: Product triads, team management
+5. **Technical Business Acumen**: API development, system architecture, analytics
+
+### Achievement Format
+Always include:
+- What was accomplished
+- Specific metrics/numbers
+- Business impact or value created
+- Technologies or methodologies used
+
+Example: "Delivered integrated payments solution generating $1M in revenue through strategic product development and cross-functional collaboration"
+
+## Component Development Rules
+
+### Naming Conventions
+- Use PascalCase for component files: `CareerTimeline.tsx`
+- Use camelCase for functions and variables
+- Use kebab-case for CSS classes and IDs
+
+### Component Structure
+```typescript
+interface ComponentProps {
+  // Define all props with proper types
+}
+
+export default function ComponentName({ prop1, prop2 }: ComponentProps) {
+  // Component logic
+  return (
+    // JSX with proper Tailwind classes
+  );
+}
+```
+
+### Styling Guidelines
+- Use Tailwind CSS for all styling
+- Follow mobile-first responsive design
+- Use consistent spacing: `p-4`, `m-6`, `gap-4`
+- Maintain consistent color scheme focusing on professional appearance
+
+## Data Update Process
+
+### Adding New Experience
+1. Update `src/data/experience.json` with new position
+2. Add company logo to `public/logos/` if needed
+3. Update `CareerTimeline` component if new features needed
+4. Test component rendering with new data
+
+### Adding New Skills
+1. Update `src/data/skills.json` with new skills/categories
+2. Update `SkillsVisualization` component if display changes needed
+3. Ensure skill levels are realistic (1-5 scale)
+
+### Adding New Projects
+1. Update `src/data/projects.json` with project details
+2. Include quantified impact and technologies used
+3. Update `ProjectShowcase` component if needed
+
+## Performance Guidelines
+
+### Image Optimization
+- Use Next.js Image component for all images
+- Optimize logos and profile images
+- Use appropriate formats (WebP when possible)
+
+### Code Splitting
+- Keep page components focused and lightweight
+- Extract reusable logic into custom hooks
+- Use dynamic imports for heavy components
+
+## SEO and Accessibility
+
+### Meta Information
+- Include relevant meta tags for each page
+- Use semantic HTML elements
+- Ensure proper heading hierarchy (h1, h2, h3)
+
+### Accessibility
+- Include alt text for all images
+- Use proper ARIA labels where needed
+- Ensure keyboard navigation works
+- Maintain good color contrast
+
+## Git Workflow
+
+### Commit Messages
+- Use conventional commits: `feat:`, `fix:`, `docs:`, `style:`
+- Be specific about changes: "feat: add AI expertise to skills section"
+- Reference data file changes: "data: update SmartMoving achievements"
+
+### Branch Strategy
+- Use feature branches for significant updates
+- Keep changes focused and atomic
+- Update documentation when adding new features
+
+## Testing Guidelines
+
+### Data Validation
+- Verify JSON structure matches TypeScript interfaces
+- Test component rendering with updated data
+- Check for broken links or missing images
+
+### Cross-Browser Testing
+- Test on major browsers (Chrome, Firefox, Safari, Edge)
+- Verify mobile responsiveness
+- Check performance on different devices
+
+## Deployment Notes
+
+### Environment Variables
+- No sensitive data should be in the repository
+- Use environment variables for any API keys or secrets
+- Document required environment variables in README
+
+### Build Process
+- Ensure TypeScript compilation passes
+- Verify all imports are resolved
+- Check that all referenced images exist in public folder
+
+## Content Strategy
+
+### Regular Updates
+- Update experience.json when changing roles or achieving new milestones
+- Add new projects as they're completed
+- Keep skills current with market demands
+- Update metrics as they improve (revenue, adoption rates, etc.)
+
+### Professional Brand Consistency
+- Maintain focus on AI/ML expertise
+- Emphasize customer-driven product development
+- Highlight cross-functional leadership experience
+- Show measurable business impact in all descriptions

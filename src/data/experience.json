@@ -1,194 +1,191 @@
 {
-    "experience": [
-      {
-        "id": "smartmoving",
-        "company": "SmartMoving Software",
-        "title": "Senior Product Manager",
-        "logo": "SmartMoving.png",
-        "location": "Dallas, Texas, United States",
-        "type": "Hybrid",
-        "startDate": "Jan 2024",
-        "endDate": "Present",
-        "duration": "1 yr 3 mos",
-        "description": "Build and scale a high performance SaaS product team by leveraging the triad model (product, design, engineering). Iteratively deliver key roadmap features for scaling the company including products like: OpenAPI, integrated payment solutions, automations, and other top customer requests.",
-        "achievements": [
-          "Lead product-led growth initiatives for a SaaS moving company platform, focusing on payments integration, marketing automation, and analytics solutions",
-          "Drive customer-centric development through continuous research and deep analytical feedback loops, conducting 20+ customer interviews monthly",
-          "Build and manage high-performing product triad teams (Product/Design/Engineering) with scalable processes",
-          "Own product strategy and go-to-market while managing product owners to deliver revenue-driving features"
-        ],
-        "skills": [
-          "SaaS",
-          "Product-Led Growth",
-          "Team Leadership",
-          "Customer Research",
-          "API Development",
-          "Payment Integration",
-          "Marketing Automation",
-          "Analytics"
-        ]
-      },
-      {
-        "id": "zebra",
-        "company": "Zebra Technologies",
-        "title": "Senior Product Manager",
-        "logo": "zebra.jpg",
-        "location": "Frisco, Texas, United States",
-        "type": "Hybrid",
-        "startDate": "Nov 2022",
-        "endDate": "Jan 2024",
-        "duration": "1 yr 3 mos",
-        "description": "Build and deliver a new AI-powered retail inventory planning system for the newly formed Zebra software business unit.",
-        "achievements": [
-          "Spearheaded development of an AI-driven retail inventory planning system, aligning product requirements with market analysis and user research",
-          "Collaborated with analytics and engineering teams to implement API-based AI forecasting capabilities and ensure seamless integrations",
-          "Established and scaled product operations for a new software business unit, driving agile feature releases in partnership with cross-functional teams",
-          "Built foundational sales pipeline by coordinating go-to-market strategies with sales and marketing teams"
-        ],
-        "skills": [
-          "AI/ML",
-          "Retail Technology",
-          "Inventory Planning",
-          "Product Operations",
-          "API Integration",
-          "Market Analysis",
-          "User Research",
-          "Agile",
-          "Go-to-Market"
-        ]
-      },
-      {
-        "id": "koddi",
-        "company": "Koddi",
-        "title": "Product Manager",
-        "logo": "koddi.png",
-        "location": "Remote",
-        "type": "Remote",
-        "startDate": "Jun 2022",
-        "endDate": "Dec 2022",
-        "duration": "7 mos",
-        "description": "Own and manage the KoddiOne digital advertising network platform",
-        "achievements": [
-          "Led the development and management of the KoddiOne digital advertising network platform, driving platform enhancements and user satisfaction",
-          "Designed and implemented a new advertisement setup portal, boosting user satisfaction by 15%",
-          "Simplified product releases by reducing complexity 20% through engineering collaboration",
-          "Streamlined product and marketing processes by creating automated release notes and standardized product operations pipeline"
-        ],
-        "skills": [
-          "Digital Advertising",
-          "Platform Management",
-          "UX Design",
-          "Engineering Collaboration",
-          "Process Automation",
-          "Product Operations"
-        ]
-      },
-      {
-        "id": "firststudent",
-        "company": "First Student",
-        "title": "Product Manager",
-        "logo": "first-student.jpg",
-        "location": "Remote",
-        "type": "Remote",
-        "startDate": "Sep 2021",
-        "endDate": "Jun 2022",
-        "duration": "10 mos",
-        "description": "Develop and lead productized effort for new alternative transportation vertical at the country's largest school bus company.",
-        "achievements": [
-          "Defined and executed product strategy, roadmap, and technical architecture for a new alternative transportation vertical",
-          "Directed a team of 40+ to develop and launch four innovative software products",
-          "Pioneered user experience enhancements and AI-driven solutions to optimize transportation services",
-          "Presented progress and strategic updates to the executive team and board of a 70,000+ employee organization"
-        ],
-        "skills": [
-          "Transportation Technology",
-          "Product Strategy",
-          "Technical Architecture",
-          "Team Leadership",
-          "UX Design",
-          "AI Solutions",
-          "Executive Presentations"
-        ]
-      },
-      {
-        "id": "ezlynx",
-        "company": "EZLynx",
-        "title": "Senior Business Analyst",
-        "logo": "ezlynx.png",
-        "location": "Lewisville, Texas, United States",
-        "type": "On-site",
-        "startDate": "Aug 2020",
-        "endDate": "Sep 2021",
-        "duration": "1 yr 2 mos",
-        "description": "Led business analysis for insurance software platform and created integration marketplace.",
-        "achievements": [
-          "Created new \"app store\" for third-party insurance product integrations via API",
-          "Created product operations pipeline in PowerBI, Jira, Freshdesk, and Salesforce",
-          "Mentored three junior business analysts and improved requirements consistency by 15%",
-          "Managed development across three scrum engineering teams with 5 developers each"
-        ],
-        "skills": [
-          "Business Analysis",
-          "API Integration",
-          "Product Operations",
-          "PowerBI",
-          "Jira",
-          "Freshdesk",
-          "Salesforce",
-          "Mentoring",
-          "Scrum Management"
-        ]
-      },
-      {
-        "id": "innovation",
-        "company": "Everdriven",
-        "title": "Business Innovation Product Manager",
-        "logo": "everdriven.jpg",
-        "location": "McKinney, TX",
-        "type": "On-site",
-        "startDate": "Aug 2019",
-        "endDate": "Aug 2020",
-        "duration": "1 yr 1 mo",
-        "description": "Led product innovation for transportation management systems.",
-        "achievements": [
-          "Formed and led new product management division by demonstrating the need to executive leadership team",
-          "Optimized transportation management platform to reduce operations overhead by 31%",
-          "Piloted geo-spatial AI algorithms to improve routing and quoting efficiencies",
-          "Traveled and met with different school districts to empathize with needs and demands of the company's operations team"
-        ],
-        "skills": [
-          "Product Innovation",
-          "Executive Leadership",
-          "Transportation Management",
-          "Operations Optimization",
-          "Geo-spatial AI",
-          "User Research"
-        ]
-      },
-      {
-        "id": "technical",
-        "company": "Everdriven",
-        "title": "Technical Product Manager",
-        "logo": "everdriven.jpg",
-        "location": "Colorado Springs, Colorado Area",
-        "type": "On-site",
-        "startDate": "Jun 2018",
-        "endDate": "Aug 2019",
-        "duration": "1 yr 3 mos",
-        "description": "Led technical product management for software development.",
-        "achievements": [
-          "Managed technical aspects of product development",
-          "Collaborated with engineering teams on implementation",
-          "Defined and documented technical requirements",
-          "Built relationships with technical stakeholders"
-        ],
-        "skills": [
-          "Technical Product Management",
-          "Software Development",
-          "REST APIs",
-          "Requirements Documentation",
-          "Team Leadership"
-        ]
-      }
-    ]
-  }
+  "experience": [
+    {
+      "id": "smartmoving",
+      "company": "SmartMoving Software",
+      "title": "Senior Product Manager",
+      "logo": "SmartMoving.png",
+      "location": "Dallas, Texas, United States",
+      "type": "Hybrid",
+      "startDate": "Jan 2024",
+      "endDate": "Present",
+      "duration": "1 yr 3 mos",
+      "description": "Lead product strategy for high-growth B2B SaaS platform, driving revenue growth through payments integration, AI-powered automation, and analytics solutions.",
+      "achievements": [
+        "Delivered $2M revenue ACH payments product in 8 months, becoming company's fastest-growing revenue stream",
+        "Launched OpenAPI platform generating $350K ARR, enabling ecosystem expansion and third-party integrations",
+        "Built analytics solution with $10K ARR personally sold, projecting 50% customer adoption within 12 months",
+        "Achieved 30% adoption rate for automation framework in 12 weeks, with 4.5/5 customer satisfaction rating",
+        "Conduct 20+ monthly customer interviews, creating data-driven product roadmap that increased feature adoption"
+      ],
+      "skills": [
+        "Product Strategy",
+        "Revenue Growth",
+        "API Development", 
+        "Payment Systems",
+        "Customer Research",
+        "B2B SaaS",
+        "Analytics",
+        "Automation"
+      ]
+    },
+    {
+      "id": "zebra",
+      "company": "Zebra Technologies",
+      "title": "Senior Product Manager",
+      "logo": "zebra.jpg",
+      "location": "Frisco, Texas, United States",
+      "type": "Hybrid",
+      "startDate": "Nov 2022",
+      "endDate": "Jan 2024",
+      "duration": "1 yr 3 mos",
+      "description": "Spearheaded AI-powered retail inventory planning system for newly formed software business unit, establishing product operations and go-to-market strategy.",
+      "achievements": [
+        "Launched AI-driven inventory planning system delivering 45% improvement in planning accuracy for retail clients",
+        "Designed specialized UI reducing planning decision-making overhead by 20%, streamlining operational workflows",
+        "Established product operations framework for new software division, scaling from 0 to market-ready product",
+        "Built foundational sales pipeline through strategic go-to-market coordination with sales and marketing teams",
+        "Led cross-functional teams integrating API-based AI forecasting capabilities with seamless system integrations"
+      ],
+      "skills": [
+        "AI/ML Integration",
+        "Retail Technology",
+        "Product Operations",
+        "Go-to-Market Strategy",
+        "API Integration",
+        "UI/UX Design",
+        "Forecasting",
+        "Business Intelligence"
+      ]
+    },
+    {
+      "id": "koddi",
+      "company": "Koddi",
+      "title": "Product Manager",
+      "logo": "koddi.png",
+      "location": "Remote",
+      "type": "Remote",
+      "startDate": "Jun 2022",
+      "endDate": "Dec 2022",
+      "duration": "7 mos",
+      "description": "Owned KoddiOne digital advertising platform, driving user experience improvements and operational efficiency through product optimization.",
+      "achievements": [
+        "Redesigned advertisement setup portal, boosting user satisfaction by 15% and reducing setup time",
+        "Reduced product complexity by 20% through strategic engineering collaboration and process optimization",
+        "Implemented standardized product operations pipeline, streamlining releases and automated documentation",
+        "Enhanced platform performance through AI-driven recommendation features for enterprise advertising clients"
+      ],
+      "skills": [
+        "Digital Advertising",
+        "Platform Optimization",
+        "User Experience",
+        "Process Automation",
+        "Engineering Collaboration",
+        "Performance Optimization"
+      ]
+    },
+    {
+      "id": "firststudent",
+      "company": "First Student",
+      "title": "Product Manager",
+      "logo": "first-student.jpg",
+      "location": "Remote",
+      "type": "Remote",
+      "startDate": "Sep 2021",
+      "endDate": "Jun 2022",
+      "duration": "10 mos",
+      "description": "Led product strategy for new special needs transportation vertical, managing technical architecture and team of 40+ contractors.",
+      "achievements": [
+        "Launched special needs transportation platform (2 web apps, 2 mobile apps) generating $1M initial revenue, scaling to $20M projected over 3 years",
+        "Directed cross-functional team of 40+ contractors delivering innovative transportation management solutions",
+        "Implemented AI-driven routing algorithms optimizing transportation efficiency and resource allocation",
+        "Presented strategic updates to executive leadership and board of 70,000+ employee organization"
+      ],
+      "skills": [
+        "Product Strategy",
+        "Technical Architecture",
+        "Transportation Technology",
+        "AI Optimization",
+        "Executive Presentations",
+        "Large Team Leadership"
+      ]
+    },
+    {
+      "id": "ezlynx",
+      "company": "EZLynx",
+      "title": "Senior Business Analyst",
+      "logo": "ezlynx.png",
+      "location": "Lewisville, Texas, United States",
+      "type": "On-site",
+      "startDate": "Aug 2020",
+      "endDate": "Sep 2021",
+      "duration": "1 yr 2 mos",
+      "description": "Developed third-party integration marketplace and product operations infrastructure for insurance software platform.",
+      "achievements": [
+        "Built API-based integration marketplace with 18 provider integrations, generating $350K revenue in 8 months",
+        "Created comprehensive product operations pipeline integrating PowerBI, Jira, Freshdesk, and Salesforce",
+        "Mentored 3 junior analysts, improving requirements consistency by 15% across development teams",
+        "Managed development across 3 scrum teams with 15 total developers, ensuring coordinated delivery"
+      ],
+      "skills": [
+        "API Integration",
+        "Business Analysis",
+        "Product Operations",
+        "Revenue Generation",
+        "Team Mentoring",
+        "Scrum Management"
+      ]
+    },
+    {
+      "id": "innovation",
+      "company": "Everdriven",
+      "title": "Business Innovation Product Manager",
+      "logo": "everdriven.jpg",
+      "location": "McKinney, TX",
+      "type": "On-site",
+      "startDate": "Aug 2019",
+      "endDate": "Aug 2020",
+      "duration": "1 yr 1 mo",
+      "description": "Established product management division and led transportation platform optimization through AI-powered solutions.",
+      "achievements": [
+        "Founded product management division by demonstrating strategic value to executive leadership team",
+        "Optimized transportation management platform, reducing operational overhead by 31% through process improvements",
+        "Pioneered geo-spatial AI algorithms improving routing efficiency and automated quoting accuracy",
+        "Conducted extensive user research with school districts, informing customer-centric platform enhancements"
+      ],
+      "skills": [
+        "Product Innovation",
+        "Operations Optimization",
+        "Geo-spatial AI",
+        "Executive Leadership",
+        "User Research",
+        "Process Improvement"
+      ]
+    },
+    {
+      "id": "technical",
+      "company": "Everdriven",
+      "title": "Technical Product Manager",
+      "logo": "everdriven.jpg",
+      "location": "Colorado Springs, Colorado Area",
+      "type": "On-site",
+      "startDate": "Jun 2018",
+      "endDate": "Aug 2019",
+      "duration": "1 yr 3 mos",
+      "description": "Led technical product development and engineering collaboration for transportation software solutions.",
+      "achievements": [
+        "Managed technical product roadmap and engineering implementation for core platform features",
+        "Collaborated with development teams on REST API architecture and system integration requirements",
+        "Established technical documentation standards and stakeholder communication processes",
+        "Built strong engineering relationships facilitating efficient product development cycles"
+      ],
+      "skills": [
+        "Technical Product Management",
+        "REST APIs",
+        "System Architecture",
+        "Engineering Collaboration",
+        "Documentation Standards"
+      ]
+    }
+  ]
+}

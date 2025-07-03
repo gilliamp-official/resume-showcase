@@ -1,6 +1,6 @@
 'use client'
 import React, { ReactNode } from 'react';
-import Navbar from './NavBar'; // Import your Navbar component
+import Navbar from './NavBar';
 import profileData from '@/data/profile.json';
 import { downloadResume } from '@/utils/downloadUtils';
 import { Linkedin, Mail, FileText } from 'lucide-react';
@@ -29,89 +29,78 @@ export default function RootLayout({ children }: RootLayoutProps) {
   );
 
   return (
-    <html lang="en">
-      <head>
-        <title>{profileData.basics.name} - {profileData.basics.title}</title>
-        <meta name="description" content={profileData.basics.summary} />
-        <link rel="icon" href="/favicon.ico" />
-      </head>
-      <body className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
-        {/* Use the Navbar component instead of inline header */}
-        <Navbar />
-        
-        {/* Add a spacer to prevent content from being hidden under the fixed navbar */}
-        
-        
-        <main>
-          {children}
-        </main>
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+      <Navbar />
+      
+      <main className="pt-16">
+        {children}
+      </main>
 
-        <footer className="bg-gray-900 text-white py-12">
-          <div className="container mx-auto px-6">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <div className="mb-6 md:mb-0">
-                <h3 className="text-xl font-bold">{profileData.basics.name}</h3>
-                <p className="text-gray-400">{profileData.basics.title}</p>
-              </div>
-              
-              <div className="flex space-x-6">
-                {profileData.social.map((social, index) => {
-                  if (social.network === 'LinkedIn') {
-                    return (
-                      <a 
-                        key={index}
-                        href={social.url} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="text-gray-400 hover:text-white transition-colors"
-                      >
-                        <Linkedin className="w-5 h-5" />
-                      </a>
-                    );
-                  } else if (social.network === 'GitHub') {
-                    return (
-                      <a 
-                        key={index}
-                        href={social.url} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="text-gray-400 hover:text-white transition-colors"
-                      >
-                        <GitHubIcon className="w-5 h-5" />
-                      </a>
-                    );
-                  } else {
-                    return (
-                      <a 
-                        key={index}
-                        href={social.url} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="text-gray-400 hover:text-white transition-colors"
-                      >
-                        <Mail className="w-5 h-5" />
-                      </a>
-                    );
-                  }
-                })}
-                {/* Resume Download Button in Footer */}
-                <button 
-                  onClick={downloadResume}
-                  className="text-gray-400 hover:text-white transition-colors cursor-pointer"
-                  aria-label="Download Resume"
-                  title="Download Resume"
-                >
-                  <FileText className="w-5 h-5" />
-                </button>
-              </div>
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-6 md:mb-0">
+              <h3 className="text-xl font-bold">{profileData.basics.name}</h3>
+              <p className="text-gray-400">{profileData.basics.title}</p>
             </div>
             
-            <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
-              <p>&copy; {new Date().getFullYear()} {profileData.basics.name}. All rights reserved.</p>
+            <div className="flex space-x-6">
+              {profileData.social.map((social, index) => {
+                if (social.network === 'LinkedIn') {
+                  return (
+                    <a 
+                      key={index}
+                      href={social.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-gray-400 hover:text-white transition-colors"
+                    >
+                      <Linkedin className="w-5 h-5" />
+                    </a>
+                  );
+                } else if (social.network === 'GitHub') {
+                  return (
+                    <a 
+                      key={index}
+                      href={social.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-gray-400 hover:text-white transition-colors"
+                    >
+                      <GitHubIcon className="w-5 h-5" />
+                    </a>
+                  );
+                } else {
+                  return (
+                    <a 
+                      key={index}
+                      href={social.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-gray-400 hover:text-white transition-colors"
+                    >
+                      <Mail className="w-5 h-5" />
+                    </a>
+                  );
+                }
+              })}
+              {/* Resume Download Button in Footer */}
+              <button 
+                onClick={downloadResume}
+                className="text-gray-400 hover:text-white transition-colors cursor-pointer"
+                aria-label="Download Resume"
+                title="Download Resume"
+              >
+                <FileText className="w-5 h-5" />
+              </button>
             </div>
           </div>
-        </footer>
-      </body>
-    </html>
+          
+          <div className=" border-gray-800 text-center text-gray-500 text-sm">
+            <p>&copy; {new Date().getFullYear()} {profileData.basics.name}. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
   );
 }
