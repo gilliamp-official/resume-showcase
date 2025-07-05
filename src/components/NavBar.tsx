@@ -35,7 +35,7 @@ export default function Navbar() {
     { href: '/about', label: 'About' },
     { href: '/experience', label: 'Experience' },
     { href: '/skills', label: 'Skills' },
-    { href: '/projects', label: 'Case Studies' },
+    { href: '/case-studies', label: 'Case Studies' },
     { href: 'https://theproductpipeline.substack.com/', label: 'Substack' },
     { href: '/contact', label: 'Contact' },
   ];

@@ -1,383 +1,725 @@
 {
   "caseStudies": [
     {
-      "id": "ai-inventory-planning",
-      "title": "AI-Driven Inventory Planning Revolution",
-      "subtitle": "Transforming Retail Planning with Custom ML Pipelines",
-      "company": "Zebra Technologies",
-      "industry": "Retail Supply Chain",
-      "timeline": "Nov 2022 – Jan 2024",
-      "duration": "14 months",
-      "heroMetric": "45% Planning Accuracy Improvement",
-      "heroDescription": "Built custom ML forecasting system that eliminated spreadsheet-based planning for Fortune 500 retailers",
-      "skills": ["AI/ML", "Product Strategy", "B2B SaaS", "Data Analytics", "LLM Integration"],
-      "impactType": ["Operational Efficiency", "Strategic Innovation"],
-      "challenge": {
-        "title": "Retailers Drowning in Spreadsheet Complexity",
-        "description": "Fortune 500 retail clients were using massive, error-prone spreadsheets for inventory planning, leading to poor demand forecasting, excessive discounting, and planner burnout. The manual process consumed planners' time with data manipulation instead of strategic decision-making.",
-        "keyProblems": [
-          "Manual spreadsheet processes taking 80% of planners' time",
-          "Historical demand patterns poorly captured in static models",
-          "Long lifecycle pricing curves leading to deep discount spirals",
-          "No integration between planning tools and real-time market data"
-        ]
-      },
-      "approach": {
-        "title": "Custom ML Pipeline Architecture",
-        "description": "I spearheaded the development of retailer-specific machine learning pipelines that combined forecasting methodologies with LLM-powered insights to revolutionize the planning process.",
-        "methodology": [
-          "Customer Discovery: Conducted deep-dive sessions with retail planners to understand workflow pain points",
-          "Technical Architecture: Designed custom ML pipelines tailored to each retailer's unique data patterns",
-          "LLM Integration: Implemented language models to help planners interpret complex demand signals",
-          "YAML ETL Pipeline: Built automated data integration saving $4M in client onboarding costs"
-        ]
-      },
-      "solution": {
-        "title": "Intelligent Planning Platform",
-        "description": "Delivered an AI-driven inventory planning system that automated data processing, provided intelligent forecasting, and gave planners actionable insights through natural language interfaces.",
-        "keyFeatures": [
-          "Custom ML forecasting models adapted to each retailer's historical patterns",
-          "LLM-powered demand signal interpretation and recommendations",
-          "Automated YAML ETL pipeline for seamless data integration",
-          "Real-time collaboration tools replacing static spreadsheets",
-          "Predictive pricing optimization to reduce deep discount scenarios"
-        ]
-      },
-      "results": {
-        "primaryMetrics": [
-          {
-            "metric": "45%",
-            "description": "Improvement in planning accuracy for Fortune 500 retail clients"
-          },
-          {
-            "metric": "$4M",
-            "description": "Saved in client onboarding costs through automated ETL pipeline"
-          },
-          {
-            "metric": "80%",
-            "description": "Reduction in manual data manipulation time for planners"
-          }
-        ],
-        "businessImpact": "Transformed how Fortune 500 retailers approach inventory planning, moving from reactive spreadsheet management to proactive AI-driven strategy. Planners could focus on strategic decisions rather than data wrangling.",
-        "customerFeedback": "Planners reported significantly improved job satisfaction and ability to make data-driven decisions with confidence."
-      },
-      "learnings": [
-        "Custom ML solutions require deep industry expertise to be effective",
-        "LLM integration can bridge the gap between complex data and human decision-making",
-        "Automated data pipelines are crucial for enterprise AI adoption",
-        "Success metrics must align with both technical performance and user workflow improvement"
-      ],
-      "technologies": ["Machine Learning", "LLM/GPT", "YAML", "ETL Pipelines", "Cloud Computing"],
-      "featured": true
-    },
-    {
-      "id": "smart-moving-ai-automation",
-      "title": "AI-Powered Moving Industry Transformation",
-      "subtitle": "Intelligent Automation Delivering $2M+ Revenue Growth",
+      "id": "smartmoving-reputation-engine",
+      "title": "Brand Guardian: Unified Reputation Management",
+      "subtitle": "Transforming scattered reviews into centralized brand control",
       "company": "SmartMoving Software",
       "industry": "Transportation & Logistics",
-      "timeline": "Jan 2024 – Present",
-      "duration": "12+ months",
-      "heroMetric": "$2.35M Revenue Generated",
-      "heroDescription": "Led AI-enhanced B2B platform transformation with intelligent automation and predictive analytics",
-      "skills": ["AI/ML", "Product Strategy", "Revenue Generation", "B2B SaaS", "FinTech"],
-      "impactType": ["Revenue Generation", "Customer Experience", "Operational Efficiency"],
+      "timeline": "2024",
+      "duration": "6 months",
+      "heroMetric": "$200K ARR in 6 months",
+      "heroDescription": "Built integrated reputation management platform connecting social media, listings, and multi-source reviews",
+      "skills": ["Product Strategy", "Partnership Management", "Marketing Tech"],
+      "solutionVertical": "Marketing Tech",
+      "techStack": "Azure",
+      "impactType": ["Revenue Generation", "Customer Experience"],
       "challenge": {
-        "title": "Manual Processes Limiting Growth Potential",
-        "description": "Moving companies were struggling with time-consuming quote generation, inaccurate cost predictions, and fragmented payment processes that hindered customer experience and business growth.",
+        "title": "Scattered Digital Presence Hurting Moving Companies",
+        "description": "Moving companies were drowning in fragmented online reputation management - juggling social media posts across platforms, losing track of business listings, and manually checking reviews on Google, Yelp, and other sites. This scattered approach meant missed opportunities to respond to customers and damaged brand perception.",
         "keyProblems": [
-          "Quote generation taking excessive time, reducing sales conversion",
-          "Inaccurate move cost predictions leading to customer disputes",
-          "Fragmented payment processing limiting cash flow",
-          "Lack of intelligent lead filtering causing sales inefficiency"
+          "No unified view of online reputation across platforms",
+          "Manual review monitoring leading to delayed responses",
+          "Inconsistent social media presence hurting brand image",
+          "Lost business due to unmanaged negative reviews"
         ]
       },
       "approach": {
-        "title": "AI-First Product Strategy",
-        "description": "I implemented an AI-enhanced approach focusing on intelligent automation, predictive analytics, and seamless financial integration to transform the moving industry experience.",
+        "title": "Strategic Partnership + Integrated Solution",
+        "description": "I identified Birdeye as the ideal technology partner and managed the entire relationship to deliver a white-labeled solution. Focused on seamless integration with existing SmartMoving workflows rather than standalone tool.",
         "methodology": [
-          "Customer Research: Conducted 20+ monthly interviews to identify automation opportunities",
-          "AI Implementation: Integrated smart lead filtering and predictive cost modeling",
-          "Payment Innovation: Delivered ACH payment system achieving first-time certification",
-          "Ecosystem Development: Launched OpenAPI platform for third-party integrations"
+          "Partner Evaluation: Assessed multiple reputation management vendors for technical fit",
+          "Integration Strategy: Designed unified inbox approach for maximum user adoption", 
+          "Relationship Management: Coordinated development efforts between SmartMoving and Birdeye teams",
+          "Launch Strategy: Rolled out to existing user base with comprehensive onboarding"
         ]
       },
       "solution": {
-        "title": "Intelligent Moving Platform",
-        "description": "Built comprehensive AI-enhanced platform combining intelligent automation, predictive analytics, and integrated financial services to revolutionize moving company operations.",
+        "title": "All-in-One Brand Control Center",
+        "description": "Delivered comprehensive reputation management platform that unified social media posting, business listing management, and multi-platform review monitoring in one dashboard.",
         "keyFeatures": [
-          "AI-powered lead filtering system for sales optimization",
-          "Machine learning-based move cost prediction algorithms",
-          "Automated ACH payment processing (first-time certification)",
-          "OpenAPI ecosystem enabling third-party integrations",
-          "Intelligent workflow automation reducing manual processes"
+          "Unified social media posting across all major platforms",
+          "Automated business listing monitoring and management",
+          "Centralized review inbox aggregating Google, Yelp, and other sources",
+          "Real-time reputation alerts and response recommendations",
+          "Integrated workflow with existing SmartMoving customer management"
         ]
       },
       "results": {
         "primaryMetrics": [
           {
-            "metric": "$2M",
-            "description": "Revenue from ACH payments product (fastest company launch in 8 months)"
+            "metric": "$200K",
+            "description": "ARR generated within 6 months of launch"
           },
           {
-            "metric": "$350K",
-            "description": "ARR generated from OpenAPI platform launch"
-          },
-          {
-            "metric": "40%",
-            "description": "Reduction in quote generation time through AI automation"
-          },
-          {
-            "metric": "25%",
-            "description": "Improvement in move cost prediction accuracy using ML"
+            "metric": "85%+",
+            "description": "User adoption rate across existing customer base"
           },
           {
             "metric": "60%",
-            "description": "Increase in customer satisfaction through intelligent automation"
+            "description": "Reduction in time spent on reputation management tasks"
           }
         ],
-        "businessImpact": "Transformed moving companies from manual, error-prone processes to AI-driven, efficient operations. The platform became a competitive differentiator in the fragmented moving industry.",
-        "customerFeedback": "Moving companies reported significant time savings and improved customer relationships due to more accurate predictions and streamlined processes."
+        "businessImpact": "Created new revenue stream while solving critical customer pain point. High adoption proved market fit and established SmartMoving as comprehensive business management platform.",
+        "customerFeedback": "Moving companies reported significantly improved online presence and faster response times to customer reviews."
       },
       "learnings": [
-        "AI integration must solve real workflow problems, not just add technology",
-        "Financial product development requires meticulous compliance and testing",
-        "API ecosystems can create significant revenue opportunities in B2B markets",
-        "Customer feedback loops are essential for AI model improvement"
+        "Strategic partnerships can accelerate product development when aligned properly",
+        "Integration with existing workflows drives higher adoption than standalone tools",
+        "Reputation management is a critical pain point for service-based businesses",
+        "White-label solutions need careful brand alignment for customer trust"
       ],
-      "technologies": ["Machine Learning", "AI Lead Filtering", "ACH Processing", "OpenAPI", "Predictive Analytics"],
+      "technologies": ["Partnership Integration", "Azure Cloud", "API Management", "Marketing Automation"],
       "featured": true
     },
     {
-      "id": "enterprise-transportation-platform",
-      "title": "Enterprise Transportation Platform at Scale",
-      "subtitle": "Managing 5,000+ Daily Student Routes with AI Optimization",
-      "company": "First Student",
+      "id": "smartmoving-crm-automation",
+      "title": "Sales Velocity Engine: AI-Powered Lead Routing",
+      "subtitle": "Eliminating manual lead chaos with intelligent automation",
+      "company": "SmartMoving Software", 
       "industry": "Transportation & Logistics",
-      "timeline": "Sep 2021 – Jun 2022",
-      "duration": "10 months",
-      "heroMetric": "$20M Projected Revenue",
-      "heroDescription": "Built comprehensive multi-platform TMS with geo-spatial AI routing for special needs transportation",
-      "skills": ["Product Strategy", "Large-Scale Systems", "AI/ML", "Multi-Platform Development"],
+      "timeline": "2024",
+      "duration": "2 months discovery + development",
+      "heroMetric": "60% Adoption Rate",
+      "heroDescription": "Delivered rapid-prototype CRM automation system using AI to streamline sales operations",
+      "skills": ["AI/ML", "Rapid Prototyping", "CRM Strategy"],
+      "solutionVertical": "CRM System",
+      "techStack": "Azure",
       "impactType": ["Operational Efficiency", "Strategic Innovation"],
       "challenge": {
-        "title": "Complex Special Needs Transportation at Scale",
-        "description": "Managing 5,000+ daily special needs student transportation routes required coordinating 40+ contractor teams while ensuring safety, compliance, and operational efficiency across multiple platforms.",
+        "title": "Manual Lead Routing Killing Sales Scalability", 
+        "description": "Moving companies were manually routing leads and struggling to scale sales operations. No systematic follow-up processes meant missed opportunities and frustrated potential customers waiting for responses.",
         "keyProblems": [
-          "Dispatch process required 5 separate tools and $300 manual labor per route",
-          "No integrated solution for special needs transportation requirements",
-          "Complex coordination needed across 40+ contractor teams",
-          "Lack of real-time visibility into route optimization and safety protocols"
+          "Manual lead assignment creating bottlenecks and delays",
+          "Inconsistent follow-up processes losing potential customers",
+          "No scalable framework for growing sales teams",
+          "Sales reps spending time on routing instead of selling"
         ]
       },
       "approach": {
-        "title": "Multi-Platform AI-Enhanced Architecture",
-        "description": "I led the development of a comprehensive transportation ecosystem combining geo-spatial AI routing, real-time tracking, and integrated dispatch management across multiple platforms.",
+        "title": "Customer-Driven Rapid Prototyping with AI",
+        "description": "Used intensive customer discovery and AI-powered rapid prototyping to deliver solution faster than traditional development cycles. First implementation of AI in company's prototyping process.",
         "methodology": [
-          "Platform Strategy: Designed 2 web apps and 2 mobile apps for complete ecosystem coverage",
-          "AI Integration: Implemented geo-spatial routing algorithms for optimization",
-          "Team Coordination: Managed 40+ contractor teams through systematic project management",
-          "Compliance Focus: Ensured all solutions met special needs transportation regulations"
+          "Deep Discovery: Conducted 20+ customer interviews to understand sales workflows",
+          "AI-Powered Development: Used AI tools to accelerate prototype development by 50%",
+          "Live Iteration: Deployed working prototype and iterated based on real customer feedback",
+          "Feedback Loops: Implemented in-app surveys and live customer sessions for continuous improvement"
         ]
       },
       "solution": {
-        "title": "Comprehensive Transportation Management System",
-        "description": "Delivered integrated TMS platform combining AI-driven route optimization, real-time tracking, and streamlined dispatch operations specifically designed for special needs transportation.",
+        "title": "Intelligent Sales Automation Platform",
+        "description": "Built comprehensive CRM automation system with AI-powered lead routing, automated follow-ups, and scalable sales frameworks specifically designed for moving companies.",
         "keyFeatures": [
-          "Geo-spatial AI routing algorithms for optimal route planning",
-          "Real-time tracking and safety monitoring for special needs students",
-          "Unified dispatch workflow replacing 5 separate tools",
-          "Multi-platform ecosystem (2 web apps, 2 mobile apps)",
-          "Contractor coordination and management system"
+          "AI-driven lead routing based on rep capacity and expertise",
+          "Automated follow-up sequences with customizable touchpoints", 
+          "Scalable sales frameworks for team growth",
+          "Real-time performance tracking and optimization",
+          "Integration with existing SmartMoving customer workflows"
         ]
       },
       "results": {
         "primaryMetrics": [
           {
-            "metric": "$20M",
-            "description": "Projected revenue from comprehensive platform launch"
+            "metric": "60%+",
+            "description": "User adoption rate for automated lead routing system"
           },
           {
-            "metric": "5,000+",
-            "description": "Daily student routes managed through AI-optimized system"
+            "metric": "2 months",
+            "description": "Time from discovery to deployed solution"
           },
           {
-            "metric": "90%+",
-            "description": "Operational efficiency improvement in dispatch processes"
+            "metric": "40%",
+            "description": "Reduction in lead response time through automation"
           },
           {
-            "metric": "$300",
-            "description": "Manual labor cost eliminated per route through automation"
+            "metric": "50%",
+            "description": "Development time reduction using AI prototyping"
           }
         ],
-        "businessImpact": "Revolutionized special needs transportation operations by creating the first integrated platform specifically designed for this complex market segment.",
-        "customerFeedback": "Dispatchers reported dramatic improvement in efficiency and ability to ensure student safety through real-time monitoring capabilities."
+        "businessImpact": "Transformed sales operations from manual chaos to scalable automation. Approach now being adopted across organization for future product development.",
+        "customerFeedback": "Sales teams reported dramatic improvement in lead management efficiency and ability to focus on actual selling."
       },
       "learnings": [
-        "Special needs transportation requires unique compliance and safety considerations",
-        "AI routing algorithms must account for more than just distance optimization",
-        "Multi-platform ecosystems require careful UX consistency planning",
-        "Large contractor team coordination demands systematic project management"
+        "AI-powered prototyping can dramatically accelerate development cycles",
+        "Live customer feedback during development improves product-market fit",
+        "CRM automation must integrate with existing workflows to drive adoption",
+        "Rapid iteration based on real usage data beats extensive upfront planning"
       ],
-      "technologies": ["Geo-spatial AI", "Real-time Tracking", "Multi-platform Development", "Route Optimization"],
+      "technologies": ["AI/ML", "CRM Automation", "Azure Cloud", "Rapid Prototyping", "Customer Analytics"],
       "featured": true
     },
     {
-      "id": "district-scaling-platform",
-      "title": "National District Scaling Through Process Innovation",
-      "subtitle": "Scaling Operations to 1000+ School Districts",
-      "company": "ALC Schools",
-      "industry": "Transportation & Logistics",
-      "timeline": "2019 – 2021",
-      "duration": "24 months",
-      "heroMetric": "1000+ Districts Served",
-      "heroDescription": "Built scalable dispatch platform serving 1000+ school districts with operational excellence framework",
-      "skills": ["Product Strategy", "Scaling Operations", "Process Optimization", "Customer Success"],
-      "impactType": ["Operational Efficiency", "Strategic Innovation"],
+      "id": "smartmoving-smart-insights",
+      "title": "Profit Intelligence: Enterprise Analytics Platform",
+      "subtitle": "From basic reports to mover-focused business intelligence",
+      "company": "SmartMoving Software",
+      "industry": "Transportation & Logistics", 
+      "timeline": "2024",
+      "duration": "8 months",
+      "heroMetric": "98% Sales Conversion Rate",
+      "heroDescription": "Built embedded analytics platform with 100% paid beta retention and industry-leading sales performance",
+      "skills": ["Data Analytics", "Product Strategy", "Enterprise Sales"],
+      "solutionVertical": "Analytics",
+      "techStack": "Azure",
+      "impactType": ["Revenue Generation", "Strategic Innovation"],
       "challenge": {
-        "title": "Scaling Startup to Enterprise Operations",
-        "description": "Transforming a startup transportation platform to serve 1000+ school districts while maintaining service quality and operational efficiency.",
+        "title": "Basic Reports Failing Enterprise Moving Companies",
+        "description": "Larger, upmarket moving companies needed deep business insights that our basic canned reports couldn't provide. They were making critical business decisions without the profitability analysis and operational metrics they needed to compete effectively.",
         "keyProblems": [
-          "Manual processes couldn't scale beyond small district count",
-          "Inconsistent service delivery across different district sizes",
-          "Complex operational workflows creating customer friction",
-          "Need for systematic approach to nationwide expansion"
+          "Canned reports too simplistic for enterprise decision-making",
+          "No profitability analysis for complex moving operations", 
+          "Lack of industry-specific metrics and benchmarking",
+          "Enterprise customers considering competitors with better analytics"
         ]
       },
       "approach": {
-        "title": "Systematic Scaling Framework",
-        "description": "I developed comprehensive operational excellence frameworks and scalable technology solutions to enable nationwide district expansion while maintaining service quality.",
+        "title": "Customer-Driven Analytics Platform Development",
+        "description": "Led comprehensive discovery process with enterprise customers and delivered industry's first mover-focused analytics solution. Used paid beta model to validate market demand and refine product.",
         "methodology": [
-          "Process Standardization: Created repeatable frameworks for district onboarding",
-          "Technology Scaling: Built central data layer supporting distributed operations",
-          "Quality Assurance: Implemented systematic monitoring and improvement processes",
-          "Customer Success: Conducted monthly stakeholder meetings for continuous feedback"
+          "Enterprise Discovery: Conducted 50+ interviews with upmarket moving companies",
+          "Analytics Design: Partnered with Sigma Computing for embedded solution",
+          "Paid Beta Strategy: First company product launched with paid beta model",
+          "Personal Sales: Directly sold each beta license to validate product-market fit"
         ]
       },
       "solution": {
-        "title": "Scalable Transportation Ecosystem",
-        "description": "Delivered comprehensive platform architecture supporting nationwide operations with standardized processes, centralized data management, and distributed execution capabilities.",
+        "title": "Industry-First Mover Analytics Platform", 
+        "description": "Delivered comprehensive embedded analytics solution powered by Sigma Computing, specifically designed for moving company profitability and operational insights.",
         "keyFeatures": [
-          "Central data layer supporting distributed operations",
-          "Standardized dispatch workflows for consistent service delivery",
-          "Scalable operations webapp and mobile applications",
-          "Automated monitoring and performance optimization",
-          "Customer success framework with regular stakeholder engagement"
+          "Mover-specific profitability analysis and cost breakdowns",
+          "Real-time operational metrics and performance tracking",
+          "Industry benchmarking and competitive analysis",
+          "Custom dashboard creation for different business roles",
+          "Embedded seamlessly within existing SmartMoving platform"
         ]
       },
       "results": {
         "primaryMetrics": [
           {
-            "metric": "1000+",
-            "description": "School districts successfully onboarded and served"
+            "metric": "100%",
+            "description": "Paid beta customer retention rate"
           },
+          {
+            "metric": "98%",
+            "description": "Sales conversion rate for account executives"
+          },
+          {
+            "metric": "50+",
+            "description": "Enterprise customer interviews informing product development"
+          },
+          {
+            "metric": "Industry-First",
+            "description": "Most comprehensive mover-focused analytics solution in market"
+          }
+        ],
+        "businessImpact": "Established SmartMoving as the profitability platform for enterprise moving companies. Created significant competitive differentiation and opened new revenue opportunities.",
+        "customerFeedback": "Enterprise customers reported having business insights they never had access to before, enabling data-driven decision making for the first time."
+      },
+      "learnings": [
+        "Paid beta models validate real market demand better than free trials",
+        "Industry-specific analytics create significant competitive advantages",
+        "Direct founder/PM sales in early stages provides invaluable customer insights",
+        "Embedded solutions drive higher adoption than standalone analytics tools"
+      ],
+      "technologies": ["Sigma Computing", "Embedded Analytics", "Azure Cloud", "Business Intelligence", "Data Visualization"],
+      "featured": true
+    },
+    {
+      "id": "smartmoving-openapi-ecosystem",
+      "title": "Integration Marketplace: OpenAPI Ecosystem",
+      "subtitle": "Unlocking enterprise growth through API-first strategy",
+      "company": "SmartMoving Software",
+      "industry": "Transportation & Logistics",
+      "timeline": "2024", 
+      "duration": "4 months GTM planning + launch",
+      "heroMetric": "$100K Revenue + 40 Integrations",
+      "heroDescription": "Delivered comprehensive OpenAPI strategy enabling 40+ third-party integrations and new revenue stream",
+      "skills": ["API Strategy", "Product Strategy", "Developer Relations"],
+      "solutionVertical": "API Platform",
+      "techStack": "Azure",
+      "impactType": ["Revenue Generation", "Strategic Innovation"],
+      "challenge": {
+        "title": "Enterprise Customers Demanding Integration Flexibility",
+        "description": "Larger moving companies needed to integrate SmartMoving with their existing tech stacks. Development had started on OpenAPI but lacked strategic direction and go-to-market planning to make it successful.",
+        "keyProblems": [
+          "Enterprise deals stalling due to lack of integration capabilities",
+          "Technical development started but no clear GTM strategy",
+          "No framework for partner ecosystem development",
+          "Missing developer experience and documentation strategy"
+        ]
+      },
+      "approach": {
+        "title": "Strategic GTM Planning + Ecosystem Development",
+        "description": "Took over existing technical development and created comprehensive go-to-market strategy. Focused on building ecosystem of integrations rather than just providing API access.",
+        "methodology": [
+          "Market Analysis: Identified key integration partners and use cases",
+          "GTM Strategy: Developed pricing, positioning, and sales enablement",
+          "Ecosystem Building: Created framework for ongoing partner integrations",
+          "Developer Experience: Designed documentation and onboarding process"
+        ]
+      },
+      "solution": {
+        "title": "Comprehensive API Platform + Partner Ecosystem",
+        "description": "Delivered full OpenAPI platform with strategic ecosystem approach, enabling enterprise customers to integrate 40+ third-party applications seamlessly.",
+        "keyFeatures": [
+          "RESTful OpenAPI with comprehensive endpoint coverage",
+          "Developer portal with documentation and testing tools",
+          "Partner integration marketplace and certification program",
+          "Enterprise-grade security and rate limiting",
+          "Revenue model for API usage and premium integrations"
+        ]
+      },
+      "results": {
+        "primaryMetrics": [
+          {
+            "metric": "$100K",
+            "description": "Direct revenue generated from API platform"
+          },
+          {
+            "metric": "40+",
+            "description": "Third-party applications integrated by customers"
+          },
+          {
+            "metric": "85%+",
+            "description": "Enterprise customer satisfaction with integration capabilities"
+          },
+          {
+            "metric": "4 months",
+            "description": "Time from strategy development to revenue generation"
+          }
+        ],
+        "businessImpact": "Unlocked enterprise market segment and created new revenue stream. Established SmartMoving as platform leader in moving industry ecosystem.",
+        "customerFeedback": "Enterprise customers appreciated ability to maintain existing workflows while gaining SmartMoving capabilities."
+      },
+      "learnings": [
+        "API strategy requires equal focus on technical capability and ecosystem development",
+        "Developer experience is crucial for third-party integration adoption",
+        "Revenue models for APIs need to balance growth with monetization",
+        "Partner ecosystems create competitive moats beyond just technology"
+      ],
+      "technologies": ["RESTful APIs", "Azure API Management", "Developer Portals", "Integration Platforms"],
+      "featured": true
+    },
+    {
+      "id": "smartmoving-ach-payments",
+      "title": "Payment Revolution: Integrated FinTech Platform",
+      "subtitle": "From costly credit cards to seamless ACH processing",
+      "company": "SmartMoving Software",
+      "industry": "Transportation & Logistics",
+      "timeline": "2024",
+      "duration": "6 months partnership + integration",
+      "heroMetric": "$1M+ Weekly Transaction Volume",
+      "heroDescription": "Delivered integrated ACH payments processing $1M+ weekly with first-try audit success",
+      "skills": ["FinTech", "Partnership Management", "Product Strategy"],
+      "solutionVertical": "FinTech",
+      "techStack": "Azure", 
+      "impactType": ["Revenue Generation", "Customer Experience"],
+      "challenge": {
+        "title": "High Payment Processing Costs Hurting Moving Companies",
+        "description": "Moving companies were losing significant margin to high credit card processing fees and needed lower-cost payment options. Existing payment infrastructure couldn't support ACH transactions or pre-authorization workflows.",
+        "keyProblems": [
+          "High credit card processing fees eating into already thin margins",
+          "No ACH payment options for cost-conscious customers",
+          "Lack of pre-authorization capability for move deposits",
+          "Complex payment workflows reducing customer conversion"
+        ]
+      },
+      "approach": {
+        "title": "Strategic FinTech Partnership + Compliance Excellence",
+        "description": "Identified and partnered with third-party vendor for ACH capabilities while managing all compliance requirements. Focused on seamless integration with existing SmartMoving payment flows.",
+        "methodology": [
+          "Vendor Selection: Interviewed and evaluated multiple FinTech partners",
+          "Compliance Strategy: Managed audit process and regulatory requirements",
+          "Integration Design: Created unified payment experience across credit card and ACH",
+          "Feature Enhancement: Added pre-authorization capabilities for improved cash flow"
+        ]
+      },
+      "solution": {
+        "title": "Unified Payment Processing Platform",
+        "description": "Integrated comprehensive payment solution supporting ACH transactions, credit card pre-authorization, and unified payment management within SmartMoving platform.",
+        "keyFeatures": [
+          "ACH payment processing with lower transaction costs",
+          "Credit card pre-authorization for move deposits",
+          "Unified payment dashboard for all transaction types", 
+          "Automated payment workflows and notifications",
+          "Compliance-ready audit trail and reporting"
+        ]
+      },
+      "results": {
+        "primaryMetrics": [
+          {
+            "metric": "$1M+",
+            "description": "Weekly transaction volume processed through platform"
+          },
+          {
+            "metric": "$1M",
+            "description": "Revenue generated for SmartMoving from payment processing"
+          },
+          {
+            "metric": "4.7/5",
+            "description": "Customer satisfaction rating for payment experience"
+          },
+          {
+            "metric": "First Try",
+            "description": "Passed compliance audit on initial attempt (rare achievement)"
+          },
+          {
+            "metric": "60%+",
+            "description": "Improvement in take rate through lower processing costs"
+          }
+        ],
+        "businessImpact": "Created significant new revenue stream while solving critical customer cost problem. Improved SmartMoving's take rate and customer satisfaction simultaneously.",
+        "customerFeedback": "Moving companies reported substantial savings on payment processing and customers appreciated more payment options."
+      },
+      "learnings": [
+        "FinTech partnerships require meticulous attention to compliance details",
+        "Payment infrastructure improvements can drive both revenue and customer satisfaction",
+        "Pre-authorization capabilities significantly improve business cash flow",
+        "First-try audit success requires extensive preparation and attention to detail"
+      ],
+      "technologies": ["ACH Processing", "Payment APIs", "Azure Security", "Financial Compliance", "Pre-Authorization"],
+      "featured": true
+    },
+    {
+      "id": "zebra-assortment-planning-ai",
+      "title": "Retail Intelligence: AI-Powered Assortment Planning",
+      "subtitle": "From spreadsheet chaos to data-driven retail strategy",
+      "company": "Zebra Technologies",
+      "industry": "Retail Technology",
+      "timeline": "2022-2023",
+      "duration": "8 months development + deployment",
+      "heroMetric": "30% Planning Time Reduction",
+      "heroDescription": "Built AI algorithm enabling 200% more data processing for Fortune 500 fashion retailers",
+      "skills": ["AI/ML", "Retail Strategy", "Data Science"],
+      "solutionVertical": "Retail Tech",
+      "techStack": "AWS",
+      "impactType": ["Operational Efficiency", "Strategic Innovation"], 
+      "challenge": {
+        "title": "Manual Spreadsheet Planning Limiting Retail Growth",
+        "description": "Fashion retailers were constrained by manual, spreadsheet-based assortment planning that couldn't handle the data volume needed for competitive merchandising decisions. Planners spent more time manipulating data than making strategic decisions.",
+        "keyProblems": [
+          "Spreadsheet limitations preventing comprehensive data analysis",
+          "Manual planning consuming majority of planner time",
+          "Inability to process competitive and market data at scale",
+          "Reactive planning instead of predictive merchandising strategy"
+        ]
+      },
+      "approach": {
+        "title": "AI Algorithm Development with Data Science Partnership",
+        "description": "Collaborated with Zebra's data science team to develop custom AI algorithms specifically designed for fashion retail assortment planning, before GenAI became mainstream.",
+        "methodology": [
+          "Data Science Collaboration: Worked closely with Zebra data scientists on algorithm development",
+          "Retail Expertise: Applied deep understanding of fashion retail planning workflows",
+          "Scalability Focus: Designed solution to handle 200% more data than spreadsheet methods",
+          "Customer Validation: Deployed with top fashion retailers for real-world testing"
+        ]
+      },
+      "solution": {
+        "title": "AI-Driven Assortment Planning Platform",
+        "description": "Delivered intelligent planning system that automated data processing and provided AI-powered recommendations for fashion retail assortment decisions.",
+        "keyFeatures": [
+          "AI algorithms processing 200% more data than traditional methods",
+          "Automated competitive and market data integration",
+          "Predictive planning recommendations based on historical patterns",
+          "Streamlined workflow reducing manual planning time by 30%",
+          "Integration with existing retail planning systems"
+        ]
+      },
+      "results": {
+        "primaryMetrics": [
           {
             "metric": "30%",
-            "description": "Reduction in operational complexity through process optimization"
+            "description": "Reduction in planning time for retail planners"
           },
           {
-            "metric": "15%",
-            "description": "Increase in customer satisfaction scores"
+            "metric": "200%",
+            "description": "Increase in data processing capability vs spreadsheets"
+          },
+          {
+            "metric": "Fortune 500",
+            "description": "Deployment with top fashion retailers including Children's Place and Evereve"
           }
         ],
-        "businessImpact": "Successfully transformed startup into nationwide platform capable of serving enterprise-scale school district operations while maintaining high service quality.",
-        "customerFeedback": "District administrators praised the consistent service delivery and responsive customer success approach across all regions."
+        "businessImpact": "Transformed retail planning from reactive spreadsheet management to proactive AI-driven strategy. Enabled retailers to make more informed merchandising decisions.",
+        "customerFeedback": "Planners reported significant improvement in their ability to focus on strategic decisions rather than data manipulation."
       },
       "learnings": [
-        "Scaling requires balancing standardization with local customization needs",
-        "Customer success frameworks are crucial for enterprise expansion",
-        "Operational excellence must be built into the product, not added later",
-        "Regular stakeholder engagement drives continuous improvement"
+        "AI solutions must solve real workflow problems, not just add technology",
+        "Data science partnerships require clear business context for success",
+        "Retail planning needs both automation and human strategic insight",
+        "Early AI adoption can create significant competitive advantages"
       ],
-      "technologies": ["Central Data Architecture", "Process Automation", "Performance Monitoring", "Customer Success Platforms"],
-      "featured": false
+      "technologies": ["Machine Learning", "AWS Cloud", "Data Science", "Retail Analytics", "Algorithm Development"],
+      "featured": true
     },
     {
-      "id": "aerospace-fintech-innovation",
-      "title": "Aerospace FinTech Data Liberation",
-      "subtitle": "Full-Stack SAP Integration Saving $800K Annually",
-      "company": "UTC Aerospace Systems",
-      "industry": "Aerospace & Defense",
-      "timeline": "Internship Project",
-      "duration": "6 months",
-      "heroMetric": "$800K Annual Savings",
-      "heroDescription": "Built custom full-stack application extracting SAP data for automated financial reporting",
-      "skills": ["Full-Stack Development", "Data Integration", "FinTech", "Process Automation"],
+      "id": "zebra-ai-product-process",
+      "title": "Process Intelligence: AI-Enhanced Product Operations",
+      "subtitle": "Eliminating duplicate effort with intelligent synthesis",
+      "company": "Zebra Technologies", 
+      "industry": "Retail Technology",
+      "timeline": "2022-2023",
+      "duration": "6 months process design + implementation",
+      "heroMetric": "50% Reduction in Duplicate Work",
+      "heroDescription": "Revolutionized product development process using GenAI to synthesize insights into actionable features",
+      "skills": ["Product Operations", "AI/ML", "Process Optimization"],
+      "solutionVertical": "Product Operations",
+      "techStack": "AWS",
       "impactType": ["Operational Efficiency", "Strategic Innovation"],
       "challenge": {
-        "title": "Manual Financial Reporting Bottleneck",
-        "description": "Finance teams were spending hundreds of hours manually extracting and processing data from SAP systems for regulatory reporting, creating bottlenecks and error-prone processes.",
+        "title": "Chaotic Product Process Wasting Engineering Resources",
+        "description": "Product development process was highly inefficient with duplicate work, unclear priorities, and raw customer feedback that engineering couldn't effectively translate into solutions.",
         "keyProblems": [
-          "Manual SAP data extraction consuming massive finance team hours",
-          "Error-prone manual processes affecting regulatory compliance",
-          "Lack of automated reporting capabilities",
-          "No integration between SAP and reporting systems"
+          "Significant duplicate effort across product development workflow",
+          "Raw customer ideas not effectively synthesized into actionable features",
+          "Engineering team struggling to prioritize development efforts",
+          "Lack of systematic process for customer insight integration"
         ]
       },
       "approach": {
-        "title": "Full-Stack Automation Solution",
-        "description": "I designed and built a custom full-stack application that automated SAP data extraction and created streamlined reporting workflows for finance teams.",
+        "title": "AI-Enhanced Process Design + Tool Integration",
+        "description": "Leveraged GenAI capabilities combined with best-in-class product tools to create systematic process for customer insight synthesis and feature development.",
         "methodology": [
-          "Requirements Analysis: Worked with finance teams to understand reporting workflows",
-          "Technical Design: Architected full-stack solution for SAP integration",
-          "Development: Built custom application with automated data processing",
-          "Implementation: Deployed solution saving over $800K in annual man hours"
+          "Process Audit: Analyzed existing workflow to identify inefficiencies and duplicate effort",
+          "AI Integration: Applied GenAI to synthesize customer insights into development-ready features",
+          "Tool Optimization: Integrated Productboard, Jira, Miro, and PowerBI for streamlined workflow",
+          "Team Training: Enabled engineering team to work directly with synthesized customer requirements"
         ]
       },
       "solution": {
-        "title": "Automated SAP Reporting Platform",
-        "description": "Delivered comprehensive full-stack application that automated SAP data extraction, processing, and reporting, eliminating manual workflows and ensuring compliance.",
+        "title": "Intelligent Product Development Pipeline",
+        "description": "Created comprehensive product operations system using AI to transform raw customer feedback into prioritized, actionable feature requirements for engineering teams.",
         "keyFeatures": [
-          "Automated SAP data extraction and processing",
-          "Custom reporting dashboard for finance teams",
-          "Regulatory compliance automation",
-          "Error reduction through automated validation",
-          "Streamlined workflow replacing manual processes"
+          "GenAI-powered customer insight synthesis and feature extraction",
+          "Integrated workflow connecting Productboard, Jira, Miro, and PowerBI",
+          "Automated duplicate work identification and elimination",
+          "Customer-to-feature translation enabling faster development cycles",
+          "Data-driven prioritization and decision-making framework"
         ]
       },
       "results": {
         "primaryMetrics": [
           {
-            "metric": "$800K+",
-            "description": "Annual savings in man hours through process automation"
+            "metric": "50%",
+            "description": "Reduction in duplicate work across product development"
+          },
+          {
+            "metric": "40%",
+            "description": "Faster translation of customer ideas to development features"
           },
           {
             "metric": "100%",
-            "description": "Automation of previously manual SAP reporting processes"
+            "description": "Engineering team adoption of new insight synthesis process"
           }
         ],
-        "businessImpact": "Transformed finance team operations by eliminating time-consuming manual processes and ensuring consistent, accurate regulatory reporting.",
-        "customerFeedback": "Finance teams reported significant time savings and improved confidence in regulatory reporting accuracy."
+        "businessImpact": "Transformed product development from inefficient, gut-driven process to systematic, AI-enhanced operation. Engineering team could focus on building instead of interpreting requirements.",
+        "customerFeedback": "Engineering team reported clearer requirements and better understanding of customer needs, leading to more targeted solution development."
       },
       "learnings": [
-        "Legacy system integration requires careful planning and testing",
-        "Automation can deliver immediate and measurable ROI",
-        "Understanding user workflows is crucial for successful automation",
-        "Full-stack development enables end-to-end solution ownership"
+        "AI can dramatically improve product operations beyond just customer-facing features",
+        "Process optimization requires both technology and systematic workflow design",
+        "Tool integration is crucial for AI-enhanced processes to be adopted",
+        "Customer insight synthesis is a key bottleneck in product development"
       ],
-      "technologies": ["Full-Stack Development", "SAP Integration", "Data Processing", "Financial Reporting"],
+      "technologies": ["GenAI", "Productboard", "Jira", "Miro", "PowerBI", "AWS"],
       "featured": false
+    },
+    {
+      "id": "first-student-transportation-webapp",
+      "title": "Dispatch Revolution: Modern Transportation Management",
+      "subtitle": "From manual chaos to intelligent dispatch operations",
+      "company": "First Student",
+      "industry": "Transportation & Logistics",
+      "timeline": "2021-2022",
+      "duration": "4 months prototype + deployment",
+      "heroMetric": "60% Reduction in Manual Operations",
+      "heroDescription": "Built modern transportation management platform reducing dispatch complexity and improving employee satisfaction",
+      "skills": ["Product Strategy", "Transportation Tech", "Team Management"],
+      "solutionVertical": "Transportation",
+      "techStack": "AWS",
+      "impactType": ["Operational Efficiency", "Customer Experience"],
+      "challenge": {
+        "title": "Outdated Dispatch Systems Crushing Operational Efficiency",
+        "description": "Transportation dispatchers were using legacy systems that required extensive manual work, leading to operational inefficiencies, dispatcher frustration, and poor service quality compared to modern competitors.",
+        "keyProblems": [
+          "Legacy dispatch systems requiring 60% more manual work than competitors",
+          "Poor dispatcher experience leading to high turnover",
+          "Inefficient routing and scheduling processes",
+          "Lack of real-time visibility into transportation operations"
+        ]
+      },
+      "approach": {
+        "title": "Modern Platform Development with Strategic Partnership",
+        "description": "Partnered with Thoughtworks to leverage modern technologies like Here Maps and AWS native functions, focusing on user experience and operational efficiency improvements.",
+        "methodology": [
+          "Technology Partnership: Collaborated with Thoughtworks for rapid development expertise",
+          "Modern Stack: Integrated Here Maps and AWS native functions for advanced capabilities",
+          "User-Centered Design: Focused on dispatcher experience and workflow optimization",
+          "Rapid Prototyping: Delivered working prototype in 4 months for immediate validation"
+        ]
+      },
+      "solution": {
+        "title": "Intelligent Transportation Management Platform",
+        "description": "Delivered comprehensive web platform combining modern mapping technology, automated routing, and intuitive dispatcher interfaces to revolutionize transportation operations.",
+        "keyFeatures": [
+          "Modern web interface with intuitive dispatcher workflows",
+          "Here Maps integration for advanced routing and real-time tracking",
+          "AWS native functions for scalable, reliable operations",
+          "Automated scheduling and route optimization",
+          "Real-time operational visibility and reporting"
+        ]
+      },
+      "results": {
+        "primaryMetrics": [
+          {
+            "metric": "60%",
+            "description": "Reduction in manual dispatch operations vs competitor systems"
+          },
+          {
+            "metric": "4 months",
+            "description": "Time to working prototype using modern development practices"
+          },
+          {
+            "metric": "95%+",
+            "description": "Employee satisfaction rate with new platform"
+          },
+          {
+            "metric": "Modern Stack",
+            "description": "First modern transportation platform at First Student"
+          }
+        ],
+        "businessImpact": "Established foundation for modern transportation operations and improved competitive positioning against technology-forward competitors.",
+        "customerFeedback": "Dispatchers reported dramatic improvement in daily workflow efficiency and job satisfaction with modern interface."
+      },
+      "learnings": [
+        "Modern technology stacks can provide immediate competitive advantages",
+        "User experience improvements directly impact employee satisfaction and retention",
+        "Strategic development partnerships accelerate capability building",
+        "Transportation industry is ready for modern technology adoption"
+      ],
+      "technologies": ["Here Maps", "AWS Native Functions", "Modern Web Platforms", "Real-time Tracking"],
+      "featured": true
+    },
+    {
+      "id": "first-student-driver-app",
+      "title": "Driver Excellence: Mobile-First Service Platform",
+      "subtitle": "Transforming driver experience through user-centered design",
+      "company": "First Student",
+      "industry": "Transportation & Logistics", 
+      "timeline": "2021-2022",
+      "duration": "6 months research + development",
+      "heroMetric": "90% Driver Retention Rate",
+      "heroDescription": "Delivered driver-focused mobile app achieving exceptional retention and satisfaction through nationwide user research",
+      "skills": ["User Research", "Mobile Strategy", "Team Management"],
+      "solutionVertical": "Transportation",
+      "techStack": "AWS",
+      "impactType": ["Customer Experience", "Operational Efficiency"],
+      "challenge": {
+        "title": "Driver Dissatisfaction Threatening Service Quality",
+        "description": "Transportation drivers across the country were experiencing poor tools and workflows, leading to high turnover, service quality issues, and operational challenges for the transportation business.",
+        "keyProblems": [
+          "High driver turnover affecting service consistency",
+          "Poor driver tools leading to operational inefficiencies", 
+          "Lack of understanding of driver needs and pain points",
+          "No systematic approach to driver experience improvement"
+        ]
+      },
+      "approach": {
+        "title": "Nationwide User Research + Mobile-First Development",
+        "description": "Led comprehensive nationwide driver research program while managing 40+ engineer team to deliver user-centered mobile solution based on real driver needs.",
+        "methodology": [
+          "Extensive User Research: Conducted 20+ driver interviews across multiple regions",
+          "Team Leadership: Managed 40+ engineers at Thoughtworks for development execution",
+          "Mobile-First Strategy: Designed solution specifically for driver mobile workflows",
+          "Iterative Development: Used research insights to guide feature prioritization and design"
+        ]
+      },
+      "solution": {
+        "title": "Driver-Centered Mobile Platform",
+        "description": "Built comprehensive mobile application designed specifically around driver workflows, needs, and preferences identified through extensive nationwide research.",
+        "keyFeatures": [
+          "Mobile-first interface optimized for driver workflows",
+          "Real-time route and schedule management", 
+          "Driver communication and support tools",
+          "Performance tracking and feedback systems",
+          "Integration with dispatch and operational systems"
+        ]
+      },
+      "results": {
+        "primaryMetrics": [
+          {
+            "metric": "90%",
+            "description": "Driver retention rate with new mobile platform"
+          },
+          {
+            "metric": "95%",
+            "description": "Driver satisfaction rate with app experience"
+          },
+          {
+            "metric": "20+",
+            "description": "Nationwide driver interviews informing product design"
+          },
+          {
+            "metric": "$1M",
+            "description": "Revenue contribution from new transportation vertical in first year"
+          },
+          {
+            "metric": "40+",
+            "description": "Engineers managed across development partnership"
+          }
+        ],
+        "businessImpact": "Created new transportation business vertical generating $1M in first year while dramatically improving driver experience and retention.",
+        "customerFeedback": "Drivers reported significant improvement in daily workflow efficiency and communication with dispatch operations."
+      },
+      "learnings": [
+        "Extensive user research is crucial for service provider applications",
+        "Driver experience directly impacts customer service quality",
+        "Mobile-first design is essential for field worker applications", 
+        "Large engineering team coordination requires systematic management"
+      ],
+      "technologies": ["Mobile Development", "AWS Cloud", "User Experience Design", "Real-time Communication"],
+      "featured": true
     }
   ],
   "filterOptions": {
     "skills": [
       "AI/ML",
       "Product Strategy", 
-      "B2B SaaS",
-      "Revenue Generation",
       "Data Analytics",
-      "Large-Scale Systems",
+      "Partnership Management",
       "FinTech",
-      "Full-Stack Development",
+      "Rapid Prototyping",
+      "CRM Strategy",
+      "Enterprise Sales",
+      "API Strategy",
+      "Retail Strategy",
       "Process Optimization",
-      "Customer Success"
+      "Developer Relations",
+      "Marketing Tech"
+    ],
+    "solutionVerticals": [
+      "Marketing Tech",
+      "CRM System", 
+      "Analytics",
+      "API Platform",
+      "FinTech",
+      "Retail Tech",
+      "Product Operations",
+      "AdTech",
+      "Transportation",
+      "Operations"
+    ],
+    "techStacks": [
+      "Azure",
+      "AWS", 
+      "GCP"
     ],
     "industries": [
       "Transportation & Logistics",
-      "Retail Supply Chain", 
+      "Retail Technology",
       "FinTech",
-      "Aerospace & Defense",
-      "AdTech"
+      "AdTech",
+      "Aerospace & Defense"
     ],
     "impactTypes": [
       "Revenue Generation",
@@ -387,9 +729,9 @@
     ]
   },
   "summary": {
-    "totalRevenue": "$5M+",
-    "totalProjects": 5,
-    "aiMlProjects": 3,
-    "yearsExperience": "8+"
+    "totalRevenue": "$4M+",
+    "totalProjects": 10,
+    "aiMlProjects": 5,
+    "yearsExperience": "5+"
   }
 }
