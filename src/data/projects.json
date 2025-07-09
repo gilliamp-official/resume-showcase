@@ -70,7 +70,11 @@
         "White-label solutions need careful brand alignment for customer trust"
       ],
       "technologies": ["Partnership Integration", "Azure Cloud", "API Management", "Marketing Automation"],
-      "featured": true
+      "featured": true,
+      "screenshots": {
+        "password": "smartmoving"
+      },
+      "marketingLink": "https://smartmoving.com/reputation-management"
     },
     {
       "id": "smartmoving-crm-automation",
@@ -146,7 +150,11 @@
         "Rapid iteration based on real usage data beats extensive upfront planning"
       ],
       "technologies": ["AI/ML", "CRM Automation", "Azure Cloud", "Rapid Prototyping", "Customer Analytics"],
-      "featured": true
+      "featured": true,
+      "screenshots": {
+        "password": "smartmoving"
+      },
+      "marketingLink": "https://help.smartmoving.com/en/articles/10007856-automated-follow-up-reminders-rule-creation"
     },
     {
       "id": "smartmoving-smart-insights",
@@ -222,7 +230,11 @@
         "Embedded solutions drive higher adoption than standalone analytics tools"
       ],
       "technologies": ["Sigma Computing", "Embedded Analytics", "Azure Cloud", "Business Intelligence", "Data Visualization"],
-      "featured": true
+      "featured": true,
+      "screenshots": {
+        "password": "smartmoving"
+      },
+      "marketingLink": "https://www.smartmoving.com/smart-insights-demo"
     },
     {
       "id": "smartmoving-openapi-ecosystem",
@@ -298,7 +310,11 @@
         "Partner ecosystems create competitive moats beyond just technology"
       ],
       "technologies": ["RESTful APIs", "Azure API Management", "Developer Portals", "Integration Platforms"],
-      "featured": true
+      "featured": true,
+      "screenshots": {
+        "password": "smartmoving"
+      },
+      "marketingLink": "https://developer.smartmoving.com/"
     },
     {
       "id": "smartmoving-ach-payments",
@@ -378,7 +394,10 @@
         "First-try audit success requires extensive preparation and attention to detail"
       ],
       "technologies": ["ACH Processing", "Payment APIs", "Azure Security", "Financial Compliance", "Pre-Authorization"],
-      "featured": true
+      "featured": true,
+      "screenshots": {
+        "password": "smartmoving"
+      }
     },
     {
       "id": "zebra-assortment-planning-ai",
@@ -450,7 +469,10 @@
         "Early AI adoption can create significant competitive advantages"
       ],
       "technologies": ["Machine Learning", "AWS Cloud", "Data Science", "Retail Analytics", "Algorithm Development"],
-      "featured": true
+      "featured": true,
+      "screenshots": {
+        "password": "zebra"
+      }
     },
     {
       "id": "zebra-ai-product-process",
@@ -598,7 +620,11 @@
         "Transportation industry is ready for modern technology adoption"
       ],
       "technologies": ["Here Maps", "AWS Native Functions", "Modern Web Platforms", "Real-time Tracking"],
-      "featured": true
+      "featured": true,
+      "screenshots": {
+        "password": "firststudent"
+      },
+      "marketingLink": "https://firststudentinc.com/halo/"
     },
     {
       "id": "first-student-driver-app",
@@ -678,7 +704,11 @@
         "Large engineering team coordination requires systematic management"
       ],
       "technologies": ["Mobile Development", "AWS Cloud", "User Experience Design", "Real-time Communication"],
-      "featured": true
+      "featured": true,
+      "screenshots": {
+        "password": "firststudent"
+      },
+      "marketingLink": "https://firststudentinc.com/halo/"
     }
   ],
   "filterOptions": {

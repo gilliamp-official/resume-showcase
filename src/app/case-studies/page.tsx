@@ -1,7 +1,9 @@
 'use client'
 import React, { useState, useMemo, useCallback, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, DollarSign, Zap, Users, Brain, Target, TrendingUp, X, ChevronDown, Filter, Lightbulb, Wrench, MessageCircle, Award, Code, Rocket } from 'lucide-react';
+import { ChevronLeft, ChevronRight, DollarSign, Zap, Users, Brain, Target, TrendingUp, X, ChevronDown, Filter, Lightbulb, Wrench, MessageCircle, Award, Code, Rocket, Camera, ExternalLink } from 'lucide-react';
 import caseStudiesData from '@/data/projects.json';
+import ScreenshotModal from '@/components/ScreenshotModal';
+import { useScreenshots } from '@/hooks/useScreenshots';
 
 interface CaseStudyMetric {
   metric: string;
@@ -43,6 +45,10 @@ interface CaseStudy {
   learnings?: string[];
   technologies?: string[];
   featured?: boolean;
+  screenshots?: {
+    password: string;
+  };
+  marketingLink?: string;
 }
 
 interface FilterOptions {
@@ -65,6 +71,46 @@ interface ProjectsData {
 
 const typedCaseStudiesData = caseStudiesData as unknown as ProjectsData;
 
+// Screenshot Button Component
+function ScreenshotButton({ caseStudyId, onClick }: { caseStudyId: string; onClick: () => void }) {
+  const { hasScreens, loading } = useScreenshots(caseStudyId);
+  
+  if (loading) {
+    return (
+      <div className="w-full bg-gray-50 border border-gray-200 rounded-xl p-4">
+        <div className="flex items-center gap-3">
+          <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-blue-600"></div>
+          <span className="text-gray-600 text-sm">Checking for screenshots...</span>
+        </div>
+      </div>
+    );
+  }
+  
+  if (!hasScreens) {
+    return null;
+  }
+  
+  return (
+    <button
+      onClick={onClick}
+      className="w-full bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-xl p-4 text-left transition-colors group"
+    >
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <Camera className="w-5 h-5 text-blue-600" />
+          <div>
+            <h4 className="font-bold text-blue-800">Screenshots</h4>
+            <p className="text-sm text-blue-600">View project images</p>
+          </div>
+        </div>
+        <div className="text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity">
+          <span className="text-sm">Protected</span>
+        </div>
+      </div>
+    </button>
+  );
+}
+
 export default function ProjectsPage() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [activeDrawer, setActiveDrawer] = useState<string | null>(null);
@@ -75,6 +121,7 @@ export default function ProjectsPage() {
     impactType: [] as string[]
   });
   const [showFilters, setShowFilters] = useState(false);
+  const [showScreenshotModal, setShowScreenshotModal] = useState(false);
 
   const caseStudies = useMemo(() => typedCaseStudiesData?.caseStudies || [], []);
   const filterOptions = typedCaseStudiesData?.filterOptions || {};
@@ -482,6 +529,34 @@ export default function ProjectsPage() {
 
                 {/* Right Column - Interactive Elements */}
                 <div className="space-y-4">
+                  {/* Screenshot and Marketing Links */}
+                  <ScreenshotButton 
+                    caseStudyId={currentProject.id} 
+                    onClick={() => setShowScreenshotModal(true)}
+                  />
+
+                  {currentProject.marketingLink && (
+                    <a
+                      href={currentProject.marketingLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full bg-green-50 hover:bg-green-100 border border-green-200 rounded-xl p-4 text-left transition-colors group block"
+                    >
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <ExternalLink className="w-5 h-5 text-green-600" />
+                          <div>
+                            <h4 className="font-bold text-green-800">Marketing Page</h4>
+                            <p className="text-sm text-green-600">View public information</p>
+                          </div>
+                        </div>
+                        <div className="text-green-600 opacity-0 group-hover:opacity-100 transition-opacity">
+                          <ExternalLink className="w-4 h-4" />
+                        </div>
+                      </div>
+                    </a>
+                  )}
+
                   {/* Interactive Cards */}
                   {currentProject.learnings && (
                     <button
@@ -635,6 +710,15 @@ export default function ProjectsPage() {
           </div>
         </div>
       )}
+
+      {/* Screenshot Modal */}
+      <ScreenshotModal
+        isOpen={showScreenshotModal}
+        onClose={() => setShowScreenshotModal(false)}
+        password={currentProject.screenshots?.password || currentProject.company.toLowerCase().replace(/\s+/g, '')}
+        caseStudyId={currentProject.id}
+        marketingLink={currentProject.marketingLink}
+      />
 
       {/* CTA Footer */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-12">
