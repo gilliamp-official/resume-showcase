@@ -1,6 +1,5 @@
 'use client'
 import React, { ReactNode } from 'react';
-import Navbar from './NavBar';
 import profileData from '@/data/profile.json';
 import { downloadResume } from '@/utils/downloadUtils';
 import { Linkedin, Mail, FileText } from 'lucide-react';
@@ -30,9 +29,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
-      <Navbar />
-      
-      <main className="pt-16">
+      <main>
         {children}
       </main>
 
@@ -41,53 +38,36 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
               <h3 className="text-xl font-bold">{profileData.basics.name}</h3>
-              <p className="text-gray-400">{profileData.basics.title}</p>
+              <p className="text-gray-400">Senior Product Leader & Platform Strategy</p>
             </div>
             
             <div className="flex space-x-6">
-              {profileData.social.map((social, index) => {
-                if (social.network === 'LinkedIn') {
-                  return (
-                    <a 
-                      key={index}
-                      href={social.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="text-gray-400 hover:text-white transition-colors"
-                    >
-                      <Linkedin className="w-5 h-5" />
-                    </a>
-                  );
-                } else if (social.network === 'GitHub') {
-                  return (
-                    <a 
-                      key={index}
-                      href={social.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="text-gray-400 hover:text-white transition-colors"
-                    >
-                      <GitHubIcon className="w-5 h-5" />
-                    </a>
-                  );
-                } else {
-                  return (
-                    <a 
-                      key={index}
-                      href={social.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="text-gray-400 hover:text-white transition-colors"
-                    >
-                      <Mail className="w-5 h-5" />
-                    </a>
-                  );
-                }
-              })}
+              <a 
+                href="https://linkedin.com/in/pgilliam2" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-blue-400 transition-colors"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a 
+                href="https://github.com/gilliamp-official" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-blue-400 transition-colors"
+              >
+                <GitHubIcon className="w-5 h-5" />
+              </a>
+              <a 
+                href="mailto:gilliamp2@protonmail.com" 
+                className="text-gray-400 hover:text-blue-400 transition-colors"
+              >
+                <Mail className="w-5 h-5" />
+              </a>
               {/* Resume Download Button in Footer */}
               <button 
                 onClick={downloadResume}
-                className="text-gray-400 hover:text-white transition-colors cursor-pointer"
+                className="text-gray-400 hover:text-blue-400 transition-colors cursor-pointer"
                 aria-label="Download Resume"
                 title="Download Resume"
               >
@@ -96,7 +76,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             </div>
           </div>
           
-          <div className=" border-gray-800 text-center text-gray-500 text-sm">
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
             <p>&copy; {new Date().getFullYear()} {profileData.basics.name}. All rights reserved.</p>
           </div>
         </div>

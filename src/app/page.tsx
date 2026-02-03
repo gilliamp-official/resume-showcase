@@ -1,47 +1,55 @@
 'use client'
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { ArrowDown, FileText, Mail, ChevronRight } from 'lucide-react';
-
-// Import JSON data
-import profileData from '@/data/profile.json';
-import experienceData from '@/data/experience.json';
+import { ArrowDown, Mail, Linkedin, Github, Target, Lightbulb, TrendingUp, Users, Award, GraduationCap, Zap, BarChart3, Shield, Truck, Cloud } from 'lucide-react';
 
 export default function Home() {
-  // Get latest job
-  const latestJob = experienceData.experience[0];
-  
-
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-blue-600">
-        <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-800 to-blue-600 opacity-90"></div>
+      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700">
+        <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 opacity-95"></div>
         
         {/* Animated background pattern */}
         <div className="absolute inset-0">
           <div className="absolute inset-0" style={{ 
-            backgroundImage: `radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.15) 2%, transparent 0%)`,
+            backgroundImage: `radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.1) 2%, transparent 0%)`,
             backgroundSize: '50px 50px' 
           }}></div>
         </div>
         
         <div className="relative z-10 text-center px-6 max-w-4xl flex flex-col items-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">{profileData.basics.name}</h1>
-          <p className="text-xl md:text-2xl font-light text-white/90 mb-8">Strategic Product Leader - Platform Innovation & Market Category Creation</p>
-          <p className="text-lg text-white/80 mb-10 leading-relaxed">
-            I identify and capture untapped market opportunities through strategic platform thinking that creates sustainable competitive advantages. 
-            Specializing in market category creation, platform economics, and transforming $100M+ opportunities into strategic business value.
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">Paul Gilliam</h1>
+          <h2 className="text-2xl font-light text-white/90 mb-6">Senior Product Leader & Platform Strategist</h2>
+          <p className="text-xl text-white/80 mb-10 leading-relaxed">
+          I see the patterns that unlock million-dollar platform opportunities.
           </p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-16">
-            <Link href="/about" className="px-8 py-3 bg-white text-blue-700 rounded-full font-medium hover:bg-blue-50 transition-colors shadow-lg">
-              View Strategic Impact
-            </Link>
-            <Link href="/contact" className="px-8 py-3 border border-white text-white rounded-full font-medium hover:bg-white/10 transition-colors">
-              Discuss Market Opportunities
-            </Link>
+          <div className="flex flex-wrap justify-center gap-8 text-center mb-10">
+            <div>
+              <div className="text-3xl font-bold text-white">8 Years</div>
+              <div className="text-sm text-white/80">Product Experience</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-white">$5M+</div>
+              <div className="text-sm text-white/80">Revenue Growth</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-white">100%</div>
+              <div className="text-sm text-white/80">Market Fit Achieved</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-white">5</div>
+              <div className="text-sm text-white/80">Verticals Transformed</div>
+            </div>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <a href="#contact" className="px-8 py-3 bg-white text-blue-700 rounded-full font-medium hover:bg-blue-50 transition-colors shadow-lg">
+              Contact
+            </a>
+            <a href="https://linkedin.com/in/pgilliam2" target="_blank" rel="noopener noreferrer" className="px-8 py-3 border border-white text-white rounded-full font-medium hover:bg-white/10 transition-colors">
+              LinkedIn
+            </a>
           </div>
           
           <div className="animate-bounce mt-8">
@@ -50,297 +58,351 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Strategic Impact Overview */}
+      {/* Core Strategic Capabilities */}
       <section className="py-20 px-6 bg-white">
-        <div className="container mx-auto max-w-5xl">
+        <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold text-center mb-16 text-gray-900 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-blue-600">
-            Strategic Market Impact
+            Strategic Product Leadership
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="relative w-full aspect-square rounded-lg overflow-hidden shadow-xl">
-                <Image 
-                  src="/me.jpg" 
-                  alt={profileData.basics.name}
-                  fill
-                  style={{ objectFit: 'cover' }}
-                  className="rounded-lg"
-                  priority
-                />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-200">
+              <div className="text-4xl text-blue-600 mb-4 flex justify-center">
+                <Lightbulb className="w-12 h-12" />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-center">Market Category Creation</h3>
+              <p className="text-gray-600 mb-4 text-center">Systematic market analysis identifying platform opportunities through competitive intelligence and customer discovery.</p>
+              <ul className="text-sm text-gray-500 space-y-1">
+                <li>• Platform economics analysis</li>
+                <li>• Competitive differentiation strategy</li>
+                <li>• Market gap identification</li>
+              </ul>
+            </div>
+            
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-200">
+              <div className="text-4xl text-green-600 mb-4 flex justify-center">
+                <Target className="w-12 h-12" />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-center">Platform Strategy & Execution</h3>
+              <p className="text-gray-600 mb-4 text-center">Transform traditional SaaS into competitive platform ecosystems with measurable revenue impact.</p>
+              <ul className="text-sm text-gray-500 space-y-1">
+                <li>• API ecosystem development</li>
+                <li>• Partnership strategy execution</li>
+                <li>• Revenue stream diversification</li>
+              </ul>
+            </div>
+            
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-200">
+              <div className="text-4xl text-purple-600 mb-4 flex justify-center">
+                <Users className="w-12 h-12" />
+              </div>
+              <h3 className="text-xl font-bold mb-4 text-center">Cross-Functional Leadership</h3>
+              <p className="text-gray-600 mb-4 text-center">Strategic influence across engineering, sales, and marketing to drive platform transformation initiatives.</p>
+              <ul className="text-sm text-gray-500 space-y-1">
+                <li>• Engineering team coordination</li>
+                <li>• Executive stakeholder management</li>
+                <li>• Strategic vision alignment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Results */}
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-center mb-16 text-gray-900 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-blue-600">
+            Strategic Impact & Results
+          </h2>
+          
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="text-center p-6 bg-white rounded-xl shadow-md border border-gray-200">
+              <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent mb-2">8</div>
+              <div className="text-sm text-gray-600">Years Product Experience</div>
+            </div>
+            <div className="text-center p-6 bg-white rounded-xl shadow-md border border-gray-200">
+              <div className="text-3xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent mb-2">$5M+</div>
+              <div className="text-sm text-gray-600">Revenue Growth</div>
+            </div>
+            <div className="text-center p-6 bg-white rounded-xl shadow-md border border-gray-200">
+              <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent mb-2">100%</div>
+              <div className="text-sm text-gray-600">Market Fit Achieved</div>
+            </div>
+            <div className="text-center p-6 bg-white rounded-xl shadow-md border border-gray-200">
+              <div className="text-3xl font-bold bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent mb-2">5</div>
+              <div className="text-sm text-gray-600">Verticals Transformed</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Strategic Case Studies */}
+      <section className="py-20 px-6 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-center mb-16 text-gray-900 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-blue-600">
+            Platform Leadership Experience
+          </h2>
+          
+          <div className="space-y-8">
+            {/* Moving Operations Intelligence */}
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-200">
+              <div className="flex flex-col md:flex-row md:items-start justify-between mb-6">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2 flex items-center gap-3">
+                    <BarChart3 className="w-6 h-6 text-blue-600" />
+                    Moving Operations Intelligence (Smart Insights)
+                  </h3>
+                  <p className="text-gray-600 mb-4">SmartMoving Software • 2024</p>
+                </div>
+                <div className="text-right mt-4 md:mt-0">
+                  <div className="text-2xl font-bold text-green-600">100%</div>
+                  <div className="text-sm text-gray-500">Beta Retention</div>
+                </div>
+              </div>
+              <p className="text-gray-700 mb-4">Identified market opportunity for embedded analytics through systematic customer discovery. Executed paid beta program achieving 100% retention and exceeded initial sales targets, demonstrating strong product-market fit for new analytics category.</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                <div>
+                  <strong className="text-gray-800">Market Validation:</strong>
+                  <p className="text-gray-600">100% paid beta retention with immediate sales traction</p>
+                </div>
+                <div>
+                  <strong className="text-gray-800">Customer Discovery:</strong>
+                  <p className="text-gray-600">Systematic market research identifying embedded analytics opportunity</p>
+                </div>
+                <div>
+                  <strong className="text-gray-800">Category Creation:</strong>
+                  <p className="text-gray-600">New analytics category with strong product-market fit</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Fintech Partnership */}
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-200">
+              <div className="flex flex-col md:flex-row md:items-start justify-between mb-6">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2 flex items-center gap-3">
+                    <Shield className="w-6 h-6 text-green-600" />
+                    Fintech Partnership Execution
+                  </h3>
+                  <p className="text-gray-600 mb-4">SmartMoving Software • 2024</p>
+                </div>
+                <div className="text-right mt-4 md:mt-0">
+                  <div className="text-2xl font-bold text-blue-600">$1M+</div>
+                  <div className="text-sm text-gray-500">Weekly Volume</div>
+                </div>
+              </div>
+              <p className="text-gray-700 mb-4">Launched and operationalized ACH platform handling $1M+ weekly volume. Executed full compliance lifecycle, achieved first-try audit success, and directly reduced processing costs for customers.</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                <div>
+                  <strong className="text-gray-800">Platform Launch:</strong>
+                  <p className="text-gray-600">$1M+ weekly transaction volume handling</p>
+                </div>
+                <div>
+                  <strong className="text-gray-800">Compliance Excellence:</strong>
+                  <p className="text-gray-600">First-try audit success with full lifecycle execution</p>
+                </div>
+                <div>
+                  <strong className="text-gray-800">Cost Optimization:</strong>
+                  <p className="text-gray-600">Direct processing cost reduction for customers</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Alternative Transportation Platform */}
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-200">
+              <div className="flex flex-col md:flex-row md:items-start justify-between mb-6">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2 flex items-center gap-3">
+                    <Truck className="w-6 h-6 text-orange-600" />
+                    Alternative Transportation Software Platform
+                  </h3>
+                  <p className="text-gray-600 mb-4">First Student • 2021-2022</p>
+                </div>
+                <div className="text-right mt-4 md:mt-0">
+                  <div className="text-2xl font-bold text-blue-600">$20M</div>
+                  <div className="text-sm text-gray-500">Projected Revenue</div>
+                </div>
+              </div>
+              <p className="text-gray-700 mb-4">Led platform strategy for new alternative transportation vertical, coordinating 40+ team of cross-functional leaders and consultants to consolidate fragmented 5-tool market into unified solution. Conducted executive stakeholder discovery across multiple locations to align business requirements with technical architecture, delivering integrated 4-application platform with $20M projected revenue impact.</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                <div>
+                  <strong className="text-gray-800">Platform Strategy:</strong>
+                  <p className="text-gray-600">5-to-1 tool consolidation with market disruption potential</p>
+                </div>
+                <div>
+                  <strong className="text-gray-800">Team Leadership:</strong>
+                  <p className="text-gray-600">40+ cross-functional leaders and consultants coordinated</p>
+                </div>
+                <div>
+                  <strong className="text-gray-800">Revenue Impact:</strong>
+                  <p className="text-gray-600">$20M projected revenue from integrated platform solution</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Corporate IT Architecture */}
+            <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-200">
+              <div className="flex flex-col md:flex-row md:items-start justify-between mb-6">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2 flex items-center gap-3">
+                    <Cloud className="w-6 h-6 text-purple-600" />
+                    Corporate IT Architecture Overhaul
+                  </h3>
+                  <p className="text-gray-600 mb-4">First Student • 2021-2022</p>
+                </div>
+                <div className="text-right mt-4 md:mt-0">
+                  <div className="text-2xl font-bold text-purple-600">Azure</div>
+                  <div className="text-sm text-gray-500">Cloud Migration</div>
+                </div>
+              </div>
+              <p className="text-gray-700 mb-4">Led a company-wide IT and product architecture transformation to align technology systems with mission-critical operational goals. Directed migration of all systems to Azure Cloud in partnership with a third-party consulting firm, eliminating infrastructure bottlenecks and enabling scalability. Efforts focused on reducing overhead labor, aligning features with user workflows, and improving visibility across dispatch and support operations.</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                <div>
+                  <strong className="text-gray-800">Architecture Strategy:</strong>
+                  <p className="text-gray-600">Company-wide transformation aligning technology with operations</p>
+                </div>
+                <div>
+                  <strong className="text-gray-800">Cloud Migration:</strong>
+                  <p className="text-gray-600">Complete Azure migration eliminating infrastructure bottlenecks</p>
+                </div>
+                <div>
+                  <strong className="text-gray-800">Operational Impact:</strong>
+                  <p className="text-gray-600">Reduced overhead labor with improved workflow visibility</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Timeline */}
+      <section className="py-20 px-6 bg-gray-50">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-3xl font-bold text-center mb-16 text-gray-900 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-blue-600">
+            Product Leadership Experience
+          </h2>
+          
+          <div className="space-y-6">
+            <div className="flex flex-col md:flex-row items-center gap-6 p-6 bg-white rounded-xl shadow-md border border-gray-200">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <Target className="w-8 h-8 text-blue-600" />
+              </div>
+              <div className="flex-grow text-center md:text-left">
+                <h3 className="text-xl font-bold text-gray-800">Senior Product Manager</h3>
+                <p className="text-gray-600">SmartMoving Software • Jan 2024 - Present</p>
+                <p className="text-sm text-gray-500 mt-2">Platform transformation and market category expansion through systematic customer discovery, competitive intelligence, and strategic partnership execution serving 8,000+ users.</p>
+              </div>
+              <div className="text-center flex-shrink-0">
+                <div className="text-lg font-bold text-green-600">$5M+</div>
+                <div className="text-xs text-gray-500">Value Created</div>
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row items-center gap-6 p-6 bg-white rounded-xl shadow-md border border-gray-200">
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <TrendingUp className="w-8 h-8 text-purple-600" />
+              </div>
+              <div className="flex-grow text-center md:text-left">
+                <h3 className="text-xl font-bold text-gray-800">Senior Product Manager</h3>
+                <p className="text-gray-600">Zebra Technologies • Nov 2022 - Jan 2024</p>
+                <p className="text-sm text-gray-500 mt-2">Market opportunity assessment and competitive positioning for retail technology business unit, conducting strategic analysis for AI-driven inventory planning platform.</p>
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row items-center gap-6 p-6 bg-white rounded-xl shadow-md border border-gray-200">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <Zap className="w-8 h-8 text-orange-600" />
+              </div>
+              <div className="flex-grow text-center md:text-left">
+                <h3 className="text-xl font-bold text-gray-800">Product Manager</h3>
+                <p className="text-gray-600">Koddi • Jun 2022 - Dec 2022</p>
+                <p className="text-sm text-gray-500 mt-2">Enhanced digital advertising platform operations for enterprise clients including Kroger and Hotels.com, focusing on competitive optimization and customer discovery.</p>
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row items-center gap-6 p-6 bg-white rounded-xl shadow-md border border-gray-200">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <Users className="w-8 h-8 text-green-600" />
+              </div>
+              <div className="flex-grow text-center md:text-left">
+                <h3 className="text-xl font-bold text-gray-800">Product Manager</h3>
+                <p className="text-gray-600">First Student • Sep 2021 - Jun 2022</p>
+                <p className="text-sm text-gray-500 mt-2">Led strategic transformation coordinating 40+ engineers delivering platform consolidation with $20M projected revenue impact.</p>
+              </div>
+              <div className="text-center flex-shrink-0">
+                <div className="text-lg font-bold text-blue-600">$20M</div>
+                <div className="text-xs text-gray-500">Projected Revenue</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Strategic Credentials */}
+      <section className="py-20 px-6 bg-white">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-center mb-16 text-gray-900 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-blue-600">
+            Foundation & Recognition
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
+              <h3 className="text-xl font-bold mb-6 flex items-center gap-3">
+                <GraduationCap className="w-6 h-6 text-blue-600" />
+                Education & Development
+              </h3>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-gray-800">MBA - Business Management</h4>
+                  <p className="text-gray-600">Quantic School of Business and Technology</p>
+                  <p className="text-sm text-gray-500">Platform Economics, Competitive Analysis, Strategic Market Development</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-800">B.S. Information Systems & Business</h4>
+                  <p className="text-gray-600">University of Colorado Colorado Springs • 4.0 GPA, Summa Cum Laude</p>
+                  <p className="text-sm text-gray-500">Enterprise Platform Architecture, Strategic Systems Design</p>
+                </div>
               </div>
             </div>
             
-            <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">$5M+ Platform Transformation + $100M+ Market Opportunities</h3>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Based in {profileData.basics.location}, I specialize in identifying untapped market opportunities and building strategic platforms that create sustainable competitive advantages. 
-                My approach combines systematic market analysis with platform economics thinking to capture opportunities competitors systematically miss.
-              </p>
-              
-              <h4 className="text-lg font-semibold text-gray-800 mb-3">Strategic Market Achievements</h4>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
-                  <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                    <div className="w-2.5 h-2.5 rounded-full bg-green-600"></div>
-                  </div>
-                  <span className="text-gray-700"><strong>$100M+ van line market opportunity</strong> identified through platform economics analysis</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                    <div className="w-2.5 h-2.5 rounded-full bg-green-600"></div>
-                  </div>
-                  <span className="text-gray-700"><strong>$1.2M market category created</strong> for moving operations intelligence</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                    <div className="w-2.5 h-2.5 rounded-full bg-green-600"></div>
-                  </div>
-                  <span className="text-gray-700"><strong>$5M+ platform transformation</strong> creating multiple revenue streams and ecosystem advantages</span>
-                </li>
-              </ul>
-              
-              <Link href="/experience" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                View Complete Strategic Impact <ChevronRight className="w-4 h-4 ml-1" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Current Strategic Role */}
-      <section className="py-20 px-6 bg-gray-50">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-600">
-              Current Strategic Leadership at SmartMoving
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Leading platform transformation and market category creation for high-growth B2B SaaS platform
-            </p>
-          </div>
-          
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
-            <div className="p-6 md:p-8">
-              <div className="flex flex-col md:flex-row md:items-center justify-between mb-6">
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-800">{latestJob.title}</h3>
-                  <p className="text-blue-600 font-medium">{latestJob.company}</p>
-                </div>
-                <div className="text-gray-600 mt-2 md:mt-0">
-                  {latestJob.startDate} - {latestJob.endDate} · {latestJob.duration}
-                </div>
-              </div>
-              
-              <p className="text-gray-700 mb-6">
-                {latestJob.description}
-              </p>
-              
-              <div className="mb-6">
-                <h4 className="text-lg font-semibold text-gray-800 mb-3">Strategic Market Achievements</h4>
-                <ul className="space-y-2">
-                  {latestJob.achievements.map((achievement, index) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                        <div className="w-2 h-2 rounded-full bg-green-600"></div>
-                      </div>
-                      <span className="text-gray-700">{achievement}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              
-              <div className="flex flex-wrap gap-2 mb-8">
-                {["Market Category Creation", "Platform Economics", "Strategic Analysis", "Competitive Intelligence", "Revenue Stream Innovation"].map((skill, index) => (
-                  <span key={index} className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-              
-              <div className="text-center">
-                <Link href="/experience" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                  See Complete Strategic Experience <ChevronRight className="w-4 h-4 ml-1" />
-                </Link>
+            <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-200">
+              <h3 className="text-xl font-bold mb-6 flex items-center gap-3">
+                <Award className="w-6 h-6 text-yellow-600" />
+                Strategic Recognition
+              </h3>
+              <div className="space-y-4 text-sm">
+                <div className="text-gray-700">International Business Competition Excellence</div>
+                <div className="text-gray-700">Strategic Entrepreneurship Recognition</div>
+                <div className="text-gray-700">Elite Academic Institution Offers (Harvard, Stanford, MIT)</div>
+                <div className="text-gray-700">Published Strategic Framework Development</div>
+                <div className="text-gray-700">5-Year Community Leadership Excellence (600+ Homes)</div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Strategic Capabilities */}
-      <section className="py-20 px-6 bg-white">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-600">
-              Strategic Leadership Capabilities
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Core VP/CPO capabilities that identify and capture market opportunities creating sustainable competitive advantages
-            </p>
-          </div>
-          
-          {/* Top 3 strategic capabilities */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="relative bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-blue-200">
-              <span className="absolute top-4 right-4 px-3 py-0.5 text-xs font-semibold bg-blue-600 text-white rounded-full leading-tight max-w-fit">
-                6+ years
-              </span>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Market Category Creation</h3>
-              <p className="text-gray-600 mb-4">Identifying and creating new market categories that establish sustainable competitive advantages</p>
-              <div className="text-sm text-blue-700 font-medium mb-1">Key Achievement:</div>
-              <p className="text-sm text-gray-600">$1.2M market category created for moving operations intelligence</p>
-            </div>
-
-            <div className="relative bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-blue-200">
-              <span className="absolute top-4 right-4 px-3 py-0.5 text-xs font-semibold bg-blue-600 text-white rounded-full leading-tight max-w-fit">
-                6+ years
-              </span>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Platform Economics & Strategy</h3>
-              <p className="text-gray-600 mb-4">Understanding platform business models, network effects, and ecosystem monetization strategies</p>
-              <div className="text-sm text-blue-700 font-medium mb-1">Key Achievement:</div>
-              <p className="text-sm text-gray-600">$100M+ van line market disruption opportunity through platform economics analysis</p>
-            </div>
-
-            <div className="relative bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-blue-200">
-              <span className="absolute top-4 right-4 px-3 py-0.5 text-xs font-semibold bg-blue-600 text-white rounded-full leading-tight max-w-fit">
-                6+ years
-              </span>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Strategic Customer Discovery</h3>
-              <p className="text-gray-600 mb-4">Systematic customer discovery programs that identify market opportunities and validate strategic direction</p>
-              <div className="text-sm text-blue-700 font-medium mb-1">Key Achievement:</div>
-              <p className="text-sm text-gray-600">25+ monthly executive interviews revealing opportunities competitors systematically miss</p>
-            </div>
-          </div>
-          
-          <div className="text-center">
-            <Link href="/skills" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-              Explore All Strategic Leadership Capabilities <ChevronRight className="w-4 h-4 ml-1" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Strategic Case Study */}
-      <section className="py-20 px-6 bg-gray-50">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-600">
-              Strategic Leadership in Action
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Transforming market opportunities through systematic analysis and strategic platform thinking
-            </p>
-          </div>
-          
-          {/* Highlight the van line strategic analysis */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 border border-blue-200">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-              <div className="p-8 lg:p-10">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">Featured Strategic Analysis</span>
-                  <span className="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">$100M+ Opportunity</span>
-                </div>
-                
-                <h3 className="text-2xl font-bold text-gray-800 mb-3">Platform Economics Revolution: Van Line Market Disruption</h3>
-                <p className="text-gray-600 mb-4 text-sm">SmartMoving Software · Strategic Analysis 2025</p>
-                
-                <p className="text-gray-700 mb-6 leading-relaxed">
-                  Conducted systematic industry analysis identifying $100M+ platform economics opportunity to disrupt van line market through strategic positioning, 
-                  network effects, and superior technology experience.
-                </p>
-                
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="text-center p-4 bg-blue-50 rounded-lg border border-blue-200">
-                    <div className="text-2xl font-bold text-blue-600">$100M+</div>
-                    <div className="text-sm text-gray-600">Market Opportunity</div>
-                  </div>
-                  <div className="text-center p-4 bg-green-50 rounded-lg border border-green-200">
-                    <div className="text-2xl font-bold text-green-600">10% vs 25-40%</div>
-                    <div className="text-sm text-gray-600">Disruptive Pricing</div>
-                  </div>
-                </div>
-                
-                <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-gray-800 mb-2">Strategic Analysis Framework:</h4>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Platform Economics</span>
-                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Market Intelligence</span>
-                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Network Effects</span>
-                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Competitive Analysis</span>
-                  </div>
-                </div>
-                
-                <Link href="/projects#smartmoving-van-line-platform-strategy" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                  View Complete Strategic Analysis <ChevronRight className="w-4 h-4 ml-1" />
-                </Link>
-              </div>
-              
-              <div className="bg-gradient-to-br from-blue-600 to-blue-700 p-8 lg:p-10 text-white">
-                <h4 className="text-lg font-semibold mb-6">Strategic Market Analysis Process</h4>
-                
-                <div className="space-y-4 mb-6">
-                  <div className="flex items-start">
-                    <div className="w-2 h-2 rounded-full bg-white mt-2 mr-3 flex-shrink-0"></div>
-                    <p className="text-sm">Conducted trade show intelligence gathering identifying market inefficiencies worth $100M+</p>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="w-2 h-2 rounded-full bg-white mt-2 mr-3 flex-shrink-0"></div>
-                    <p className="text-sm">Analyzed 200,000+ interstate moves for systematic platform economics modeling</p>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="w-2 h-2 rounded-full bg-white mt-2 mr-3 flex-shrink-0"></div>
-                    <p className="text-sm">Identified network effects opportunity leveraging 1000+ company distribution</p>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="w-2 h-2 rounded-full bg-white mt-2 mr-3 flex-shrink-0"></div>
-                    <p className="text-sm">Created strategic partnership framework for DOT compliance and tracking capabilities</p>
-                  </div>
-                </div>
-                
-                <div className="border-t border-white/20 pt-4">
-                  <p className="text-xs text-white/80 italic">
-                    &ldquo;When my boss said &apos;figure out&apos; the van line integration, I identified a potential market transformation 
-                    that could redefine an entire industry segment.&rdquo;
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="text-center mt-12">
-            <Link href="/projects" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-              View All Strategic Market Analysis Case Studies <ChevronRight className="w-4 h-4 ml-1" />
-            </Link>
           </div>
         </div>
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 px-6 bg-gradient-to-r from-blue-700 to-blue-800 text-white">
-        <div className="container mx-auto max-w-5xl text-center">
+      <section id="contact" className="py-16 px-6 bg-gradient-to-r from-blue-800 to-blue-700 text-white">
+        <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold mb-6 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-300">
-            Ready for Strategic Product Leadership?
+            Ready to Drive Platform Transformation?
           </h2>
-          <p className="text-blue-100 mb-10 max-w-xl mx-auto">
-            Let&apos;s discuss how my proven market opportunity identification and $5M+ platform transformation experience can drive 
-            strategic competitive advantages and sustainable business growth for your organization.
-          </p>
+          <p className="text-xl text-blue-100 mb-8">Let&apos;s discuss how strategic market analysis and platform thinking can accelerate your organization&apos;s competitive position.</p>
           
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link 
-              href="/contact"
-              className="px-6 py-3 bg-white text-blue-700 hover:bg-blue-50 rounded-lg transition-colors flex items-center shadow-md"
-            >
-              <Mail className="w-5 h-5 mr-2" /> Discuss Strategic Opportunities
-            </Link>
-            <a 
-              href="/resume.pdf" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 border border-white hover:bg-white/10 rounded-lg transition-colors flex items-center"
-            >
-              <FileText className="w-5 h-5 mr-2" /> Download Resume
+          <div className="flex flex-col sm:flex-row justify-center gap-6">
+            <a href="mailto:gilliamp2@protonmail.com" className="bg-white text-blue-800 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition flex items-center justify-center gap-2">
+              <Mail className="w-5 h-5" />
+              gilliamp2@protonmail.com
+            </a>
+          </div>
+          
+          <div className="mt-8 flex justify-center gap-6">
+            <a href="https://linkedin.com/in/pgilliam2" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-200 transition">
+              <Linkedin className="w-6 h-6" />
+            </a>
+            <a href="https://github.com/gilliamp-official" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-200 transition">
+              <Github className="w-6 h-6" />
             </a>
           </div>
         </div>
