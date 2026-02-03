@@ -50,10 +50,6 @@ interface SkillCategory {
 
 interface Skills {
   categories: SkillCategory[];
-  tools: {
-    category: string;
-    items: string[];
-  }[];
   highlights: string[];
 }
 

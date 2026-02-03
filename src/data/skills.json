@@ -1,376 +1,270 @@
 {
   "categories": [
     {
-      "id": "ai",
-      "name": "AI & Machine Learning",
-      "description": "AI literacy and implementation expertise - critical for 2024 PM roles",
-      "icon": "brain",
+      "id": "strategic",
+      "name": "Strategic Leadership",
+      "description": "Market opportunity identification and competitive advantage creation - core VP/CPO capabilities",
+      "icon": "chess-king",
       "skills": [
         {
-          "name": "AI/ML Strategy & Implementation",
-          "level": 91,
-          "description": "Leading AI-powered product initiatives that deliver measurable business impact",
+          "name": "Market Category Creation & Opportunity Identification",
+          "level": 95,
+          "description": "Identifying and creating new market categories that establish sustainable competitive advantages",
+          "usedAt": ["smartmoving", "firststudent", "zebra"],
+          "yearsExperience": "6+",
+          "achievements": [
+            "$100M+ van line market opportunity identified through platform economics analysis",
+            "$1.2M market category created for moving operations intelligence",
+            "First comprehensive analytics platform in moving industry establishing competitive moat"
+          ]
+        },
+        {
+          "name": "Platform Economics & Network Strategy",
+          "level": 92,
+          "description": "Understanding platform business models, network effects, and ecosystem monetization strategies",
+          "usedAt": ["smartmoving", "firststudent"],
+          "yearsExperience": "6+",
+          "achievements": [
+            "Platform consolidation strategy replacing 5 competitor tools with unified solution",
+            "Ecosystem monetization framework for vendor-funded development and co-marketing",
+            "Network effects strategy leveraging 1000+ company distribution across North America"
+          ]
+        },
+        {
+          "name": "Competitive Intelligence & Strategic Analysis",
+          "level": 94,
+          "description": "Systematic competitive analysis identifying market gaps and strategic positioning opportunities",
           "usedAt": ["smartmoving", "zebra", "firststudent"],
-          "yearsExperience": "3+",
+          "yearsExperience": "6+",
           "achievements": [
-            "45% improvement in inventory planning through AI implementation",
-            "AI-powered routing optimization reducing operational overhead by 31%",
-            "Led AI product strategy for Fortune 500 retail clients"
+            "Trade show intelligence gathering identifying $100M+ market inefficiencies in van line economics", 
+            "Systematic customer discovery uncovering market opportunities competitors systematically miss",
+            "Strategic positioning creating competitive moats unavailable from market competitors"
           ]
         },
         {
-          "name": "Large Language Models (LLMs) & Generative AI",
-          "level": 88,
-          "description": "Practical application of LLMs and generative AI in product development",
-          "usedAt": ["zebra", "smartmoving"],
-          "yearsExperience": "2+",
+          "name": "Strategic Customer Discovery & Market Validation",
+          "level": 96,
+          "description": "Systematic customer discovery programs that identify market opportunities and validate strategic direction",
+          "usedAt": ["smartmoving", "zebra", "firststudent"],
+          "yearsExperience": "6+",
           "achievements": [
-            "LLM integration for demand signal interpretation",
-            "AI-powered automation workflows with 30% adoption",
-            "Generative AI features for enterprise clients"
-          ]
-        },
-        {
-          "name": "AI Product Operations & Integration",
-          "level": 90,
-          "description": "Operationalizing AI solutions and integrating them into existing product ecosystems",
-          "usedAt": ["zebra", "smartmoving", "firststudent"],
-          "yearsExperience": "3+",
-          "achievements": [
-            "Azure Cognitive Services automation workflows",
-            "Custom ML pipeline architecture for retail forecasting",
-            "AI-enhanced business intelligence platforms"
-          ]
-        },
-        {
-          "name": "AI Ethics & Responsible AI",
-          "level": 82,
-          "description": "Ensuring ethical AI implementation and addressing bias in AI-powered products",
-          "usedAt": ["zebra", "smartmoving"],
-          "yearsExperience": "2+",
-          "achievements": [
-            "Responsible AI framework for retail planning algorithms",
-            "Bias detection and mitigation in forecasting models",
-            "AI transparency features for enterprise customers"
-          ]
-        },
-        {
-          "name": "AI-Driven Analytics & Insights",
-          "level": 93,
-          "description": "Using AI to extract actionable insights from data and enhance decision-making",
-          "usedAt": ["smartmoving", "zebra", "ezlynx"],
-          "yearsExperience": "4+",
-          "achievements": [
-            "AI-powered analytics solution with $10K ARR",
-            "Predictive analytics improving planning accuracy by 45%",
-            "Machine learning insights driving product roadmap decisions"
+            "25+ monthly executive interviews driving strategic roadmap development and market opportunity identification",
+            "Paid beta strategy generating premium market validation feedback with 100% retention rate",
+            "Customer pattern analysis revealing systematic vendor ecosystem opportunities worth $150K+ ARR"
           ]
         }
       ]
     },
     {
-      "id": "product",
-      "name": "Product Leadership",
-      "description": "Strategic product management and revenue-driving capabilities",
+      "id": "platform",
+      "name": "Platform Strategy & Innovation",
+      "description": "Platform development and ecosystem thinking for sustainable competitive growth",
+      "icon": "network-wired",
+      "skills": [
+        {
+          "name": "API Strategy & Ecosystem Development",
+          "level": 90,
+          "description": "Building strategic API platforms that unlock enterprise markets and enable ecosystem monetization",
+          "usedAt": ["smartmoving", "ezlynx"],
+          "yearsExperience": "5+",
+          "achievements": [
+            "$150K ARR API ecosystem unlocking 10+ enterprise customers and preventing 15+ account churn",
+            "Vendor ecosystem framework enabling co-development partnerships and revenue sharing opportunities",
+            "Integration marketplace generating $350K revenue in 8 months through strategic partner relationships"
+          ]
+        },
+        {
+          "name": "Strategic Partnership Execution & Management",
+          "level": 92,
+          "description": "Executing complex strategic partnerships that create competitive advantages and new revenue streams",
+          "usedAt": ["smartmoving", "zebra", "firststudent"],
+          "yearsExperience": "5+",
+          "achievements": [
+            "FinTech partnership delivering $1M+ weekly transaction volume with first-try audit success (rare achievement)",
+            "Strategic vendor relationships creating development funding opportunities and co-marketing frameworks",
+            "Partnership strategy enabling DOT compliance automation and digital tracking capabilities"
+          ]
+        },
+        {
+          "name": "Revenue Stream Innovation & Development",
+          "level": 93,
+          "description": "Creating new revenue streams through strategic product innovation and market positioning",
+          "usedAt": ["smartmoving", "firststudent", "zebra"],
+          "yearsExperience": "6+",
+          "achievements": [
+            "$5M+ platform transformation creating multiple revenue streams through strategic market positioning",
+            "$1M to $20M revenue scaling through strategic market consolidation and platform advantages",
+            "Data infrastructure monetization strategy enabling future platform growth and competitive differentiation"
+          ]
+        },
+        {
+          "name": "AI Strategy & Strategic Implementation",
+          "level": 88,
+          "description": "Strategic AI implementation that creates competitive advantages and operational excellence before mainstream adoption",
+          "usedAt": ["smartmoving", "zebra", "firststudent"],
+          "yearsExperience": "4+",
+          "achievements": [
+            "AI-powered platform consolidation reducing operational overhead by 31% vs. competitor solutions",
+            "AI-driven inventory planning improving accuracy by 45% for Fortune 500 retailers before GenAI mainstream adoption",
+            "AI product strategy implementation creating sustainable competitive advantages through technology leadership"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "executive",
+      "name": "Executive Leadership",
+      "description": "Strategic leadership and organizational transformation capabilities at enterprise scale",
+      "icon": "crown",
+      "skills": [
+        {
+          "name": "Strategic Team Leadership & Transformation",
+          "level": 94,
+          "description": "Leading large-scale strategic initiatives and organizational transformation through team excellence",
+          "usedAt": ["firststudent", "smartmoving", "zebra"],
+          "yearsExperience": "6+",
+          "achievements": [
+            "40+ engineer team leadership delivering $20M projected revenue platform transformation",
+            "Cross-functional strategic alignment across engineering, sales, and marketing for complex initiatives",
+            "Strategic transformation initiatives creating sustainable competitive advantages and market positioning"
+          ]
+        },
+        {
+          "name": "Executive Stakeholder Management & Communication",
+          "level": 95,
+          "description": "Strategic communication and stakeholder alignment at executive and board levels",
+          "usedAt": ["firststudent", "smartmoving", "zebra"],
+          "yearsExperience": "6+",
+          "achievements": [
+            "Executive presentations to 70,000+ employee organization board leadership with strategic recommendations",
+            "Strategic vision communication enabling data warehouse investment approval and platform transformation",
+            "Cross-functional executive alignment for complex strategic initiatives and market opportunity capture"
+          ]
+        },
+        {
+          "name": "Strategic Decision Making & Business Judgment",
+          "level": 93,
+          "description": "Making complex strategic decisions that balance market opportunities with organizational capabilities",
+          "usedAt": ["smartmoving", "zebra", "firststudent"],
+          "yearsExperience": "6+",
+          "achievements": [
+            "Strategic investment decisions enabling $1.2M+ market opportunity capture through systematic analysis",
+            "Platform vs. feature strategic trade-offs creating sustainable competitive advantages and market differentiation",
+            "Market timing decisions for strategic technology adoption and competitive positioning ahead of industry trends"
+          ]
+        },
+        {
+          "name": "Strategic Vision Development & Execution",
+          "level": 91,
+          "description": "Creating and executing strategic vision that drives organizational transformation and market positioning",
+          "usedAt": ["smartmoving", "zebra", "firststudent"],
+          "yearsExperience": "6+",
+          "achievements": [
+            "Market category vision establishing moving operations intelligence leadership and competitive differentiation",
+            "Platform consolidation vision transforming fragmented transportation market through technology advantages",
+            "Strategic product vision enabling new software division market penetration and enterprise customer acquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "name": "Market Intelligence & Analysis",
+      "description": "Strategic market analysis and competitive positioning expertise for identifying transformation opportunities",
       "icon": "chart-line",
       "skills": [
         {
-          "name": "Product Strategy & Roadmapping",
-          "level": 95,
-          "description": "Developing product vision and strategic roadmaps that drive $20M+ in revenue growth",
-          "usedAt": ["smartmoving", "zebra", "firststudent"],
-          "yearsExperience": "5+",
+          "name": "Market Gap Analysis & Opportunity Assessment",
+          "level": 94,
+          "description": "Systematic market analysis identifying strategic opportunities and competitive vulnerabilities worth millions",
+          "usedAt": ["smartmoving", "firststudent", "zebra"],
+          "yearsExperience": "6+",
           "achievements": [
-            "$2M ACH payments product delivered in 8 months",
-            "$350K ARR OpenAPI platform launched",
-            "$1M→$20M revenue scale for transportation platform"
+            "Van line market inefficiency analysis revealing $100M+ platform disruption opportunity through economics modeling",
+            "Transportation market fragmentation analysis enabling 5-to-1 tool consolidation strategy and competitive advantage",
+            "Analytics market gap identification creating new category for moving operations intelligence and market leadership"
           ]
         },
         {
-          "name": "Revenue Generation & Growth",
+          "name": "Strategic Business Intelligence & Analytics",
           "level": 92,
-          "description": "Identifying and executing product opportunities that directly drive business growth",
-          "usedAt": ["smartmoving", "zebra", "firststudent", "ezlynx"],
-          "yearsExperience": "5+",
+          "description": "Transforming data into strategic insights that drive market positioning and competitive advantage creation",
+          "usedAt": ["smartmoving", "zebra", "ezlynx"],
+          "yearsExperience": "6+",
           "achievements": [
-            "Generated $2.35M+ in documented product revenue",
-            "45% improvement in inventory planning accuracy",
-            "30% automation adoption in 12 weeks"
+            "200,000+ interstate move analysis validating $100M+ market opportunity through systematic data modeling",
+            "Customer pattern analysis revealing systematic vendor ecosystem opportunities generating $150K+ ARR",
+            "Strategic data frameworks enabling market category creation and competitive positioning advantages"
           ]
         },
         {
-          "name": "Customer Research & Discovery",
-          "level": 95,
-          "description": "Conducting deep customer research to inform data-driven product decisions",
-          "usedAt": ["smartmoving", "zebra", "firststudent"],
-          "yearsExperience": "4+",
-          "achievements": [
-            "20+ monthly customer interviews driving roadmap priorities",
-            "Extensive user research identifying market opportunities",
-            "4.5/5 customer satisfaction on delivered products"
-          ]
-        },
-        {
-          "name": "Product Portfolio Management",
+          "name": "Industry Intelligence & Strategic Research",
           "level": 90,
-          "description": "Managing multiple products and features within a cohesive strategy",
+          "description": "Systematic industry research and competitive intelligence gathering for strategic advantage identification",
           "usedAt": ["smartmoving", "zebra", "firststudent"],
-          "yearsExperience": "3+",
+          "yearsExperience": "6+",
           "achievements": [
-            "Managed 3+ product initiatives simultaneously at SmartMoving",
-            "Coordinated product portfolio for new software division at Zebra",
-            "Oversaw 4 applications (2 web, 2 mobile) at First Student"
+            "Trade show intelligence gathering identifying market consolidation opportunities and competitive vulnerabilities",
+            "Industry pattern synthesis revealing competitive gaps and strategic positioning opportunities worth millions",
+            "Systematic competitive analysis enabling platform economics modeling and market transformation strategies"
           ]
         },
         {
-          "name": "Go-to-Market Strategy",
-          "level": 88,
-          "description": "Launching products successfully with coordinated sales and marketing efforts",
-          "usedAt": ["zebra", "smartmoving", "ezlynx"],
-          "yearsExperience": "4+",
+          "name": "Strategic Customer Intelligence & Relationship Development", 
+          "level": 93,
+          "description": "Building systematic customer intelligence programs that inform strategic decision making and opportunity identification",
+          "usedAt": ["smartmoving", "zebra", "firststudent"],
+          "yearsExperience": "6+",
           "achievements": [
-            "Coordinated GTM with sales/marketing teams at Zebra",
-            "Launched 3 major products with successful market adoption",
-            "Built foundational sales pipeline for new product lines"
-          ]
-        },
-        {
-          "name": "Product Operations & Frameworks",
-          "level": 92,
-          "description": "Establishing scalable processes and operational excellence for product teams",
-          "usedAt": ["zebra", "koddi", "ezlynx"],
-          "yearsExperience": "4+",
-          "achievements": [
-            "Established product operations framework for new software division",
-            "Standardized operations pipeline across multiple tools",
-            "20% complexity reduction through process optimization"
+            "25+ monthly executive interviews creating strategic roadmap intelligence and market opportunity identification",
+            "Systematic customer discovery revealing market opportunities competitors systematically miss through strategic frameworks", 
+            "Customer relationship development enabling strategic market validation and competitive positioning advantages"
           ]
         }
       ]
     },
     {
       "id": "technical",
-      "name": "Technical Expertise",
-      "description": "AI integration and technical architecture capabilities",
-      "icon": "code",
+      "name": "Technical Strategy & Architecture",
+      "description": "Strategic technical leadership and platform architecture capabilities enabling competitive advantages",
+      "icon": "cogs",
       "skills": [
         {
-          "name": "API Development & Platform Strategy",
-          "level": 85,
-          "description": "Designing platforms and integrations that enable ecosystem expansion",
-          "usedAt": ["smartmoving", "zebra", "ezlynx"],
-          "yearsExperience": "4+",
-          "achievements": [
-            "$350K ARR OpenAPI platform",
-            "18 provider integrations generating $350K revenue",
-            "RESTful API frameworks for system integration"
-          ]
-        },
-        {
-          "name": "Data Analytics & Business Intelligence",
-          "level": 100,
-          "description": "Transforming data into actionable insights and product intelligence",
-          "usedAt": ["smartmoving", "zebra", "ezlynx"],
-          "yearsExperience": "5+",
-          "achievements": [
-            "Analytics solution with $10K ARR and 50% projected adoption",
-            "PowerBI operations pipeline integration",
-            "Data-driven decision making improving performance 15-30%"
-          ]
-        },
-        {
-          "name": "Technical Architecture & Systems Design",
+          "name": "Platform Architecture & Strategic Systems Design",
           "level": 88,
-          "description": "Designing scalable technical solutions and system architectures",
-          "usedAt": ["firststudent", "zebra", "smartmoving"],
-          "yearsExperience": "3+",
+          "description": "Designing strategic platform architectures that enable competitive advantages and ecosystem growth",
+          "usedAt": ["firststudent", "smartmoving", "zebra"],
+          "yearsExperience": "7+",
           "achievements": [
-            "Architected 4-application transportation platform",
-            "Designed AI-driven inventory planning system architecture",
-            "Led technical integration across multiple payment systems"
+            "Platform consolidation architecture replacing 5 competitor tools with unified solution creating market advantage",
+            "Strategic API platform architecture enabling enterprise market access and ecosystem monetization opportunities",
+            "Data infrastructure strategy enabling future monetization and competitive moats through platform thinking"
           ]
         },
         {
-          "name": "Agile & DevOps Integration",
+          "name": "Strategic Technology Implementation & Integration",
           "level": 85,
-          "description": "Working with engineering teams using modern development practices",
-          "usedAt": ["koddi", "ezlynx", "smartmoving"],
-          "yearsExperience": "4+",
+          "description": "Implementing strategic technology solutions that create competitive advantages and market differentiation",
+          "usedAt": ["smartmoving", "zebra", "firststudent"],
+          "yearsExperience": "7+",
           "achievements": [
-            "Managed 3 scrum teams with 15 developers",
-            "Standardized release pipelines and documentation",
-            "Reduced engineering collaboration complexity by 20%"
+            "FinTech integration strategy delivering $1M+ weekly transaction volume with exceptional compliance execution",
+            "AI technology implementation creating 45% operational improvement advantages before mainstream market adoption",
+            "Strategic technology partnerships enabling platform capabilities unavailable from competitors through vendor relationships"
           ]
         }
       ]
-    },
-    {
-      "id": "leadership",
-      "name": "Leadership & Operations",
-      "description": "Team leadership and cross-functional collaboration skills",
-      "icon": "users",
-      "skills": [
-        {
-          "name": "Cross-Functional Team Leadership",
-          "level": 99,
-          "description": "Building and leading high-performing product teams to deliver results - critical for senior PM roles",
-          "usedAt": ["smartmoving", "zebra", "firststudent"],
-          "yearsExperience": "5+",
-          "achievements": [
-            "Led team of 40+ contractors across multiple projects",
-            "Built high-performing product triad teams",
-            "Managed development across 3 scrum teams with 15 developers"
-          ]
-        },
-        {
-          "name": "Stakeholder Management & Executive Communication",
-          "level": 96,
-          "description": "Aligning executive, technical, and business stakeholders for product success",
-          "usedAt": ["smartmoving", "zebra", "firststudent"],
-          "yearsExperience": "5+",
-          "achievements": [
-            "Executive presentations to 70,000+ employee organization",
-            "Go-to-market coordination with sales and marketing teams",
-            "Cross-functional collaboration delivering integrated solutions"
-          ]
-        },
-        {
-          "name": "People Management & Mentoring",
-          "level": 88,
-          "description": "Developing and managing product managers and cross-functional team members",
-          "usedAt": ["ezlynx", "firststudent", "smartmoving"],
-          "yearsExperience": "3+",
-          "achievements": [
-            "Mentored 3 junior analysts, improving consistency by 15%",
-            "Led 40+ contractor team coordination and development",
-            "Built high-performing product teams from scratch"
-          ]
-        },
-        {
-          "name": "Strategic Decision Making & Problem Solving",
-          "level": 94,
-          "description": "Making complex product decisions that balance technical constraints with business objectives",
-          "usedAt": ["smartmoving", "zebra", "firststudent"],
-          "yearsExperience": "5+",
-          "achievements": [
-            "Navigated complex technical and business trade-offs for $2M+ products",
-            "Solved operational challenges reducing overhead by 20-31%",
-            "Strategic product decisions driving 45% performance improvements"
-          ]
-        },
-        {
-          "name": "Product Vision & Communication",
-          "level": 92,
-          "description": "Communicating compelling product vision that aligns teams and drives execution",
-          "usedAt": ["zebra", "firststudent", "smartmoving"],
-          "yearsExperience": "4+",
-          "achievements": [
-            "Established product vision for new software division",
-            "Communicated strategic vision to 70,000+ employee organization",
-            "Aligned cross-functional teams around product roadmap"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "business",
-      "name": "Business Acumen",
-      "description": "Market analysis and strategic business capabilities",
-      "icon": "briefcase",
-      "skills": [
-        {
-          "name": "B2B SaaS Expertise",
-          "level": 93,
-          "description": "Deep understanding of B2B software business models and growth strategies",
-          "usedAt": ["smartmoving", "zebra", "koddi", "ezlynx"],
-          "yearsExperience": "5+",
-          "achievements": [
-            "Payments integration and API monetization strategies",
-            "Enterprise software positioning and adoption",
-            "SaaS platform scaling and ecosystem development"
-          ]
-        },
-        {
-          "name": "Market Research & Competitive Analysis",
-          "level": 92,
-          "description": "Conducting market research and competitive analysis to identify opportunities",
-          "usedAt": ["zebra", "firststudent", "ezlynx"],
-          "yearsExperience": "4+",
-          "achievements": [
-            "Market analysis driving product requirements alignment",
-            "New vertical development from concept to $20M scale",
-            "Integration marketplace strategy and execution"
-          ]
-        },
-        {
-          "name": "Financial Acumen & Business Metrics",
-          "level": 90,
-          "description": "Understanding financial models, pricing strategies, and business metrics",
-          "usedAt": ["smartmoving", "zebra", "ezlynx"],
-          "yearsExperience": "4+",
-          "achievements": [
-            "Generated $2.35M+ in documented product revenue",
-            "Pricing strategy for payments products and API platforms",
-            "Business case development for $20M+ product initiatives"
-          ]
-        },
-        {
-          "name": "Product Marketing & Positioning",
-          "level": 87,
-          "description": "Positioning products in market and coordinating marketing efforts",
-          "usedAt": ["zebra", "smartmoving", "firststudent"],
-          "yearsExperience": "3+",
-          "achievements": [
-            "Go-to-market coordination with sales and marketing teams",
-            "Product positioning for new software division launch",
-            "Marketing strategy for enterprise and SMB segments"
-          ]
-        },
-        {
-          "name": "Time Management & Prioritization",
-          "level": 95,
-          "description": "Managing multiple competing priorities and deadlines effectively",
-          "usedAt": ["smartmoving", "zebra", "firststudent"],
-          "yearsExperience": "5+",
-          "achievements": [
-            "Managed 3+ product initiatives simultaneously",
-            "Coordinated 40+ contractor teams across projects",
-            "Delivered multiple products on aggressive timelines"
-          ]
-        }
-      ]
-    }
-  ],
-  "tools": [
-    {
-      "category": "AI & Machine Learning",
-      "items": ["Azure Cognitive Services", "OpenAI GPT", "Machine Learning Pipelines", "Python", "TensorFlow", "Azure ML", "LLM APIs"]
-    },
-    {
-      "category": "Product Management",
-      "items": ["Jira", "Confluence", "Figma", "Miro", "ProductBoard", "Aha!", "Linear"]
-    },
-    {
-      "category": "Analytics & Data",
-      "items": ["PowerBI", "Google Analytics", "SQL", "Tableau", "Mixpanel", "Amplitude", "DataBricks"]
-    },
-    {
-      "category": "Development & APIs",
-      "items": ["REST APIs", "OpenAPI", "Postman", "Azure DevOps", "GitHub", "Docker", "Kubernetes"]
-    },
-    {
-      "category": "Business Tools",
-      "items": ["Salesforce", "Freshdesk", "Slack", "Microsoft Office", "Notion", "Airtable"]
     }
   ],
   "highlights": [
-    "Senior Product Manager with 5+ years driving $20M+ in documented revenue",
-    "AI/ML literacy and implementation with proven 31-45% performance improvements",
-    "Proven cross-functional leadership managing 40+ team members across complex projects",
-    "Strategic product portfolio management with 3+ concurrent product initiatives",
-    "Data-driven decision making with customer research (20+ monthly interviews)",
-    "Technical architecture and API platform expertise generating $350K+ ARR",
-    "Go-to-market coordination and stakeholder management at enterprise scale",
-    "Product operations framework development for scaling organizations"
+    "Strategic Product Leader with 6+ years driving $5M+ platform transformation and $100M+ market opportunity identification",
+    "Founded and built first product department in 2019, scaling strategic capabilities across multiple organizations",
+    "Market category creation expert with 6+ years establishing competitive advantages through systematic customer discovery",
+    "Platform economics specialist with 6+ years identifying consolidation opportunities and ecosystem monetization strategies", 
+    "Strategic partnership execution with 5+ years delivering complex FinTech and technology integrations",
+    "Large-scale strategic leadership with 6+ years managing cross-functional transformation initiatives",
+    "Technical architecture foundation with 7+ years enabling strategic platform development and competitive advantages",
+    "Executive stakeholder management with 6+ years of strategic communication at enterprise and board levels"
   ]
 }

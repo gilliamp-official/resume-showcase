@@ -71,45 +71,6 @@ interface ProjectsData {
 
 const typedCaseStudiesData = caseStudiesData as unknown as ProjectsData;
 
-// Screenshot Button Component
-function ScreenshotButton({ caseStudyId, onClick }: { caseStudyId: string; onClick: () => void }) {
-  const { hasScreens, loading } = useScreenshots(caseStudyId);
-  
-  if (loading) {
-    return (
-      <div className="w-full bg-gray-50 border border-gray-200 rounded-xl p-4">
-        <div className="flex items-center gap-3">
-          <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-blue-600"></div>
-          <span className="text-gray-600 text-sm">Checking for screenshots...</span>
-        </div>
-      </div>
-    );
-  }
-  
-  if (!hasScreens) {
-    return null;
-  }
-  
-  return (
-    <button
-      onClick={onClick}
-      className="w-full bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-xl p-4 text-left transition-colors group"
-    >
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <Camera className="w-5 h-5 text-blue-600" />
-          <div>
-            <h4 className="font-bold text-blue-800">Screenshots</h4>
-            <p className="text-sm text-blue-600">View project images</p>
-          </div>
-        </div>
-        <div className="text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity">
-          <span className="text-sm">Protected</span>
-        </div>
-      </div>
-    </button>
-  );
-}
 
 export default function ProjectsPage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -143,6 +104,7 @@ export default function ProjectsPage() {
   }, [caseStudies, filters]);
 
   const currentProject = filteredCaseStudies[currentSlide] || caseStudies[0];
+  const { hasScreens, loading } = useScreenshots(currentProject?.id || '');
 
   const nextSlide = useCallback(() => {
     setCurrentSlide(prev => (prev + 1) % filteredCaseStudies.length);
@@ -510,106 +472,116 @@ export default function ProjectsPage() {
                 </div>
 
                 {/* Center Column - Key Metrics */}
-                <div>
-                  <h3 className="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
-                    <TrendingUp className="w-5 h-5 text-green-600" />
-                    Key Results
-                  </h3>
-                  {currentProject.results?.primaryMetrics && (
-                    <div className="space-y-4">
-                      {currentProject.results.primaryMetrics.slice(0, 4).map((metric, index) => (
-                        <div key={index} className="bg-gradient-to-r from-green-50 to-green-100 rounded-xl p-4 border border-green-200">
-                          <div className="text-2xl font-bold text-green-800 mb-1">{metric.metric}</div>
-                          <div className="text-sm text-green-700">{metric.description}</div>
-                        </div>
-                      ))}
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
+                      <TrendingUp className="w-5 h-5 text-green-600" />
+                      Key Results
+                    </h3>
+                    {currentProject.results?.primaryMetrics && (
+                      <div className="grid grid-cols-2 gap-3">
+                        {currentProject.results.primaryMetrics.slice(0, 4).map((metric, index) => (
+                          <div key={index} className="bg-gradient-to-r from-green-50 to-green-100 rounded-xl p-4 border border-green-200">
+                            <div className="text-xl font-bold text-green-800 mb-1">{metric.metric}</div>
+                            <div className="text-xs text-green-700">{metric.description}</div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Resources Section */}
+                  {(hasScreens || currentProject.marketingLink || loading) && (
+                    <div>
+                      <h3 className="text-lg font-bold text-gray-800 mb-3">Resources</h3>
+                      <div className="space-y-2">
+                        {loading && (
+                          <div className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 flex items-center gap-3">
+                            <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-600"></div>
+                            <span className="text-gray-600 text-sm">Checking for screenshots...</span>
+                          </div>
+                        )}
+                        {!loading && hasScreens && (
+                          <button
+                            onClick={() => setShowScreenshotModal(true)}
+                            className="w-full bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg p-3 text-left transition-colors group flex items-center gap-3"
+                          >
+                            <Camera className="w-4 h-4 text-blue-600" />
+                            <span className="text-sm font-medium text-blue-800">Screenshots</span>
+                          </button>
+                        )}
+                        {currentProject.marketingLink && (
+                          <a
+                            href={currentProject.marketingLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg p-3 text-left transition-colors group flex items-center gap-3"
+                          >
+                            <ExternalLink className="w-4 h-4 text-green-600" />
+                            <span className="text-sm font-medium text-green-800">Marketing Page</span>
+                          </a>
+                        )}
+                      </div>
                     </div>
                   )}
                 </div>
 
-                {/* Right Column - Interactive Elements */}
+                {/* Right Column - Full Story */}
                 <div className="space-y-4">
-                  {/* Screenshot and Marketing Links */}
-                  <ScreenshotButton 
-                    caseStudyId={currentProject.id} 
-                    onClick={() => setShowScreenshotModal(true)}
-                  />
+                  {/* Full Story Section */}
+                  {(currentProject.learnings || currentProject.approach || currentProject.results?.businessImpact) && (
+                    <div>
+                      <h3 className="text-lg font-bold text-gray-800 mb-3">Full Story</h3>
+                      <div className="space-y-3">
+                        {currentProject.learnings && (
+                          <button
+                            onClick={() => setActiveDrawer(activeDrawer === 'learnings' ? null : 'learnings')}
+                            className="w-full bg-purple-50 hover:bg-purple-100 border border-purple-200 rounded-lg p-3 text-left transition-colors group flex items-center justify-between"
+                          >
+                            <div className="flex items-center gap-3">
+                              <Lightbulb className="w-4 h-4 text-purple-600" />
+                              <span className="text-sm font-medium text-purple-800">Key Learnings</span>
+                            </div>
+                            <ChevronDown className={`w-4 h-4 text-purple-600 transition-transform ${activeDrawer === 'learnings' ? 'rotate-180' : ''}`} />
+                          </button>
+                        )}
 
-                  {currentProject.marketingLink && (
-                    <a
-                      href={currentProject.marketingLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full bg-green-50 hover:bg-green-100 border border-green-200 rounded-xl p-4 text-left transition-colors group block"
-                    >
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                          <ExternalLink className="w-5 h-5 text-green-600" />
-                          <div>
-                            <h4 className="font-bold text-green-800">Marketing Page</h4>
-                            <p className="text-sm text-green-600">View public information</p>
-                          </div>
-                        </div>
-                        <div className="text-green-600 opacity-0 group-hover:opacity-100 transition-opacity">
-                          <ExternalLink className="w-4 h-4" />
-                        </div>
-                      </div>
-                    </a>
-                  )}
+                        {currentProject.approach && (
+                          <button
+                            onClick={() => setActiveDrawer(activeDrawer === 'approach' ? null : 'approach')}
+                            className="w-full bg-orange-50 hover:bg-orange-100 border border-orange-200 rounded-lg p-3 text-left transition-colors group flex items-center justify-between"
+                          >
+                            <div className="flex items-center gap-3">
+                              <Wrench className="w-4 h-4 text-orange-600" />
+                              <span className="text-sm font-medium text-orange-800">Approach</span>
+                            </div>
+                            <ChevronDown className={`w-4 h-4 text-orange-600 transition-transform ${activeDrawer === 'approach' ? 'rotate-180' : ''}`} />
+                          </button>
+                        )}
 
-                  {/* Interactive Cards */}
-                  {currentProject.learnings && (
-                    <button
-                      onClick={() => setActiveDrawer(activeDrawer === 'learnings' ? null : 'learnings')}
-                      className="w-full bg-purple-50 hover:bg-purple-100 border border-purple-200 rounded-xl p-4 text-left transition-colors group"
-                    >
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                          <Lightbulb className="w-5 h-5 text-purple-600" />
-                          <div>
-                            <h4 className="font-bold text-purple-800">Key Learnings</h4>
-                            <p className="text-sm text-purple-600">{currentProject.learnings.length} insights</p>
+                        {currentProject.results?.businessImpact && (
+                          <div className="space-y-3">
+                            <button
+                              onClick={() => setActiveDrawer(activeDrawer === 'impact' ? null : 'impact')}
+                              className="w-full bg-green-50 hover:bg-green-100 border border-green-200 rounded-lg p-3 text-left transition-colors group flex items-center justify-between"
+                            >
+                              <div className="flex items-center gap-3">
+                                <MessageCircle className="w-4 h-4 text-green-600" />
+                                <span className="text-sm font-medium text-green-800">Business Impact</span>
+                              </div>
+                              <ChevronDown className={`w-4 h-4 text-green-600 transition-transform ${activeDrawer === 'impact' ? 'rotate-180' : ''}`} />
+                            </button>
+                            <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                              <p className="text-sm text-green-700 leading-relaxed">
+                                {currentProject.results.businessImpact.length > 200 
+                                  ? `${currentProject.results.businessImpact.substring(0, 200)}...` 
+                                  : currentProject.results.businessImpact}
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                        <ChevronDown className={`w-4 h-4 text-purple-600 transition-transform ${activeDrawer === 'learnings' ? 'rotate-180' : ''}`} />
+                        )}
                       </div>
-                    </button>
-                  )}
-
-                  {currentProject.approach && (
-                    <button
-                      onClick={() => setActiveDrawer(activeDrawer === 'approach' ? null : 'approach')}
-                      className="w-full bg-orange-50 hover:bg-orange-100 border border-orange-200 rounded-xl p-4 text-left transition-colors"
-                    >
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                          <Wrench className="w-5 h-5 text-orange-600" />
-                          <div>
-                            <h4 className="font-bold text-orange-800">Approach</h4>
-                            <p className="text-sm text-orange-600">{currentProject.approach.methodology?.length || 0} methods</p>
-                          </div>
-                        </div>
-                        <ChevronDown className={`w-4 h-4 text-orange-600 transition-transform ${activeDrawer === 'approach' ? 'rotate-180' : ''}`} />
-                      </div>
-                    </button>
-                  )}
-
-                  {currentProject.results?.businessImpact && (
-                    <button
-                      onClick={() => setActiveDrawer(activeDrawer === 'impact' ? null : 'impact')}
-                      className="w-full bg-green-50 hover:bg-green-100 border border-green-200 rounded-xl p-4 text-left transition-colors"
-                    >
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                          <MessageCircle className="w-5 h-5 text-green-600" />
-                          <div>
-                            <h4 className="font-bold text-green-800">Business Impact</h4>
-                            <p className="text-sm text-green-600">Full story</p>
-                          </div>
-                        </div>
-                        <ChevronDown className={`w-4 h-4 text-green-600 transition-transform ${activeDrawer === 'impact' ? 'rotate-180' : ''}`} />
-                      </div>
-                    </button>
+                    </div>
                   )}
 
                   {currentProject.technologies && (

@@ -142,66 +142,16 @@ export default function SkillsPage() {
 
             {/* Right Sidebar */}
             <div className="lg:col-span-1">
-              {/* Tools & Technologies */}
+              {/* Skills Highlights */}
               <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200 sticky top-4">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">Tools & Technologies</h3>
-                
-                {(() => {
-                  if (!categoryFilter) {
-                    // Show all tools when no filter is selected
-                    return (
-                      <div className="space-y-4">
-                        {skillsData.tools.map(toolCategory => (
-                          <div key={toolCategory.category}>
-                            <h4 className="text-sm font-semibold text-blue-600 mb-2">{toolCategory.category}</h4>
-                            <div className="flex flex-wrap gap-1">
-                              {toolCategory.items.map(tool => (
-                                <span key={tool} className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">
-                                  {tool}
-                                </span>
-                              ))}
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    );
-                  } else {
-                    // Show relevant tools for the selected category
-                    const categoryToolMap: Record<string, string[]> = {
-                      'AI & Machine Learning': ['AI & Machine Learning'],
-                      'Product Leadership': ['Product Management'],
-                      'Technical Expertise': ['Development & APIs', 'Analytics & Data'],
-                      'Leadership & Operations': ['Business Tools', 'Product Management'],
-                      'Business Acumen': ['Business Tools', 'Analytics & Data']
-                    };
-                    
-                    const relevantToolCategories = categoryToolMap[categoryFilter] || [];
-                    const filteredTools = skillsData.tools.filter(toolCategory => 
-                      relevantToolCategories.includes(toolCategory.category)
-                    );
-
-                    return filteredTools.length > 0 ? (
-                      <div className="space-y-4">
-                        {filteredTools.map(toolCategory => (
-                          <div key={toolCategory.category}>
-                            <h4 className="text-sm font-semibold text-blue-600 mb-2">{toolCategory.category}</h4>
-                            <div className="flex flex-wrap gap-1">
-                              {toolCategory.items.map(tool => (
-                                <span key={tool} className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">
-                                  {tool}
-                                </span>
-                              ))}
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    ) : (
-                      <div className="text-center text-gray-500 py-4">
-                        <p className="text-sm">No tools mapped to {categoryFilter}</p>
-                      </div>
-                    );
-                  }
-                })()}
+                <h3 className="text-lg font-bold text-gray-900 mb-4">Key Highlights</h3>
+                <div className="space-y-3">
+                  {skillsData.highlights.map((highlight, index) => (
+                    <div key={index} className="text-sm text-gray-700 leading-relaxed">
+                      {highlight}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

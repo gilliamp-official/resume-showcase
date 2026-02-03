@@ -8,8 +8,6 @@ import { ArrowDown, FileText, Mail, ChevronRight } from 'lucide-react';
 import profileData from '@/data/profile.json';
 import experienceData from '@/data/experience.json';
 
-
-
 export default function Home() {
   // Get latest job
   const latestJob = experienceData.experience[0];
@@ -31,18 +29,18 @@ export default function Home() {
         
         <div className="relative z-10 text-center px-6 max-w-4xl flex flex-col items-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">{profileData.basics.name}</h1>
-          <p className="text-xl md:text-2xl font-light text-white/90 mb-8">AI Product Leader - $5M+ Revenue Growth</p>
+          <p className="text-xl md:text-2xl font-light text-white/90 mb-8">Strategic Product Leader - Platform Innovation & Market Category Creation</p>
           <p className="text-lg text-white/80 mb-10 leading-relaxed">
-            I lead AI-powered product strategies that deliver measurable business impact for Fortune 500 companies. 
-            Specializing in custom ML solutions, LLM integration, and transforming enterprise operations through intelligent automation.
+            I identify and capture untapped market opportunities through strategic platform thinking that creates sustainable competitive advantages. 
+            Specializing in market category creation, platform economics, and transforming $100M+ opportunities into strategic business value.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-16">
             <Link href="/about" className="px-8 py-3 bg-white text-blue-700 rounded-full font-medium hover:bg-blue-50 transition-colors shadow-lg">
-              View My Impact
+              View Strategic Impact
             </Link>
             <Link href="/contact" className="px-8 py-3 border border-white text-white rounded-full font-medium hover:bg-white/10 transition-colors">
-              Let&apos;s Talk Revenue
+              Discuss Market Opportunities
             </Link>
           </div>
           
@@ -52,11 +50,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Revenue Impact Overview */}
+      {/* Strategic Impact Overview */}
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold text-center mb-16 text-gray-900 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-blue-600">
-            Proven Revenue Results
+            Strategic Market Impact
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -74,51 +72,51 @@ export default function Home() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">$5M+ in Product Revenue</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">$5M+ Platform Transformation + $100M+ Market Opportunities</h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Based in {profileData.basics.location}, I specialize in building AI-powered B2B SaaS products that generate substantial revenue growth. 
-                My approach combines deep technical expertise with customer-centric development to deliver solutions that solve real business problems.
+                Based in {profileData.basics.location}, I specialize in identifying untapped market opportunities and building strategic platforms that create sustainable competitive advantages. 
+                My approach combines systematic market analysis with platform economics thinking to capture opportunities competitors systematically miss.
               </p>
               
-              <h4 className="text-lg font-semibold text-gray-800 mb-3">Recent Revenue Achievements</h4>
+              <h4 className="text-lg font-semibold text-gray-800 mb-3">Strategic Market Achievements</h4>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
                   <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                     <div className="w-2.5 h-2.5 rounded-full bg-green-600"></div>
                   </div>
-                  <span className="text-gray-700"><strong>$2M ACH payments product</strong> delivered in 8 months at SmartMoving</span>
+                  <span className="text-gray-700"><strong>$100M+ van line market opportunity</strong> identified through platform economics analysis</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                     <div className="w-2.5 h-2.5 rounded-full bg-green-600"></div>
                   </div>
-                  <span className="text-gray-700"><strong>$350K ARR OpenAPI platform</strong> enabling ecosystem expansion</span>
+                  <span className="text-gray-700"><strong>$1.2M market category created</strong> for moving operations intelligence</span>
                 </li>
                 <li className="flex items-start">
                   <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                     <div className="w-2.5 h-2.5 rounded-full bg-green-600"></div>
                   </div>
-                  <span className="text-gray-700"><strong>$1M→$5M revenue scale</strong> for transportation platform at First Student</span>
+                  <span className="text-gray-700"><strong>$5M+ platform transformation</strong> creating multiple revenue streams and ecosystem advantages</span>
                 </li>
               </ul>
               
               <Link href="/experience" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                View Complete Revenue History <ChevronRight className="w-4 h-4 ml-1" />
+                View Complete Strategic Impact <ChevronRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Current Role Impact */}
+      {/* Current Strategic Role */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-gray-900 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-600">
-              Current Impact at SmartMoving
+              Current Strategic Leadership at SmartMoving
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Leading product strategy for high-growth B2B SaaS platform, driving revenue through AI-powered solutions
+              Leading platform transformation and market category creation for high-growth B2B SaaS platform
             </p>
           </div>
           
@@ -139,7 +137,7 @@ export default function Home() {
               </p>
               
               <div className="mb-6">
-                <h4 className="text-lg font-semibold text-gray-800 mb-3">Key Revenue Achievements</h4>
+                <h4 className="text-lg font-semibold text-gray-800 mb-3">Strategic Market Achievements</h4>
                 <ul className="space-y-2">
                   {latestJob.achievements.map((achievement, index) => (
                     <li key={index} className="flex items-start">
@@ -153,7 +151,7 @@ export default function Home() {
               </div>
               
               <div className="flex flex-wrap gap-2 mb-8">
-                {latestJob.skills.slice(0, 5).map((skill, index) => (
+                {["Market Category Creation", "Platform Economics", "Strategic Analysis", "Competitive Intelligence", "Revenue Stream Innovation"].map((skill, index) => (
                   <span key={index} className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
                     {skill}
                   </span>
@@ -162,7 +160,7 @@ export default function Home() {
               
               <div className="text-center">
                 <Link href="/experience" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                  See Complete Experience History <ChevronRight className="w-4 h-4 ml-1" />
+                  See Complete Strategic Experience <ChevronRight className="w-4 h-4 ml-1" />
                 </Link>
               </div>
             </div>
@@ -170,140 +168,140 @@ export default function Home() {
         </div>
       </section>
 
-      {/* AI Leadership Expertise */}
+      {/* Strategic Capabilities */}
       <section className="py-20 px-6 bg-white">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-gray-900 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-600">
-              AI Product Leadership
+              Strategic Leadership Capabilities
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Leading AI-powered product strategies that deliver measurable business impact and revenue growth
+              Core VP/CPO capabilities that identify and capture market opportunities creating sustainable competitive advantages
             </p>
           </div>
           
-          {/* Top 3 AI skills cards */}
+          {/* Top 3 strategic capabilities */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <div className="relative bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-blue-200">
               <span className="absolute top-4 right-4 px-3 py-0.5 text-xs font-semibold bg-blue-600 text-white rounded-full leading-tight max-w-fit">
-                3+ years
+                6+ years
               </span>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">AI/ML Strategy & Implementation</h3>
-              <p className="text-gray-600 mb-4">Leading AI-powered product initiatives that deliver measurable business impact</p>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">Market Category Creation</h3>
+              <p className="text-gray-600 mb-4">Identifying and creating new market categories that establish sustainable competitive advantages</p>
               <div className="text-sm text-blue-700 font-medium mb-1">Key Achievement:</div>
-              <p className="text-sm text-gray-600">45% improvement in inventory planning through AI implementation</p>
+              <p className="text-sm text-gray-600">$1.2M market category created for moving operations intelligence</p>
             </div>
 
             <div className="relative bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-blue-200">
               <span className="absolute top-4 right-4 px-3 py-0.5 text-xs font-semibold bg-blue-600 text-white rounded-full leading-tight max-w-fit">
-                3+ years
+                6+ years
               </span>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">AI Product Operations & Integration</h3>
-              <p className="text-gray-600 mb-4">Operationalizing AI solutions and integrating them into existing product ecosystems</p>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">Platform Economics & Strategy</h3>
+              <p className="text-gray-600 mb-4">Understanding platform business models, network effects, and ecosystem monetization strategies</p>
               <div className="text-sm text-blue-700 font-medium mb-1">Key Achievement:</div>
-              <p className="text-sm text-gray-600">Custom ML pipeline architecture for retail forecasting</p>
+              <p className="text-sm text-gray-600">$100M+ van line market disruption opportunity through platform economics analysis</p>
             </div>
 
             <div className="relative bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow border border-blue-200">
               <span className="absolute top-4 right-4 px-3 py-0.5 text-xs font-semibold bg-blue-600 text-white rounded-full leading-tight max-w-fit">
-                2+ years
+                6+ years
               </span>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">LLMs & Generative AI</h3>
-              <p className="text-gray-600 mb-4">Practical application of LLMs and generative AI in product development</p>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">Strategic Customer Discovery</h3>
+              <p className="text-gray-600 mb-4">Systematic customer discovery programs that identify market opportunities and validate strategic direction</p>
               <div className="text-sm text-blue-700 font-medium mb-1">Key Achievement:</div>
-              <p className="text-sm text-gray-600">AI-powered automation workflows with 30% adoption</p>
+              <p className="text-sm text-gray-600">25+ monthly executive interviews revealing opportunities competitors systematically miss</p>
             </div>
           </div>
           
           <div className="text-center">
             <Link href="/skills" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-              Explore All AI & Technical Capabilities <ChevronRight className="w-4 h-4 ml-1" />
+              Explore All Strategic Leadership Capabilities <ChevronRight className="w-4 h-4 ml-1" />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Featured AI Case Study */}
+      {/* Featured Strategic Case Study */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-gray-900 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-600">
-              AI Product Leadership in Action
+              Strategic Leadership in Action
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Transforming Fortune 500 retail operations through custom AI/ML solutions and strategic product leadership
+              Transforming market opportunities through systematic analysis and strategic platform thinking
             </p>
           </div>
           
-          {/* Highlight the top AI case study */}
+          {/* Highlight the van line strategic analysis */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8 border border-blue-200">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
               <div className="p-8 lg:p-10">
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">Featured AI Case Study</span>
-                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">Fortune 500</span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">Featured Strategic Analysis</span>
+                  <span className="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">$100M+ Opportunity</span>
                 </div>
                 
-                <h3 className="text-2xl font-bold text-gray-800 mb-3">AI-Driven Inventory Planning Revolution</h3>
-                <p className="text-gray-600 mb-4 text-sm">Zebra Technologies · Nov 2022 – Jan 2024</p>
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">Platform Economics Revolution: Van Line Market Disruption</h3>
+                <p className="text-gray-600 mb-4 text-sm">SmartMoving Software · Strategic Analysis 2025</p>
                 
                 <p className="text-gray-700 mb-6 leading-relaxed">
-                  Led the development of custom ML forecasting systems that eliminated spreadsheet-based planning for Fortune 500 retailers, 
-                  implementing LLM-powered insights and automated data pipelines.
+                  Conducted systematic industry analysis identifying $100M+ platform economics opportunity to disrupt van line market through strategic positioning, 
+                  network effects, and superior technology experience.
                 </p>
                 
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="text-center p-4 bg-blue-50 rounded-lg border border-blue-200">
-                    <div className="text-2xl font-bold text-blue-600">45%</div>
-                    <div className="text-sm text-gray-600">Planning Accuracy</div>
+                    <div className="text-2xl font-bold text-blue-600">$100M+</div>
+                    <div className="text-sm text-gray-600">Market Opportunity</div>
                   </div>
                   <div className="text-center p-4 bg-green-50 rounded-lg border border-green-200">
-                    <div className="text-2xl font-bold text-green-600">$4M</div>
-                    <div className="text-sm text-gray-600">Client Savings</div>
+                    <div className="text-2xl font-bold text-green-600">10% vs 25-40%</div>
+                    <div className="text-sm text-gray-600">Disruptive Pricing</div>
                   </div>
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-gray-800 mb-2">AI/ML Technologies Used:</h4>
+                  <h4 className="text-sm font-semibold text-gray-800 mb-2">Strategic Analysis Framework:</h4>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Custom ML Pipelines</span>
-                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">LLM Integration</span>
-                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">YAML ETL</span>
-                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Predictive Analytics</span>
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Platform Economics</span>
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Market Intelligence</span>
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Network Effects</span>
+                    <span className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">Competitive Analysis</span>
                   </div>
                 </div>
                 
-                <Link href="/projects#project-ai-inventory-planning" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-                  View Complete AI Case Study <ChevronRight className="w-4 h-4 ml-1" />
+                <Link href="/projects#smartmoving-van-line-platform-strategy" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                  View Complete Strategic Analysis <ChevronRight className="w-4 h-4 ml-1" />
                 </Link>
               </div>
               
               <div className="bg-gradient-to-br from-blue-600 to-blue-700 p-8 lg:p-10 text-white">
-                <h4 className="text-lg font-semibold mb-6">AI Product Management Impact</h4>
+                <h4 className="text-lg font-semibold mb-6">Strategic Market Analysis Process</h4>
                 
                 <div className="space-y-4 mb-6">
                   <div className="flex items-start">
                     <div className="w-2 h-2 rounded-full bg-white mt-2 mr-3 flex-shrink-0"></div>
-                    <p className="text-sm">Conducted deep customer discovery with retail planners to identify AI automation opportunities</p>
+                    <p className="text-sm">Conducted trade show intelligence gathering identifying market inefficiencies worth $100M+</p>
                   </div>
                   <div className="flex items-start">
                     <div className="w-2 h-2 rounded-full bg-white mt-2 mr-3 flex-shrink-0"></div>
-                    <p className="text-sm">Designed custom ML pipeline architecture tailored to Fortune 500 data patterns</p>
+                    <p className="text-sm">Analyzed 200,000+ interstate moves for systematic platform economics modeling</p>
                   </div>
                   <div className="flex items-start">
                     <div className="w-2 h-2 rounded-full bg-white mt-2 mr-3 flex-shrink-0"></div>
-                    <p className="text-sm">Integrated LLMs to bridge complex data interpretation with human decision-making</p>
+                    <p className="text-sm">Identified network effects opportunity leveraging 1000+ company distribution</p>
                   </div>
                   <div className="flex items-start">
                     <div className="w-2 h-2 rounded-full bg-white mt-2 mr-3 flex-shrink-0"></div>
-                    <p className="text-sm">Delivered measurable ROI through 80% reduction in manual planning time</p>
+                    <p className="text-sm">Created strategic partnership framework for DOT compliance and tracking capabilities</p>
                   </div>
                 </div>
                 
                 <div className="border-t border-white/20 pt-4">
                   <p className="text-xs text-white/80 italic">
-                    &ldquo;This project showcases the strategic intersection of AI technology and product management, 
-                    delivering enterprise value through customer-centric ML solutions.&rdquo;
+                    &ldquo;When my boss said &apos;figure out&apos; the van line integration, I identified a potential market transformation 
+                    that could redefine an entire industry segment.&rdquo;
                   </p>
                 </div>
               </div>
@@ -312,7 +310,7 @@ export default function Home() {
           
           <div className="text-center mt-12">
             <Link href="/projects" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
-              View All AI & Product Innovation Case Studies <ChevronRight className="w-4 h-4 ml-1" />
+              View All Strategic Market Analysis Case Studies <ChevronRight className="w-4 h-4 ml-1" />
             </Link>
           </div>
         </div>
@@ -322,11 +320,11 @@ export default function Home() {
       <section className="py-16 px-6 bg-gradient-to-r from-blue-700 to-blue-800 text-white">
         <div className="container mx-auto max-w-5xl text-center">
           <h2 className="text-3xl font-bold mb-6 relative pb-4 inline-block after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:w-full after:h-1 after:bg-blue-300">
-            Ready to Scale with AI Product Leadership?
+            Ready for Strategic Product Leadership?
           </h2>
           <p className="text-blue-100 mb-10 max-w-xl mx-auto">
-            Let&apos;s discuss how my proven AI/ML expertise and $5M+ in product revenue can transform your business 
-            through intelligent automation, custom ML solutions, and strategic product innovation.
+            Let&apos;s discuss how my proven market opportunity identification and $5M+ platform transformation experience can drive 
+            strategic competitive advantages and sustainable business growth for your organization.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
@@ -334,7 +332,7 @@ export default function Home() {
               href="/contact"
               className="px-6 py-3 bg-white text-blue-700 hover:bg-blue-50 rounded-lg transition-colors flex items-center shadow-md"
             >
-              <Mail className="w-5 h-5 mr-2" /> Discuss Revenue Opportunities
+              <Mail className="w-5 h-5 mr-2" /> Discuss Strategic Opportunities
             </Link>
             <a 
               href="/resume.pdf" 
