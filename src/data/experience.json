@@ -8,25 +8,27 @@
       "location": "Dallas, Texas, United States",
       "type": "Hybrid",
       "startDate": "Jan 2024",
-      "endDate": "Present",
-      "duration": "1 yr 8 mos",
-      "description": "Drive platform transformation and market category expansion for moving operations software, identifying untapped opportunities and building sustainable competitive advantages serving 8,000+ users.",
+      "endDate": "Jan 2026",
+      "duration": "2 yrs",
+      "description": "Built full-stack prototypes, validated market opportunities, and drove $5M+ in revenue growth through technical execution and systematic customer discovery.",
       "achievements": [
-        "Transformed traditional SaaS into differentiated platform ecosystem through $2M ACH payment infrastructure, analytics licensing, and API marketplace development",
-        "Generated $150K ARR through strategic API ecosystem development, creating new revenue streams and competitive moats unavailable from market competitors",
-        "Built and personally sold analytics platform achieving 100% enterprise beta retention rate, establishing new market category for moving operations intelligence",
-        "Established systematic customer discovery program with 25+ monthly executive interviews, uncovering multi-million dollar market opportunities competitors systematically miss",
-        "Identified $100M+ van line market opportunity through platform economics analysis, demonstrating strategic market positioning capabilities"
+        "Built & validated Smart Insights: Developed full-stack analytics prototype in Azure using AI-assisted development, tested with customers, achieved 100% paid beta retention validating $1.2M market opportunity—all before engineering resources committed",
+        "End-to-end ownership: Built ACH payment system handling $10M+ transactions, personally sold analytics platform to enterprise customers, launched API marketplace generating $150K ARR",
+        "Technical PM skills: Coded prototypes, deployed to Azure, managed cloud infrastructure, integrated with data warehouses—then partnered with sales and marketing to bring solutions to market",
+        "Systematic discovery: Conducted 200+ customer interviews identifying opportunities competitors miss, including $100M vanlines market and embedded analytics category",
+        "Cross-functional collaboration: Worked closely with engineering, sales, and marketing teams to validate ideas quickly and ship products customers actually wanted"
       ],
       "skills": [
-        "Platform Strategy",
-        "Market Category Creation",
-        "Revenue Stream Development",
-        "Competitive Intelligence",
+        "Full-Stack Development",
+        "Azure Cloud Platform",
+        "AI-Assisted Development",
+        "Rapid Prototyping",
         "Customer Discovery",
-        "Platform Economics",
-        "Strategic Analysis",
-        "Enterprise Sales"
+        "B2B SaaS",
+        "Payment Systems",
+        "API Development",
+        "Cross-Functional Leadership",
+        "GTM Execution"
       ]
     },
     {
@@ -39,8 +41,9 @@
       "startDate": "Nov 2022",
       "endDate": "Jan 2024",
       "duration": "1 yr 3 mos",
-      "description": "Led market opportunity assessment and competitive positioning for newly formed retail technology business unit, conducting strategic analysis for AI-driven inventory planning platform in enterprise market.",
+      "description": "Led market opportunity assessment and competitive positioning for retail technology business unit. Successfully tested AI-driven assortment model reducing manual assortment manipulation by 19%.",
       "achievements": [
+        "Successfully tested AI-driven assortment model reducing manual assortment manipulation by 19%, validating product-market fit for enterprise retail clients",
         "Conducted comprehensive customer discovery with fashion retail executives to validate AI-driven inventory planning platform opportunity and establish competitive differentiation strategy",
         "Designed strategic ETL pipeline architecture for enterprise client onboarding through systematic market gap analysis and customer workflow optimization",
         "Established product management frameworks and competitive positioning strategies for business unit market penetration in retail technology sector",
@@ -65,10 +68,11 @@
       "location": "Remote",
       "type": "Remote",
       "startDate": "Jun 2022",
-      "endDate": "Dec 2022",
-      "duration": "7 mos",
-      "description": "Enhanced digital advertising platform strategy for enterprise clients including Kroger and Hotels.com, focusing on competitive optimization and strategic customer discovery.",
+      "endDate": "Nov 2022",
+      "duration": "6 mos",
+      "description": "Enhanced digital advertising platform for enterprise clients including Booking.com and Hotels.com, creating workflows that dramatically improved efficiency and targeting.",
       "achievements": [
+        "Created ad creation workflow for Booking.com saving hotel users 20 minutes per session with 21% improved targeting rate",
         "Conducted strategic customer discovery with enterprise advertising stakeholders to identify platform optimization opportunities and competitive positioning gaps",
         "Reduced platform complexity through systematic customer feedback analysis and competitive benchmarking for major enterprise clients",
         "Implemented customer-driven strategic frameworks optimizing enterprise-scale advertising operations and stakeholder relationships"
@@ -76,10 +80,10 @@
       "skills": [
         "Enterprise Platform Strategy",
         "Customer Discovery",
+        "Workflow Optimization",
         "Competitive Analysis",
         "Strategic Optimization",
-        "Stakeholder Management",
-        "Platform Simplification"
+        "Stakeholder Management"
       ]
     },
     {
@@ -92,16 +96,18 @@
       "startDate": "Sep 2021",
       "endDate": "Jun 2022",
       "duration": "10 mos",
-      "description": "Identified critical market category opportunity in transportation technology and built comprehensive platform consolidation strategy creating sustainable competitive advantage for 5,000+ daily operations.",
+      "description": "Led platform consolidation strategy coordinating 40+ engineers to deliver unified transportation solution replacing 5 fragmented competitor tools.",
       "achievements": [
         "Identified strategic market gap where competitors required 5 separate tools with $300 manual labor per dispatch operation, creating massive consolidation opportunity",
         "Built unified platform strategy creating competitive advantage through technology consolidation, generating $1M initial revenue scaling to $20M projected",
         "Conducted extensive customer discovery and operational site visits with transportation executives to understand market dynamics and competitive landscape vulnerabilities",
-        "Managed 40+ strategic contractor relationships and stakeholder ecosystem to deliver market-differentiating technology innovation"
+        "Managed 40+ strategic contractor relationships and stakeholder ecosystem to deliver market-differentiating technology innovation",
+        "Partnered with engineering teams and Thoughtworks consultants to deliver modern web and mobile applications with 60% operational efficiency improvement"
       ],
       "skills": [
-        "Market Gap Analysis",
         "Platform Consolidation Strategy",
+        "Large-Scale Team Leadership",
+        "Market Gap Analysis",
         "Competitive Advantage Creation",
         "Strategic Customer Discovery",
         "Stakeholder Ecosystem Management",
@@ -119,7 +125,7 @@
       "startDate": "Aug 2020",
       "endDate": "Sep 2021",
       "duration": "1 yr 2 mos",
-      "description": "Enhanced core insurance platform and built revenue-scaling marketplace through competitive analysis and strategic customer discovery, leading cross-functional teams and establishing analytical frameworks.",
+      "description": "Enhanced core insurance platform and built revenue-scaling marketplace through competitive analysis and strategic customer discovery.",
       "achievements": [
         "Enhanced core insurance platform through systematic customer discovery and competitive gap analysis, improving operational efficiency for nationwide agency network",
         "Built strategic vendor integration marketplace enabling scalable revenue growth through competitor analysis and strategic customer needs assessment",
@@ -145,7 +151,7 @@
       "startDate": "Aug 2019",
       "endDate": "Aug 2020",
       "duration": "1 yr 1 mo",
-      "description": "Scaled educational technology platform to 1000+ districts through systematic customer discovery and competitive positioning, establishing operational excellence and strategic frameworks.",
+      "description": "Scaled educational technology platform to 1000+ districts through systematic customer discovery and operational excellence.",
       "achievements": [
         "Scaled operations to 1000+ districts through systematic customer discovery meetings with operational executive teams and strategic stakeholder development",
         "Reduced operational complexity by 30% and increased satisfaction by 15% through customer feedback analysis and competitive benchmarking",
@@ -171,7 +177,7 @@
       "startDate": "Jun 2018",
       "endDate": "Aug 2020",
       "duration": "2 yr 6 mos",
-      "description": "Established technical product leadership and cross-functional engineering collaboration for transportation software solutions, building foundational systems architecture.",
+      "description": "Established technical product leadership and cross-functional engineering collaboration for transportation software solutions.",
       "achievements": [
         "Established technical product strategy and engineering implementation frameworks for core platform development",
         "Built strategic API architecture and system integration requirements enabling scalable platform expansion",
