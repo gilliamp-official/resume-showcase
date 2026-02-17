@@ -19,9 +19,11 @@ export default function Home() {
         
         <div className="relative z-10 text-center px-6 max-w-4xl flex flex-col items-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">Paul Gilliam</h1>
-          <h2 className="text-2xl font-light text-white/90 mb-6">Analytics & Solutions Leader | Transportation & B2B SaaS</h2>
+          <h2 className="text-2xl font-light text-white/90 mb-6">
+            Turning Data Into Clear Stories That Drive Decisions
+          </h2>
           <p className="text-xl text-white/80 mb-10 leading-relaxed">
-          I use data to prove value before companies spend millions building. Through analytics, forecasting models, and systematic business validation, I turn technical possibilities into revenue-generating realities.
+            Every dataset has a story. I find it, tell it, and help businesses move forward with it.
           </p>
           
           <div className="flex flex-wrap justify-center gap-8 text-center mb-10">
@@ -35,11 +37,11 @@ export default function Home() {
             </div>
             <div>
               <div className="text-3xl font-bold text-white">$1.2M</div>
-              <div className="text-sm text-white/80">Market Validated Through Data</div>
+              <div className="text-sm text-white/80">Market Capitalized Through Data</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-white">200+</div>
-              <div className="text-sm text-white/80">Business Validation Sessions</div>
+              <div className="text-sm text-white/80">Customer Discovery Interviews</div>
             </div>
           </div>
           
@@ -97,11 +99,11 @@ export default function Home() {
                 <Code className="w-12 h-12" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-center">Technical Implementation</h3>
-              <p className="text-gray-600 mb-4 text-center">Deep expertise with Snowflake, Azure ML/AI, Power BI, Python. I don't just recommend tools—I architect data warehouses, build ETL pipelines, deploy cloud solutions, and create the analytics that drive decisions.</p>
+              <p className="text-gray-600 mb-4 text-center">Deep expertise with Snowflake, Azure Data Products, Power BI, Python, and Sigam Computing. I don&apos;t just recommend tools, I architect data warehouses, build ETL pipelines, deploy cloud solutions, and create the analytics that drive decisions.</p>
               <ul className="text-sm text-gray-500 space-y-1">
                 <li>Snowflake data architecture</li>
-                <li>Azure ML/AI deployment</li>
-                <li>ETL pipeline development</li>
+                <li>Azure Data Factory Development</li>
+                <li>Databricks AI/ML</li>
               </ul>
             </div>
           </div>
@@ -127,15 +129,15 @@ export default function Home() {
               <div className="space-y-4 text-gray-700">
                 <div>
                   <div className="font-semibold mb-1">Snowflake</div>
-                  <p className="text-sm text-gray-600">Owned and managed SmartMoving's data warehouse. Built custom data models, optimized queries, architected data integration strategy.</p>
+                  <p className="text-sm text-gray-600">Owned and managed SmartMoving&apos;s data warehouse. Built custom data models, optimized queries, architected data integration strategy.</p>
                 </div>
                 <div>
                   <div className="font-semibold mb-1">Azure (Synapse, Data Factory, Foundry)</div>
-                  <p className="text-sm text-gray-600">Deployed full-stack analytics applications, built ETL pipelines, implemented ML/AI solutions at Zebra Technologies.</p>
+                  <p className="text-sm text-gray-600">Deployed full-stack analytics applications, built ETL pipelines, lead implementation of ML/AI solutions at Zebra Technologies.</p>
                 </div>
                 <div>
                   <div className="font-semibold mb-1">Power BI & Sigma Computing</div>
-                  <p className="text-sm text-gray-600">Extensive experience across multiple companies. CEOs seek my advice on implementation. Personally sold Sigma licenses to enterprise customers.</p>
+                  <p className="text-sm text-gray-600">Extensive experience across multiple companies. CEOs seek my advice on implementation. Personally sold an embedded analytics solution to enterprise customers at SmartMoving.</p>
                 </div>
               </div>
             </div>
@@ -271,7 +273,7 @@ export default function Home() {
                   <div className="text-sm text-gray-500">Accuracy Improvement</div>
                 </div>
               </div>
-              <p className="text-gray-700 mb-4">Developed AI/ML forecasting algorithms for fashion retail assortment planning using Azure ML. Improved forecast accuracy by 17% in early models while accounting for ~1000 variables across inventory, seasonality, and market trends.</p>
+              <p className="text-gray-700 mb-4">Lead development of AI/ML forecasting algorithms for fashion retail assortment planning using Azure ML. Improved forecast accuracy by 17% in early models while accounting for ~1000 variables across inventory, seasonality, and market trends.</p>
               
               <div className="bg-purple-50 rounded-xl p-6 mt-4 border-2 border-purple-200">
                 <h4 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
@@ -279,7 +281,6 @@ export default function Home() {
                   Technical & Business Approach
                 </h4>
                 <ul className="text-sm text-gray-700 space-y-2">
-                  <li>Built machine learning models using Azure Synapse, Data Factory, and Foundry</li>
                   <li>Processed ~1000 variables including inventory levels, seasonal patterns, historical sales</li>
                   <li>Validated models against retail planning teams to ensure business applicability</li>
                   <li>Achieved 17% forecasting accuracy improvement, reducing manual planning work by 19%</li>
@@ -290,7 +291,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm mt-4">
                 <div>
                   <strong className="text-gray-800">Technical Stack:</strong>
-                  <p className="text-gray-600">Azure Synapse, Data Factory, ML Foundry, Python</p>
+                  <p className="text-gray-600">AWS, Databricks, Python, FastAPI</p>
                 </div>
                 <div>
                   <strong className="text-gray-800">Business Impact:</strong>
@@ -343,14 +344,14 @@ export default function Home() {
                     <Layers className="w-6 h-6 text-purple-600" />
                     Platform Transformation Through Behavioral Analytics
                   </h3>
-                  <p className="text-gray-600 mb-4">SmartMoving Software 2024-2025</p>
+                  <p className="text-gray-600 mb-4">SmartMoving Software 2024-2026</p>
                 </div>
                 <div className="text-right mt-4 md:mt-0">
                   <div className="text-2xl font-bold text-purple-600">1000+</div>
                   <div className="text-sm text-gray-500">Hours Saved (Quantified)</div>
                 </div>
               </div>
-              <p className="text-gray-700 mb-4">Used behavioral analytics and customer segmentation data to drive platform evolution from basic CRM to comprehensive operations hub. Built data models identifying feature gaps, quantified business value, and enabled enterprise expansion.</p>
+              <p className="text-gray-700 mb-4">I used behavioral analytics and customer segmentation data to drive platform evolution from basic CRM to comprehensive operations hub. I built data models identifying feature gaps, quantified business value, and enabled enterprise expansion.</p>
               
               <div className="bg-purple-50 rounded-xl p-6 mt-4 border-2 border-purple-200">
                 <h4 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
@@ -373,7 +374,7 @@ export default function Home() {
                 </div>
                 <div>
                   <strong className="text-gray-800">Claims Module:</strong>
-                  <p className="text-gray-600">100% enterprise usage validated through analytics</p>
+                  <p className="text-gray-600">100% ICP usage validated through analytics</p>
                 </div>
                 <div>
                   <strong className="text-gray-800">Automation ROI:</strong>

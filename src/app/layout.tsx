@@ -1,46 +1,48 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css'; // Keep the CSS for the color scheme
+import './globals.css';
 import RootLayout from '@/components/RootLayout';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Paul Gilliam - Strategic Product Leader | Platform Innovation & Market Category Creation',
-  description: 'Strategic Product Leader specializing in market opportunity identification, platform economics, and competitive advantage creation. $5M+ platform transformation and $100M+ market opportunities identified through systematic strategic analysis.',
+  title: 'Paul Gilliam - Analytics & Solutions Leader | Transportation & B2B SaaS',
+  description: 'Analytics and solutions leader with 8+ years building data platforms, presenting technical solutions to customers, and validating business value through analytics. I have a wide variety of experiences in using different data tools to tell the right story at the right time.',
   keywords: [
-    'Strategic Product Leader',
-    'VP Product',
-    'Market Category Creation',
-    'Platform Economics',
-    'Competitive Intelligence',
-    'Strategic Customer Discovery',
-    'Platform Strategy',
-    'Market Opportunity Identification',
-    'Strategic Analysis',
-    'Business Strategy',
-    'Revenue Growth',
-    'Strategic Partnerships'
+    'Analytics Leader',
+    'Solutions Engineer',
+    'Data Platform',
+    'Snowflake',
+    'Azure ML/AI',
+    'Power BI',
+    'Python',
+    'Machine Learning',
+    'Business Analytics',
+    'Customer Analytics',
+    'Transportation Software',
+    'B2B SaaS',
+    'Data Validation',
+    'Technical Presentations'
   ].join(', '),
   openGraph: {
-    title: 'Paul Gilliam - Strategic Product Leader',
-    description: 'Market opportunity identification and platform transformation specialist. $5M+ strategic impact and $100M+ opportunities identified.',
+    title: 'Paul Gilliam - Analytics & Solutions Leader',
+    description: 'Building data platforms and validating business value through analytics. Snowflake, Azure ML/AI, Power BI expertise. National innovation award winner.',
     url: 'https://paul.gilliamclan.com',
-    siteName: 'Paul Gilliam - Strategic Product Leadership',
+    siteName: 'Paul Gilliam - Analytics & Solutions Leadership',
     type: 'website',
     images: [
       {
-        url: '/og-image.jpg', // You'll want to add this
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Paul Gilliam - Strategic Product Leader',
+        alt: 'Paul Gilliam - Analytics & Solutions Leader',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Paul Gilliam - Strategic Product Leader',
-    description: 'Market opportunity identification and platform transformation specialist.',
+    title: 'Paul Gilliam - Analytics & Solutions Leader',
+    description: 'Building data platforms and validating business value through analytics.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -77,7 +79,6 @@ export default function Layout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#2563eb" />
         
-        {/* Schema.org structured data for better SEO */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -85,32 +86,35 @@ export default function Layout({
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Paul Gilliam",
-              "jobTitle": "Strategic Product Leader",
-              "description": "Strategic Product Leader specializing in market opportunity identification, platform economics, and competitive advantage creation",
+              "jobTitle": "Analytics & Solutions Leader",
+              "description": "Analytics and solutions leader specializing in data platforms, machine learning, and business validation through analytics",
               "url": "https://paul.gilliamclan.com",
               "sameAs": [
                 "https://linkedin.com/in/pgilliam2",
                 "https://github.com/gilliamp-official"
               ],
               "knowsAbout": [
-                "Strategic Product Leadership",
-                "Market Category Creation",
-                "Platform Economics",
-                "Competitive Intelligence",
-                "Strategic Customer Discovery",
-                "Platform Strategy",
-                "Market Opportunity Identification"
+                "Data Analytics",
+                "Solutions Engineering",
+                "Snowflake",
+                "Azure Machine Learning",
+                "Power BI",
+                "Python",
+                "Business Intelligence",
+                "Customer Analytics",
+                "Transportation Software",
+                "B2B SaaS"
               ],
               "alumniOf": [
                 {
                   "@type": "EducationalOrganization",
                   "name": "Quantic School of Business and Technology",
-                  "description": "MBA in Strategic Business Management"
+                  "description": "MBA in Business Management"
                 },
                 {
                   "@type": "EducationalOrganization", 
                   "name": "University of Colorado, Colorado Springs",
-                  "description": "B.S. Information Systems & Business Administration, Summa Cum Laude"
+                  "description": "B.S. Information Systems, Summa Cum Laude, 4.0 GPA"
                 }
               ],
               "workLocation": {
