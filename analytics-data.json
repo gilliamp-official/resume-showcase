@@ -1,0 +1,34 @@
+[
+  {
+    "page": "/",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "referrer": "",
+    "timestamp": 1773847619151,
+    "sessionId": "4pnfze6ghdkmmw72mof",
+    "ip": "::ffff:127.0.0.1",
+    "device": "Desktop",
+    "browser": "Chrome"
+  },
+  {
+    "page": "/",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "referrer": "",
+    "timestamp": 1773847743558,
+    "sessionId": "4pnfze6ghdkmmw72mof",
+    "sessionDuration": 124,
+    "ip": "::ffff:127.0.0.1",
+    "device": "Desktop",
+    "browser": "Chrome"
+  },
+  {
+    "page": "/",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "referrer": "",
+    "timestamp": 1773847818075,
+    "sessionId": "4pnfze6ghdkmmw72mof",
+    "sessionDuration": 199,
+    "ip": "::ffff:127.0.0.1",
+    "device": "Desktop",
+    "browser": "Chrome"
+  }
+]

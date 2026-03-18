@@ -6,43 +6,54 @@ import RootLayout from '@/components/RootLayout';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Paul Gilliam - Analytics & Solutions Leader | Transportation & B2B SaaS',
-  description: 'Analytics and solutions leader with 8+ years building data platforms, presenting technical solutions to customers, and validating business value through analytics. I have a wide variety of experiences in using different data tools to tell the right story at the right time.',
+  title: 'Paul Gilliam - Senior Product Leader | B2B SaaS | Customer Discovery | Teams That Ship',
+  description: 'Senior product leader with 8+ years building B2B SaaS products the way founders do: close to the customer, cross-functional by default, and focused on outcomes worth paying for. Inc. Magazine Innovation Award winner. $6M+ ARR growth contributed.',
   keywords: [
-    'Analytics Leader',
-    'Solutions Engineer',
-    'Data Platform',
-    'Snowflake',
-    'Azure ML/AI',
-    'Power BI',
-    'Python',
-    'Machine Learning',
-    'Business Analytics',
-    'Customer Analytics',
-    'Transportation Software',
-    'B2B SaaS',
-    'Data Validation',
-    'Technical Presentations'
+    'Product Manager',
+    'Senior Product Manager',
+    'Director of Product Management',
+    'Principal Product Manager',
+    'B2B SaaS Product Leader',
+    'Customer Discovery',
+    'Product Strategy',
+    'Go-to-Market Strategy',
+    'Cross-Functional Leadership',
+    'Platform Strategy',
+    'Enterprise Software',
+    'AI Product Strategy',
+    'Data Storytelling',
+    'Embedded Analytics',
+    'Product Led Growth',
+    'Roadmap Prioritization',
+    'Stakeholder Management',
+    'People Management',
+    'Vertical SaaS',
+    'Revenue Growth',
+    'Inc. Magazine Innovation Award',
+    'SmartMoving',
+    'Capital One Software',
+    'McKinney Texas',
+    'Dallas Product Manager',
   ].join(', '),
   openGraph: {
-    title: 'Paul Gilliam - Analytics & Solutions Leader',
-    description: 'Building data platforms and validating business value through analytics. Snowflake, Azure ML/AI, Power BI expertise. National innovation award winner.',
+    title: 'Paul Gilliam - Senior Product Leader | B2B SaaS',
+    description: 'I rally teams around problems worth solving. 8+ years building B2B SaaS products through customer discovery, cross-functional execution, and a relentless focus on outcomes that matter.',
     url: 'https://paul.gilliamclan.com',
-    siteName: 'Paul Gilliam - Analytics & Solutions Leadership',
+    siteName: 'Paul Gilliam - Product Leader',
     type: 'website',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Paul Gilliam - Analytics & Solutions Leader',
+        alt: 'Paul Gilliam - Senior Product Leader',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Paul Gilliam - Analytics & Solutions Leader',
-    description: 'Building data platforms and validating business value through analytics.',
+    title: 'Paul Gilliam - Senior Product Leader | B2B SaaS',
+    description: 'I rally teams around problems worth solving. Inc. Magazine Innovation Award winner. $6M+ ARR growth contributed.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -77,8 +88,8 @@ export default function Layout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#2563eb" />
-        
+        <meta name="theme-color" content="#1a2b4a" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -86,25 +97,31 @@ export default function Layout({
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Paul Gilliam",
-              "jobTitle": "Analytics & Solutions Leader",
-              "description": "Analytics and solutions leader specializing in data platforms, machine learning, and business validation through analytics",
+              "jobTitle": "Senior Product Leader",
+              "description": "Senior product leader with 8+ years building B2B SaaS products through customer discovery, cross-functional execution, and outcomes that drive revenue growth.",
               "url": "https://paul.gilliamclan.com",
               "sameAs": [
                 "https://linkedin.com/in/pgilliam2",
-                "https://github.com/gilliamp-official"
+                "https://github.com/gilliamp-official",
+                "https://theproductpipeline.substack.com"
               ],
               "knowsAbout": [
-                "Data Analytics",
-                "Solutions Engineering",
-                "Snowflake",
-                "Azure Machine Learning",
-                "Power BI",
-                "Python",
-                "Business Intelligence",
-                "Customer Analytics",
-                "Transportation Software",
-                "B2B SaaS"
+                "Product Management",
+                "Product Strategy",
+                "Customer Discovery",
+                "B2B SaaS",
+                "Go-to-Market Strategy",
+                "Platform Strategy",
+                "Cross-Functional Leadership",
+                "AI Prototyping",
+                "Data Storytelling",
+                "Embedded Analytics",
+                "People Management",
+                "Roadmap Prioritization",
+                "Enterprise Software",
+                "Vertical SaaS"
               ],
+              "award": "Inc. Magazine National Innovation Award - Smart Insights Analytics Platform",
               "alumniOf": [
                 {
                   "@type": "EducationalOrganization",
@@ -112,14 +129,14 @@ export default function Layout({
                   "description": "MBA in Business Management"
                 },
                 {
-                  "@type": "EducationalOrganization", 
-                  "name": "University of Colorado, Colorado Springs",
+                  "@type": "EducationalOrganization",
+                  "name": "University of Colorado Colorado Springs",
                   "description": "B.S. Information Systems, Summa Cum Laude, 4.0 GPA"
                 }
               ],
               "workLocation": {
                 "@type": "Place",
-                "name": "Dallas, Texas, United States"
+                "name": "McKinney, Texas, United States"
               }
             })
           }}
