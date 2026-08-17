@@ -1,6 +1,34 @@
 {
   "experience": [
     {
+      "id": "capitalone",
+      "company": "Capital One Software",
+      "title": "Senior Manager, Product Management",
+      "logo": "capitalone.png",
+      "location": "Remote",
+      "type": "Remote",
+      "startDate": "Jan 2026",
+      "endDate": "Present",
+      "duration": "Present",
+      "description": "Building a new AI-ready data security and optimization intelligence platform, using Claude Code prototyping to turn a single-team proof of concept into a semantic layer standard adopted across 4 lines of business.",
+      "achievements": [
+        "Identified a gap across 8+ teams causing confusion for enterprises trying to optimize their data security and cost posture, built the business case from scratch, and led detailed discovery",
+        "Leveraged Claude Code to create lightweight prototypes that verified the problem and solution, leading to a semantic layer that cut delivery time from 3 months to 1 hour and cut duplicate and poorly defined metrics by 30%",
+        "Scaled the semantic layer beyond initial investment by aligning engineering, design, risk, and architecture around a reusable standard, turning a single-team POC into infrastructure adopted across 4 lines of business",
+        "Leading early discovery on a new AI-focused intelligence layer POC to help enterprises make security decisions up to 30% better, tying together security policy context and the tools that enforce it"
+      ],
+      "skills": [
+        "AI Prototyping",
+        "Claude Code",
+        "Semantic Layer Design",
+        "Enterprise Data Platforms",
+        "Business Case Development",
+        "Cross-Functional Alignment",
+        "Data Security Strategy",
+        "Agent Design"
+      ]
+    },
+    {
       "id": "smartmoving",
       "company": "SmartMoving Software",
       "title": "Senior Product Manager",
@@ -10,20 +38,20 @@
       "startDate": "Jan 2024",
       "endDate": "Jan 2026",
       "duration": "2 yrs",
-      "description": "Built full-stack prototypes, validated market opportunities, and drove $5M+ in revenue growth through technical execution and systematic customer discovery.",
+      "description": "Partnered directly with the founder/CEO and VP of Product to transform a vertical SaaS CRM into a full operating system for movers, personally contributing to $6M in ARR growth over two years.",
       "achievements": [
-        "Built & validated Smart Insights: Developed full-stack analytics prototype in Azure using AI-assisted development, tested with customers, achieved 100% paid beta retention validating $1.2M market opportunity—all before engineering resources committed",
-        "End-to-end ownership: Built ACH payment system handling $10M+ transactions, personally sold analytics platform to enterprise customers, launched API marketplace generating $150K ARR",
-        "Technical PM skills: Coded prototypes, deployed to Azure, managed cloud infrastructure, integrated with data warehouses—then partnered with sales and marketing to bring solutions to market",
-        "Systematic discovery: Conducted 200+ customer interviews identifying opportunities competitors miss, including $100M vanlines market and embedded analytics category",
-        "Cross-functional collaboration: Worked closely with engineering, sales, and marketing teams to validate ideas quickly and ship products customers actually wanted"
+        "Led a strategic ICP realignment through 200+ cumulative customer interviews and monthly on-site visits, shifting the mix from 37% in ICP to 80% in ICP over two years and directly contributing to $6M in ARR growth",
+        "Used AI to rapidly build and deploy lightweight prototypes before engineering was ever involved, validating customer pain and demand, then built a rapid context engine that synthesized sessions into structured roadmap inputs",
+        "Convinced leadership to invest in an embedded analytics platform, negotiating a vendor option 10x cheaper than the internal build estimate and redirecting engineering toward differentiated product work",
+        "Led discovery, market sizing, pricing, and GTM across every major capability added to the platform, including an ACH payments platform that contributed over $1M in ARR and an OpenAPI ecosystem that generated $100K in third-party integration revenue",
+        "Hired and mentored 2 PMs, established every product and engineering process from scratch, and led 3 engineering teams across concurrent workstreams; conducted over 200 customer discovery interviews and made 8 in-person trips to moving companies"
       ],
       "skills": [
-        "Full-Stack Development",
+        "Full-Stack Prototyping",
+        "Claude Code",
         "Azure Cloud Platform",
-        "AI-Assisted Development",
-        "Rapid Prototyping",
         "Customer Discovery",
+        "ICP Realignment",
         "B2B SaaS",
         "Payment Systems",
         "API Development",
@@ -41,13 +69,12 @@
       "startDate": "Nov 2022",
       "endDate": "Jan 2024",
       "duration": "1 yr 3 mos",
-      "description": "Led market opportunity assessment and competitive positioning for retail technology business unit. Successfully tested AI-driven assortment model reducing manual assortment manipulation by 19%.",
+      "description": "Worked embedded with pre-sales, sales, and data science teams to make the life of a retail assortment planner easier, turning complex AI/ML outputs into intuitive, actionable intelligence inside a larger integrated platform.",
       "achievements": [
-        "Successfully tested AI-driven assortment model reducing manual assortment manipulation by 19%, validating product-market fit for enterprise retail clients",
-        "Conducted comprehensive customer discovery with fashion retail executives to validate AI-driven inventory planning platform opportunity and establish competitive differentiation strategy",
-        "Designed strategic ETL pipeline architecture for enterprise client onboarding through systematic market gap analysis and customer workflow optimization",
-        "Established product management frameworks and competitive positioning strategies for business unit market penetration in retail technology sector",
-        "Built customer feedback systems and strategic planning processes enabling data-driven decision making for executive stakeholders"
+        "Partnered with pre-sales and sales teams on enterprise deals with clients including JCPenney, The Children's Place, and Evereve, translating customer pain points directly into product requirements",
+        "Recognized that raw data access was creating decision paralysis for assortment planners and led the reframe toward actionable business intelligence, reducing noise and surfacing what actually mattered",
+        "Collaborated with data science teams to shape AI/ML forecasting models that improved retail planning accuracy by 17% across nearly 1,000 variables",
+        "Conducted extensive user research with assortment planners to identify workflow gaps and prioritize features that differentiated the platform from legacy competitors"
       ],
       "skills": [
         "Market Opportunity Assessment",
@@ -70,12 +97,11 @@
       "startDate": "Jun 2022",
       "endDate": "Nov 2022",
       "duration": "6 mos",
-      "description": "Enhanced digital advertising platform for enterprise clients including Booking.com and Hotels.com, creating workflows that dramatically improved efficiency and targeting.",
+      "description": "Embedded with engineering, program management, and Booking.com teams to simplify targeted ad creation for hoteliers inside KoddiOne, turning complex ad performance data into clear, actionable decisions.",
       "achievements": [
-        "Created ad creation workflow for Booking.com saving hotel users 20 minutes per session with 21% improved targeting rate",
-        "Conducted strategic customer discovery with enterprise advertising stakeholders to identify platform optimization opportunities and competitive positioning gaps",
-        "Reduced platform complexity through systematic customer feedback analysis and competitive benchmarking for major enterprise clients",
-        "Implemented customer-driven strategic frameworks optimizing enterprise-scale advertising operations and stakeholder relationships"
+        "Led customer discovery sessions with Booking.com that surfaced key workflow gaps, resulting in a 15% improvement in ad targeting accuracy",
+        "Improved platform reporting capabilities to give customers faster, clearer answers to their most common performance questions",
+        "Streamlined the discovery and delivery process inside Jira, creating better alignment between engineering and stakeholder priorities"
       ],
       "skills": [
         "Enterprise Platform Strategy",
@@ -96,13 +122,13 @@
       "startDate": "Sep 2021",
       "endDate": "Jun 2022",
       "duration": "10 mos",
-      "description": "Led platform consolidation strategy coordinating 40+ engineers to deliver unified transportation solution replacing 5 fragmented competitor tools.",
+      "description": "Hand-selected to build a new vertical from the ground up, traveling to school bus depots, embedding with districts, and leading a 40-person contractor team to launch a $1M special needs transportation platform serving 1,000+ students across 10+ districts.",
       "achievements": [
-        "Identified strategic market gap where competitors required 5 separate tools with $300 manual labor per dispatch operation, creating massive consolidation opportunity",
-        "Built unified platform strategy creating competitive advantage through technology consolidation, generating $1M initial revenue scaling to $20M projected",
-        "Conducted extensive customer discovery and operational site visits with transportation executives to understand market dynamics and competitive landscape vulnerabilities",
-        "Managed 40+ strategic contractor relationships and stakeholder ecosystem to deliver market-differentiating technology innovation",
-        "Partnered with engineering teams and Thoughtworks consultants to deliver modern web and mobile applications with 60% operational efficiency improvement"
+        "Defined the full platform strategy spanning a web app, two mobile apps, and cloud infrastructure, owning the vision from concept through launch",
+        "Traveled directly to school bus depots and met with district stakeholders to understand operational realities before defining requirements, focusing on being discovery led, not assumption led",
+        "Partnered with 3 pilot districts to validate the platform in real-world conditions, using their feedback to shape the product roadmap",
+        "Partnered with marketing and sales to define the go-to-market strategy and positioning for broader district expansion",
+        "Led a cross-functional team of 40 contractors, coordinating across engineering, operations, and external partners to deliver on time and on budget"
       ],
       "skills": [
         "Platform Consolidation Strategy",

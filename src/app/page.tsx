@@ -4,9 +4,10 @@ import { useState, ReactNode, MouseEvent } from 'react'
 import {
   ArrowDown, Mail, Linkedin, TrendingUp, Users, Award,
   GraduationCap, Zap, Shield, Video, Bus,
-  ChevronDown, ChevronUp, BarChart2,
+  ChevronDown, ChevronUp, BarChart2, Download,
 } from 'lucide-react'
 import SectionTracker from '@/components/SectionTracker'
+import { downloadResume } from '@/utils/downloadUtils'
 
 const NAVY       = '#1a2b4a'
 const AMBER      = '#d97706'
@@ -60,6 +61,14 @@ function OutcomeGrid({ items }: OutcomeGridProps) {
   )
 }
 
+function BulletList({ items }: { items: string[] }) {
+  return (
+    <ul className="text-slate-700 text-sm leading-relaxed space-y-2.5 mb-6 list-disc pl-5 marker:text-amber-600">
+      {items.map((item, i) => <li key={i}>{item}</li>)}
+    </ul>
+  )
+}
+
 function CaseCard({ tag, tagAmber = false, title, company, date, stat, statLabel, children, outcomeItems, extraLink }: CaseCardProps) {
   return (
     <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-100">
@@ -94,17 +103,19 @@ function SmartMovingCaseStudy() {
   const capabilities: Capability[] = [
     { label: 'Dispatch at Scale', description: 'Rebuilt core dispatching workflows to handle high-volume moving operations across multiple locations, giving operators visibility they never had before.' },
     { label: 'Claims Management', description: 'Designed and shipped a centralized claims module that replaced a fragmented, manual process, reducing resolution time and giving ops teams a single source of truth.' },
-    { label: 'Smart Insights Analytics', description: 'Validated a $1.2M market opportunity through 200+ discovery sessions alongside Sales and CS. Achieved 100% paid beta retention and earned the national Inc. Magazine Innovation Award.' },
-    { label: 'Automation Framework', description: 'Started lightweight and scaled with customer needs. Reached 20% platform adoption with a 4.5/5 satisfaction score by letting actual workflows drive what got automated.' },
-    { label: 'ACH Payments', description: 'Identified a gap in how movers collected payments and built a native ACH platform that generated over $1M in new revenue.' },
-    { label: 'OpenAPI Ecosystem', description: 'Opened the platform to third-party integrations through a structured API strategy, capturing $100K from external partners and expanding reach beyond direct customers.' },
+    { label: 'Smart Insights Analytics', description: 'Built a full-stack analytics prototype and tested it directly with customers before committing engineering resources. Achieved 100% paid beta retention and earned the national Inc. Magazine Innovation Award.' },
+    { label: 'Automation Framework', description: 'Started lightweight and scaled with customer needs, letting actual workflows drive what got automated rather than automating for its own sake.' },
+    { label: 'ACH Payments', description: 'Identified a gap in how movers collected payments and built a native ACH platform that contributed over $1M in ARR.' },
+    { label: 'OpenAPI Ecosystem', description: 'Opened the platform to third-party integrations through a structured API strategy, generating $100K in third-party integration revenue and expanding reach beyond direct customers.' },
     { label: 'Trade Show and Sales Support', description: 'Attended industry conferences and joined key sales calls to stay close to the market, support deals, and bring real customer signal back into the product process.' },
   ]
 
-  const outcomeItems: OutcomeItem[] = [
-    { label: 'The Strategic Problem', value: 'Known only as a sales CRM, the platform lacked the operational depth to move upmarket. Larger movers did not see themselves in the product.' },
-    { label: 'How I Approached It', value: 'Trade show discovery, 200+ customer sessions with sales and CS, AI prototypes to align executives, and seven capabilities shipped to tell a new platform story.' },
-    { label: 'Business Outcome', value: 'Contributed to $6M ARR growth, $1M+ from payments alone, and a national Inc. Magazine Innovation Award for Smart Insights.' },
+  const bullets: string[] = [
+    'Identified that 63% of customers were outside the ideal profile and consuming disproportionate support with low expansion potential. Led a strategic ICP realignment through 200+ cumulative customer interviews and monthly on-site visits with operators, shifting the mix from 37% in ICP to 80% in ICP over two years and directly contributing to $6M in ARR growth.',
+    'Used AI to rapidly build and deploy lightweight prototypes before engineering was ever involved, sending one-time links to customers to measure whether they completed expected flows and whether they were in enough pain to try something new at all. Built a rapid context engine that synthesized those sessions into structured roadmap inputs, so customer insights went directly into prioritization rather than sitting in notes.',
+    'Convinced leadership to invest in an embedded analytics platform, testing each solution with real customers, negotiating contracts, and presenting a vendor option 10x cheaper than the internal build estimate, redirecting engineering toward differentiated product work.',
+    'Personally led discovery, market sizing, pricing, and GTM across every major capability added to the platform including automation, claims management, dispatch improvements, an ACH payments platform that contributed over $1M in ARR, and an OpenAPI ecosystem that generated $100K in third-party integration revenue.',
+    'Hired and mentored 2 PMs, established every product and engineering process from scratch, and led 3 engineering teams across concurrent workstreams. Conducted over 200 customer discovery interviews, made 8 in-person trips to moving companies.',
   ]
 
   return (
@@ -122,17 +133,14 @@ function SmartMovingCaseStudy() {
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6 rounded-xl p-4 sm:p-5 border border-slate-100" style={{ backgroundColor: OFF_WHITE }}>
           <Stat value="$6M+" label="ARR Contributed" accent />
-          <Stat value="$1M+" label="Payments Revenue" accent />
-          <Stat value="20%" label="Automation Adoption" />
+          <Stat value="80%" label="ICP Mix (from 37%)" accent />
+          <Stat value="$1M+" label="Payments ARR" />
           <Stat value="200+" label="Customer Sessions" />
         </div>
-        <p className="text-slate-700 text-sm leading-relaxed mb-3">
-          SmartMoving was built by a founder who was a salesperson at heart, and the product reflected that. It was genuinely great at opportunity management and everyone in the moving industry knew it as &#8220;the CRM for movers.&#8221; The problem was the company wanted to move upmarket to serve larger operators, and a CRM reputation wasn&#8217;t going to get them there.
-        </p>
         <p className="text-slate-700 text-sm leading-relaxed mb-6">
-          When I joined, the bigger challenge wasn&#8217;t just adding features. The existing pieces didn&#8217;t clearly connect into a coherent platform story for enterprise buyers. I spent time at industry trade shows talking directly to movers who had never considered SmartMoving for their operation because they didn&#8217;t know it could do more. That field research shaped everything. Over two years I led the expansion into seven new capability areas, rallying a cross-functional team of 10+ and working alongside sales and CS to make sure every decision was grounded in what larger operators actually needed.
+          Partnered directly with the founder/CEO and VP of Product to transform a vertical SaaS CRM into a full operating system for movers. Owned product strategy, discovery, roadmap, commercialization, and team building end-to-end across seven capability areas, personally contributing to $6M in ARR growth over two years.
         </p>
-        <OutcomeGrid items={outcomeItems} />
+        <BulletList items={bullets} />
         <div className="mt-4 mb-2">
           <a href="https://www.youtube.com/watch?v=oX2n4CgRtnE" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-medium transition-colors" style={{ color: AMBER }}>
@@ -161,6 +169,66 @@ function SmartMovingCaseStudy() {
   )
 }
 
+function CapitalOneCaseStudy() {
+  const [expanded, setExpanded] = useState(false)
+
+  const capabilities: Capability[] = [
+    { label: 'Scaling Beyond a Single Team', description: 'Aligned engineering, design, risk, and architecture around a reusable standard, turning a single-team POC into infrastructure enterprises could adopt broadly.' },
+    { label: 'AI Across the Product Lifecycle', description: 'Used AI (Claude Code) to synthesize research, build business cases, and prototype solutions, compressing weeks of analysis into days of validated, data-backed decisions, and scaled the solution across 4 other lines of business.' },
+    { label: 'New AI Intelligence Layer (Early Discovery)', description: 'Leading early discovery on a new AI-focused intelligence layer POC to help enterprises make security decisions up to 30% better, tying together security policy context and the tools that enforce it, which today live in separate systems and create enforcement gaps.' },
+  ]
+
+  const outcomeItems: OutcomeItem[] = [
+    { label: 'The Strategic Problem', value: 'A gap across 8+ teams left enterprises confused about how to improve their data security and cost optimization posture, with no shared way to define or measure the problem.' },
+    { label: 'How I Approached It', value: 'Built the business case from scratch, led detailed discovery, and used Claude Code to create lightweight prototypes that verified the problem and solution before committing engineering resources.' },
+    { label: 'Business Outcome', value: 'A semantic layer that cut delivery time from 3 months to 1 hour, reduced duplicate and poorly defined metrics by 30%, and scaled across 4 lines of business.' },
+  ]
+
+  return (
+    <div className="bg-white rounded-2xl shadow-sm border-2 overflow-hidden" style={{ borderColor: NAVY }}>
+      <div className="px-6 sm:px-8 py-4 flex flex-wrap gap-2 items-center" style={{ backgroundColor: NAVY }}>
+        <Tag amber>AI-Native Product Build</Tag>
+        <Tag>Enterprise Data Platform</Tag>
+      </div>
+      <div className="p-6 sm:p-8">
+        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
+          <div className="flex-1 min-w-0">
+            <h3 className="text-lg sm:text-xl font-bold mb-1" style={{ color: NAVY }}>Capital One: A Semantic Layer for Enterprise Data Security &amp; Optimization</h3>
+            <p className="text-slate-500 text-sm">Capital One Software · Jan 2026 – Present</p>
+          </div>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6 rounded-xl p-4 sm:p-5 border border-slate-100" style={{ backgroundColor: OFF_WHITE }}>
+          <Stat value="3 Mo &#8594; 1 Hr" label="Delivery Time Cut" accent />
+          <Stat value="30%" label="Duplicate Metrics Cut" accent />
+          <Stat value="4" label="Lines of Business Scaled" />
+          <Stat value="8+" label="Teams Aligned" />
+        </div>
+        <p className="text-slate-700 text-sm leading-relaxed mb-6">
+          Built a new AI-ready data security and optimization intelligence platform to help enterprises improve their data security and cost optimization postures. Identified a gap across 8+ teams causing confusion for enterprises trying to optimize their businesses, built the business case from scratch, led detailed discovery, and leveraged Claude Code to create lightweight prototypes that verified the problem and solution. This led to a semantic layer solution that reduced delivery time from 3 months to 1 hour and cut duplicate and poorly defined metrics by 30%.
+        </p>
+        <OutcomeGrid items={outcomeItems} />
+      </div>
+      <div className="px-6 sm:px-8 pb-6 sm:pb-8">
+        <button onClick={() => setExpanded(!expanded)}
+          className="flex items-center gap-2 text-sm font-semibold transition-colors" style={{ color: NAVY }}>
+          {expanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+          {expanded ? 'Hide the full breakdown' : 'See how this scaled beyond one team'}
+        </button>
+        {expanded && (
+          <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {capabilities.map((cap, i) => (
+              <div key={i} className="rounded-xl p-4 border border-slate-100" style={{ backgroundColor: OFF_WHITE }}>
+                <div className="text-sm font-semibold text-slate-800 mb-1">{cap.label}</div>
+                <p className="text-sm text-slate-500">{cap.description}</p>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
 function handleAmberHover(e: MouseEvent<HTMLAnchorElement>) { e.currentTarget.style.backgroundColor = AMBER_DARK }
 function handleAmberLeave(e: MouseEvent<HTMLAnchorElement>) { e.currentTarget.style.backgroundColor = AMBER }
 
@@ -173,10 +241,10 @@ export default function Home() {
   ]
 
   const impactStats: HeroStat[] = [
-    { value: '$6M+',  label: 'ARR Growth Contributed' },
-    { value: '$1.2M', label: 'Market Opportunity Validated' },
-    { value: '100%',  label: 'Beta Retention on Smart Insights' },
-    { value: '200+',  label: 'Customer Discovery Sessions' },
+    { value: '$6M+', label: 'ARR Growth Contributed' },
+    { value: '80%',  label: 'SmartMoving ICP Mix (from 37%)' },
+    { value: '100%', label: 'Beta Retention on Smart Insights' },
+    { value: '200+', label: 'Customer Discovery Sessions' },
   ]
 
   const aboutPillars: Pillar[] = [
@@ -200,7 +268,8 @@ export default function Home() {
       title: 'Senior Manager, Product Management',
       company: 'Capital One Software',
       period: 'Jan 2026 – Present',
-      detail: 'Leading product strategy for an enterprise data platform, analyzing customer requirements to ensure product teams have the infrastructure and solutions needed to solve complex data and storytelling problems worth selling. Focused on enabling teams and their customers to tell the right data stories by turning complex data into clear answers that drive decisions.',
+      detail: 'Leading strategy for an AI-ready enterprise data security and optimization platform, using Claude Code prototyping to turn a single-team proof of concept into a semantic layer standard adopted across 4 lines of business.',
+      featured: true,
     },
     {
       icon: <Award className="w-5 h-5" />,
@@ -222,7 +291,7 @@ export default function Home() {
       title: 'Product Manager',
       company: 'Koddi',
       period: 'Jun 2022 – Nov 2022',
-      detail: 'Worked directly with Booking.com to simplify targeted ad creation for hoteliers. Discovery-led improvements resulted in 15% better ad targeting accuracy.',
+      detail: 'Embedded with engineering, program management, and Booking.com teams to simplify targeted ad creation for hoteliers inside KoddiOne, driving a 15% improvement in ad targeting accuracy through customer-led discovery.',
     },
     {
       icon: <Users className="w-5 h-5" />,
@@ -258,7 +327,7 @@ export default function Home() {
     },
     {
       label: 'AI and Data Fluency',
-      tags: ['AI Prototyping', 'Data Storytelling', 'Embedded Analytics', 'Snowflake', 'SQL', 'Power BI', 'Behavioral Analytics', 'Generative AI'],
+      tags: ['Claude Code', 'AI Prototyping', 'Agent Design', 'Data Storytelling', 'Embedded Analytics', 'Snowflake', 'SQL', 'Power BI', 'Behavioral Analytics', 'Generative AI'],
     },
     {
       label: 'Team and Process Building',
@@ -315,6 +384,10 @@ export default function Home() {
                 onMouseOut={handleAmberLeave}>
                 Get in Touch
               </a>
+              <button type="button" onClick={downloadResume}
+                className="px-7 py-3 border border-slate-600 text-slate-300 text-sm font-semibold rounded-full text-center hover:border-slate-400 hover:text-white transition-colors inline-flex items-center justify-center gap-2">
+                <Download className="w-4 h-4" />Download Resume
+              </button>
               <a href="https://linkedin.com/in/pgilliam2" target="_blank" rel="noopener noreferrer"
                 className="px-7 py-3 border border-slate-600 text-slate-300 text-sm font-semibold rounded-full text-center hover:border-slate-400 hover:text-white transition-colors">
                 LinkedIn Profile
@@ -393,6 +466,8 @@ export default function Home() {
           <div className="space-y-6 sm:space-y-8">
             <SmartMovingCaseStudy />
 
+            <CapitalOneCaseStudy />
+
             <CaseCard
               tag="0 to 1 Platform Build"
               title="Special Needs Student Transportation Platform"
@@ -402,11 +477,18 @@ export default function Home() {
               statLabel="Person Team Led"
               outcomeItems={[
                 { label: 'The Strategic Problem', value: 'First Student had no platform for special needs transportation. Districts were managing complex, high-stakes logistics with fragmented tools and no operational visibility.' },
-                { label: 'How I Approached It', value: 'Traveled to school bus depots, embedded with 3 pilot districts before writing a requirement, then led a 40-person contractor team through full delivery with GTM alignment alongside sales and marketing.' },
+                { label: 'How I Approached It', value: 'Traveled to school bus depots, partnered with 3 pilot districts before writing a requirement, then led a 40-person contractor team through full delivery with GTM alignment alongside sales and marketing.' },
                 { label: 'Business Outcome', value: 'Launched a $1M platform spanning a web app and 2 mobile apps, serving 1,000+ students across 10+ districts, on time and on budget.' },
               ]}
             >
-              <p>Hand-selected to build an entirely new vertical from scratch. I traveled to school bus depots, sat with district administrators, and embedded myself in the day-to-day before writing a single requirement. Then I led a 40-person contractor team to ship a web app, two mobile apps, and cloud infrastructure serving 1,000+ students across 10+ districts.</p>
+              <p>Hand-selected to build a new vertical from the ground up, traveling to school bus depots, embedding with districts, and leading a 40-person contractor team to launch a $1M special needs transportation platform serving 1,000+ students across 10+ districts. Reported directly under a VP of growth and strategy to lead meaningful change.</p>
+              <BulletList items={[
+                'Defined the full platform strategy spanning a web app, two mobile apps, and cloud infrastructure, owning the vision from concept through launch',
+                'Traveled directly to school bus depots and met with district stakeholders to understand operational realities before defining requirements, focusing on being discovery led, not assumption led',
+                'Partnered with 3 pilot districts to validate the platform in real-world conditions, using their feedback to shape the product roadmap',
+                'Partnered with marketing and sales to define the go-to-market strategy and positioning for broader district expansion',
+                'Led a cross-functional team of 40 contractors, coordinating across engineering, operations, and external partners to deliver on time and on budget',
+              ]} />
             </CaseCard>
 
             <CaseCard
@@ -434,11 +516,17 @@ export default function Home() {
               statLabel="Planning Accuracy Gained"
               outcomeItems={[
                 { label: 'The Strategic Problem', value: 'Enterprise retailers could not trust their forecasts. AI/ML models produced raw outputs that assortment planners at JCPenney, The Children\'s Place, and Evereve had no way to interpret or act on.' },
-                { label: 'How I Approached It', value: 'Embedded directly with pre-sales, sales, and data science teams to run discovery with planners in their actual workflow, then reframed the product from a data output into a decision-support tool.' },
-                { label: 'Business Outcome', value: '17% improvement in forecast accuracy across roughly 1,000 variables, 19% reduction in manual planning work, and time-to-market accelerated by 30%.' },
+                { label: 'How I Approached It', value: 'Embedded directly with pre-sales, sales, and data science teams to run discovery with planners in their actual workflow, then reframed the product from a data dump into actionable business intelligence.' },
+                { label: 'Business Outcome', value: '17% improvement in forecast accuracy across nearly 1,000 variables, with a platform planners could trust and act on.' },
               ]}
             >
-              <p>Embedded with pre-sales and data science teams to solve a real user problem: assortment planners at major retailers were drowning in raw model outputs with no way to act on them. I led discovery with planners at JCPenney, The Children&#8217;s Place, and Evereve to understand their actual workflow, then reframed the product from a data dump into something they could trust and use.</p>
+              <p>Worked embedded with pre-sales, sales, and data science teams to make the life of a retail assortment planner easier, turning complex AI/ML outputs into intuitive, actionable intelligence inside a larger integrated platform.</p>
+              <BulletList items={[
+                "Partnered with pre-sales and sales teams on enterprise deals with clients including JCPenney, The Children's Place, and Evereve, translating customer pain points directly into product requirements",
+                'Recognized that raw data access was creating decision paralysis for assortment planners and led the reframe toward actionable business intelligence, reducing noise and surfacing what actually mattered',
+                'Collaborated with data science teams to shape AI/ML forecasting models that improved retail planning accuracy by 17% across nearly 1,000 variables',
+                'Conducted extensive user research with assortment planners to identify workflow gaps and prioritize features that differentiated the platform from legacy competitors',
+              ]} />
             </CaseCard>
           </div>
         </div>

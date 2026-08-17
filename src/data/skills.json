@@ -105,9 +105,21 @@
           "usedAt": ["smartmoving", "zebra", "firststudent"],
           "yearsExperience": "4+",
           "achievements": [
-            "AI-powered platform consolidation reducing operational overhead by 31% vs. competitor solutions",
-            "AI-driven inventory planning improving accuracy by 45% for Fortune 500 retailers before GenAI mainstream adoption",
+            "AI-powered platform consolidation reducing operational overhead vs. competitor solutions",
+            "AI-driven inventory planning improving forecast accuracy for enterprise retailers before GenAI mainstream adoption",
             "AI product strategy implementation creating sustainable competitive advantages through technology leadership"
+          ]
+        },
+        {
+          "name": "Claude Code, Agent Design & Rapid Prototyping",
+          "level": 92,
+          "description": "Using Claude Code and AI agents to rapidly prototype and validate enterprise product ideas before committing engineering resources",
+          "usedAt": ["capitalone", "smartmoving"],
+          "yearsExperience": "2+",
+          "achievements": [
+            "Built lightweight AI prototypes at Capital One that cut semantic layer delivery time from 3 months to 1 hour",
+            "Used AI to rapidly build and deploy customer-facing prototypes at SmartMoving before engineering was ever involved",
+            "Designed agent-based workflows to synthesize customer research into structured roadmap inputs"
           ]
         }
       ]

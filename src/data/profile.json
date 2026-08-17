@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Paul Gilliam",
-    "title": "Strategic Product Leader - Platform Innovation & Market Category Creation",
+    "title": "Senior Product Manager - AI-Native Platforms & Data-Driven Growth",
     "location": "Dallas, Texas, United States",
     "email": "gilliamp2@protonmail.com",
     "phone": "719-322-1477",
     "website": "https://paul.gilliamclan.com",
-    "summary": "Strategic Product Leader with proven ability to identify untapped market opportunities and build category-defining platforms that create sustainable competitive advantages. Track record of transforming traditional SaaS products into differentiated ecosystems, generating $5M+ in new revenue streams through market-validated innovation. Expert at establishing systematic customer discovery programs that uncover multi-million dollar opportunities competitors miss. Specializes in platform architecture thinking that consolidates fragmented markets into unified competitive advantages."
+    "summary": "Senior Product Manager with a track record of turning ambiguous, cross-functional problems into shipped platforms and measurable revenue growth. Personally contributed $6M+ in ARR growth at SmartMoving through a two-year ICP realignment and platform expansion, and now builds AI-native prototypes with Claude Code to validate enterprise data products before engineering resources are committed. Specializes in systematic customer discovery, GTM execution, and turning fragmented markets into coherent platform stories."
   },
   "social": [
     {
@@ -21,16 +21,19 @@
     }
   ],
   "highlights": [
-    "Transformed traditional SaaS into $5M+ platform ecosystem through payment infrastructure, analytics licensing, and competitive moat development",
-    "Identified $100M+ van line market opportunity through platform economics analysis, demonstrating strategic market positioning capabilities", 
-    "Built and personally sold analytics platform achieving 100% enterprise beta retention rate, establishing new market category for operations intelligence",
-    "Generated $150K ARR through strategic API ecosystem development, creating revenue streams unavailable from market competitors",
-    "Established systematic customer discovery program with 25+ monthly executive interviews uncovering market opportunities competitors systematically miss",
-    "Led platform consolidation strategy creating sustainable competitive advantage where competitors required 5 separate tools with $300 manual overhead per operation"
+    "Personally contributed $6M+ in ARR growth at SmartMoving through a two-year ICP realignment, shifting the customer mix from 37% to 80% in ideal customer profile",
+    "Built a native ACH payments platform at SmartMoving contributing over $1M in ARR, and an OpenAPI ecosystem generating $100K in third-party integration revenue",
+    "Built and personally sold an analytics platform achieving 100% paid beta retention, earning a national Inc. Magazine Innovation Award",
+    "Used Claude Code to build a semantic layer at Capital One that cut delivery time from 3 months to 1 hour and reduced duplicate metrics by 30%, scaled across 4 lines of business",
+    "Established a systematic customer discovery program with 200+ cumulative customer interviews and monthly on-site visits uncovering opportunities competitors miss",
+    "Led platform consolidation strategy building a $1M special needs transportation platform serving 1,000+ students across 10+ districts with a 40-person contractor team"
   ],
   "keywords": [
+    "AI Prototyping",
+    "Claude Code",
+    "Semantic Layer Design",
     "Market Category Creation",
-    "Platform Strategy", 
+    "Platform Strategy",
     "Competitive Intelligence",
     "Strategic Customer Discovery",
     "Platform Economics",

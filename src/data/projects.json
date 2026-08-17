@@ -1,323 +1,176 @@
 {
   "caseStudies": [
     {
-      "id": "smartmoving-market-category-creation",
-      "title": "Market Category Pioneer: Moving Operations Intelligence",
-      "subtitle": "Creating $1.2M ARR market category through systematic customer discovery and strategic positioning",
+      "id": "smartmoving-operations-platform",
+      "title": "SmartMoving: From Niche CRM to Operations Platform",
+      "subtitle": "Transforming a vertical SaaS CRM into a full operating system for movers, contributing $6M in ARR growth over two years",
       "company": "SmartMoving Software",
       "industry": "Transportation & Logistics",
-      "timeline": "2024",
-      "duration": "8 months strategic development",
-      "heroMetric": "$1.2M Market Opportunity + 100% Beta Retention",
-      "heroDescription": "Identified and created new market category for moving operations intelligence, establishing competitive differentiation through systematic customer discovery and strategic UI/UX positioning",
-      "skills": ["Market Category Creation", "Strategic Customer Discovery", "Competitive Intelligence"],
+      "timeline": "2024-2026",
+      "duration": "2 years",
+      "heroMetric": "$6M+ ARR Contributed + 80% ICP Mix (from 37%)",
+      "heroDescription": "Partnered with the founder/CEO and VP of Product to expand SmartMoving across seven capability areas, realigning the customer base from 37% to 80% in ICP and contributing $6M in ARR growth.",
+      "skills": ["ICP Realignment", "AI Prototyping", "Payments Strategy", "API Ecosystem Strategy", "Customer Discovery"],
       "solutionVertical": "Strategic Analytics",
       "techStack": "Azure",
-      "impactType": ["Market Category Creation", "Strategic Innovation", "Revenue Generation"],
+      "impactType": ["Revenue Generation", "Market Category Creation", "AI-Native Product Development"],
       "challenge": {
-        "title": "No Analytics Market Category Existed for Moving Operations",
-        "description": "Moving industry lacked sophisticated business intelligence - competitors only offered basic 'custom reports' without strategic insights. No solution translated complex analytical concepts into actionable business intelligence for blue-collar competitive movers.",
+        "title": "A CRM Reputation Couldn't Support an Upmarket Move",
+        "description": "SmartMoving was known industry-wide as a sales CRM for movers, but the company needed to move upmarket to serve larger operators. 63% of the customer base sat outside the ideal customer profile, consuming disproportionate support with low expansion potential.",
         "keyProblems": [
-          "Industry trapped in 'custom reports' mindset vs. strategic analytics",
-          "No competitor understood mover psychology around data-driven competition",
-          "Complex analytics interfaces unusable for operational decision-making",
-          "Missing connection between data insights and competitive advantage"
+          "Known only as a CRM, with no operational depth for larger movers",
+          "63% of customers outside the ideal customer profile",
+          "No systematic process for validating new capabilities before building them",
+          "High-cost credit card processing eating into customer margins"
         ]
       },
       "approach": {
-        "title": "Systematic Market Discovery + Strategic UI/UX Innovation",
-        "description": "Conducted systematic customer discovery program to identify unmet analytics needs, then created strategic UI/UX framework translating complex analytics into competitive tools. Implemented paid beta model for high-quality market validation.",
+        "title": "ICP Realignment + AI-Native Prototyping",
+        "description": "Led a strategic ICP realignment through 200+ cumulative customer interviews and monthly on-site visits, while using AI to rapidly prototype and validate new capabilities before engineering was ever involved.",
         "methodology": [
-          "Systematic Customer Discovery: 25+ monthly executive interviews identifying analytics gaps",
-          "Strategic UI/UX Design: Three-bucket framework (tables, reports, dashboards) for operational usability",
-          "Paid Beta Strategy: First-in-industry paid beta generating premium customer feedback", 
-          "Personal GTM Execution: Evaluated each vendor relationship personally for strategic fit"
+          "200+ cumulative customer interviews and monthly on-site visits with operators to drive ICP realignment",
+          "AI-built lightweight prototypes and one-time links sent to customers to measure real usage and pain before committing engineering resources",
+          "A rapid context engine synthesizing customer sessions into structured roadmap inputs",
+          "Personal GTM execution across every new capability, including vendor negotiation and pricing"
         ]
       },
       "solution": {
-        "title": "Industry-First Moving Operations Intelligence Platform",
-        "description": "Created new market category combining strategic analytics with mover-specific competitive psychology. Established platform for future data infrastructure monetization and enterprise customer expansion.",
+        "title": "Seven New Capability Areas Shipped as a Coherent Platform",
+        "description": "Expanded the platform across dispatch, claims management, analytics, automation, payments, and an open API ecosystem, telling a coherent operations-platform story instead of a collection of disconnected features.",
         "keyFeatures": [
-          "Market-first analytics category designed for competitive mover psychology",
-          "Strategic UI/UX framework making complex analytics operationally actionable",
-          "Platform foundation enabling future data warehouse monetization strategy",
-          "Competitive intelligence unavailable from any market competitor",
-          "Enterprise-grade analytics with blue-collar operational simplicity"
+          "Smart Insights analytics platform with 100% paid beta retention and a national Inc. Magazine Innovation Award",
+          "Native ACH payments platform contributing over $1M in ARR",
+          "OpenAPI ecosystem generating $100K in third-party integration revenue",
+          "Embedded analytics platform sourced at 10x lower cost than the internal build estimate",
+          "Automation framework built around actual customer workflows"
         ]
       },
       "results": {
         "primaryMetrics": [
-          {
-            "metric": "$1.2M",
-            "description": "Additional ARR market opportunity created (excluding future tiers and customer acquisition)"
-          },
-          {
-            "metric": "100%",
-            "description": "Paid beta customer retention rate demonstrating strong market validation"
-          },
-          {
-            "metric": "New Category",
-            "description": "First comprehensive moving operations intelligence platform in market"
-          },
-          {
-            "metric": "Data Strategy",
-            "description": "Enabled data warehouse investment approval for future platform monetization"
-          }
+          { "metric": "$6M+", "description": "ARR growth contributed over two years" },
+          { "metric": "80%", "description": "Customer mix in ideal customer profile, up from 37%" },
+          { "metric": "$1M+", "description": "ARR contributed by the native ACH payments platform" },
+          { "metric": "100%", "description": "Paid beta retention on the Smart Insights analytics platform" }
         ],
-        "businessImpact": "Created entirely new market category establishing SmartMoving as analytics leader in moving operations. Platform foundation enables future revenue streams through data infrastructure monetization.",
-        "customerFeedback": "Enterprise movers reported having competitive business insights unavailable anywhere else in the industry, enabling data-driven operational advantages."
+        "businessImpact": "Repositioned SmartMoving from a niche CRM to a full operations platform for movers, directly contributing $6M in ARR growth and winning a national Inc. Magazine Innovation Award for Smart Insights.",
+        "customerFeedback": "Larger operators who had never considered SmartMoving for their business began adopting the platform once they saw it as an operations system, not just a CRM."
       },
       "learnings": [
-        "Market category creation requires understanding customer psychology beyond just technical capabilities",
-        "Paid beta models generate significantly higher quality strategic feedback than free trials",
-        "Blue-collar competitive psychology demands simple interfaces for complex strategic insights",
-        "Strategic UI/UX design can create entirely new market categories from existing technology"
+        "AI-built prototypes validate real customer pain faster and cheaper than requirements documents",
+        "ICP realignment is a multi-year discipline, not a one-time segmentation exercise",
+        "A coherent platform story matters as much to enterprise buyers as any individual feature"
       ],
-      "technologies": ["Sigma Computing", "Strategic Analytics", "Market Intelligence", "Azure Data Platform"],
+      "technologies": ["Azure", "AI Prototyping", "Sigma Computing", "ACH Processing", "RESTful APIs"],
       "featured": true
     },
     {
-      "id": "smartmoving-api-ecosystem-strategy",
-      "title": "Ecosystem Architecture: Strategic API Platform Development", 
-      "subtitle": "Unlocking enterprise market through systematic integration strategy and vendor ecosystem development",
-      "company": "SmartMoving Software",
-      "industry": "Transportation & Logistics",
-      "timeline": "2024",
-      "duration": "4 months strategic development + ecosystem building",
-      "heroMetric": "$150K ARR + 10 Enterprise Customers + Ecosystem Strategy",
-      "heroDescription": "Identified integration patterns through systematic customer analysis, delivered strategic API platform unlocking enterprise market and enabling vendor ecosystem monetization",
-      "skills": ["API Strategy", "Ecosystem Development", "Enterprise Market Analysis"],
-      "solutionVertical": "Platform Infrastructure",
-      "techStack": "Azure API Management",
-      "impactType": ["Enterprise Market Access", "Ecosystem Strategy", "Revenue Generation"],
+      "id": "capitalone-semantic-layer",
+      "title": "Semantic Layer for Enterprise Data Security & Optimization",
+      "subtitle": "Cutting delivery time from 3 months to 1 hour with an AI-native semantic layer scaled across 4 lines of business",
+      "company": "Capital One Software",
+      "industry": "Enterprise Data & Security",
+      "timeline": "2026",
+      "duration": "Ongoing",
+      "heroMetric": "3 Months to 1 Hour Delivery + 30% Fewer Duplicate Metrics",
+      "heroDescription": "Built a new AI-ready data security and optimization intelligence platform, using Claude Code prototyping to verify the problem and solution before committing engineering resources.",
+      "skills": ["AI Prototyping", "Claude Code", "Semantic Layer Design", "Business Case Development"],
+      "solutionVertical": "Enterprise Data Platform",
+      "techStack": "AI Prototyping / Claude Code",
+      "impactType": ["AI-Native Product Development", "Enterprise Platform Strategy", "Efficiency Gains"],
       "challenge": {
-        "title": "Enterprise Customers Blocked by Integration Limitations",
-        "description": "Enterprise deals stalling due to integration requirements. Systematic pattern analysis revealed customer-vendor relationships requiring API connectivity. Massive ecosystem monetization opportunity being missed through lack of strategic approach.",
+        "title": "8+ Teams, No Shared Way to Define the Problem",
+        "description": "A gap across 8+ teams was causing confusion for enterprises trying to improve their data security and cost optimization posture, with no shared standard for defining or measuring the problem.",
         "keyProblems": [
-          "Enterprise sales blocked by integration capability gaps",
-          "Customer churn risk from 15+ accounts requiring vendor connectivity",
-          "No systematic approach to vendor ecosystem development",
-          "Missing strategic framework for API platform monetization"
+          "No shared definition of data security and cost optimization posture across teams",
+          "Duplicate and poorly defined metrics slowing enterprise decision-making",
+          "Manual metric delivery taking up to 3 months per request",
+          "No lightweight way to validate a solution before committing engineering resources"
         ]
       },
       "approach": {
-        "title": "Integration Pattern Analysis + Strategic Ecosystem Development",
-        "description": "Conducted systematic analysis of customer integration requests, identified vendor relationship patterns, and developed comprehensive ecosystem strategy. Created framework for vendor-funded development and co-marketing opportunities.",
+        "title": "Business Case, Discovery, and AI-Built Prototypes",
+        "description": "Built the business case from scratch, led detailed discovery, and used Claude Code to create lightweight prototypes that verified the problem and solution before engineering resources were committed.",
         "methodology": [
-          "Integration Pattern Analysis: Analyzed customer requests to identify systematic vendor relationship opportunities",
-          "Vendor Ecosystem Development: Met directly with customer vendors to understand integration requirements",
-          "Strategic Beta Program: Validated enterprise API requirements through systematic customer testing",
-          "Ecosystem Monetization Strategy: Developed framework for vendor-funded development and co-marketing"
-        ]
-      },
-      "solution": {
-        "title": "Strategic API Platform + Vendor Ecosystem Framework",
-        "description": "Comprehensive API platform enabling enterprise integrations while establishing vendor ecosystem for co-development and co-marketing opportunities. Strategic foundation for platform-based revenue growth.",
-        "keyFeatures": [
-          "Enterprise-grade API platform with comprehensive endpoint coverage",
-          "Vendor ecosystem framework enabling co-development and co-marketing partnerships",
-          "Strategic integration methodology reducing enterprise sales cycle friction",
-          "Platform foundation for vendor-funded development and revenue sharing",
-          "Systematic approach to ecosystem growth and monetization"
+          "Built the business case and led detailed discovery across 8+ affected teams",
+          "Used Claude Code to build lightweight prototypes verifying the problem and solution",
+          "Aligned engineering, design, risk, and architecture around a reusable semantic layer standard",
+          "Scaled the solution beyond the initial team investment across 4 lines of business"
         ]
       },
       "results": {
         "primaryMetrics": [
-          {
-            "metric": "$150K",
-            "description": "Annual recurring revenue generated from API platform"
-          },
-          {
-            "metric": "10+",
-            "description": "New enterprise customers unlocked through integration capabilities"
-          },
-          {
-            "metric": "15+",
-            "description": "At-risk accounts retained through vendor integration capabilities"
-          },
-          {
-            "metric": "Ecosystem Strategy",
-            "description": "Framework established for vendor-funded development and co-marketing (above current organizational capability)"
-          }
+          { "metric": "3 Mo to 1 Hr", "description": "Delivery time cut for semantic layer metric requests" },
+          { "metric": "30%", "description": "Reduction in duplicate and poorly defined metrics" },
+          { "metric": "4", "description": "Lines of business scaled to" },
+          { "metric": "8+", "description": "Teams aligned around a shared standard" }
         ],
-        "businessImpact": "Unlocked enterprise market segment while establishing strategic foundation for ecosystem monetization. Created framework for vendor partnerships generating development funding and co-marketing opportunities.",
-        "customerFeedback": "Enterprise customers reported seamless integration enabling them to maintain existing vendor relationships while gaining SmartMoving capabilities."
+        "businessImpact": "Turned a single-team proof of concept into a reusable semantic layer standard adopted across 4 lines of business, cutting delivery time from 3 months to 1 hour.",
+        "customerFeedback": "Teams that previously waited months for metric definitions could self-serve consistent, trusted metrics in about an hour."
       },
       "learnings": [
-        "Integration pattern analysis reveals systematic ecosystem opportunities beyond individual customer requests",
-        "Vendor ecosystem strategy can generate development funding and co-marketing partnerships",
-        "Enterprise API strategy requires both technical capability and ecosystem development framework",
-        "Strategic vendor relationships create competitive moats beyond technology capabilities"
+        "AI-built prototypes can verify enterprise problem/solution fit before engineering is ever involved",
+        "A reusable standard scales further than a single-team solution, but requires cross-functional alignment to adopt"
       ],
-      "technologies": ["RESTful APIs", "Azure API Management", "Ecosystem Development", "Vendor Integration Platforms"],
-      "featured": true
-    },
-    {
-      "id": "smartmoving-fintech-partnership-strategy",
-      "title": "FinTech Partnership Excellence: Strategic Payment Platform Integration",
-      "subtitle": "Delivering $1M+ weekly transaction volume through strategic partnership execution and compliance mastery",
-      "company": "SmartMoving Software",
-      "industry": "Transportation & Logistics",
-      "timeline": "2024",
-      "duration": "6 months strategic partnership + compliance execution",
-      "heroMetric": "$1M+ Weekly Volume + First-Try Audit Success",
-      "heroDescription": "Executed complex FinTech partnership strategy delivering $1M+ weekly transaction volume with exceptional compliance execution and strategic vendor relationship management",
-      "skills": ["FinTech Strategy", "Strategic Partnerships", "Compliance Excellence"],
-      "solutionVertical": "FinTech Platform",
-      "techStack": "Azure Financial Services",
-      "impactType": ["Strategic Partnership Execution", "Compliance Excellence", "Revenue Generation"],
-      "challenge": {
-        "title": "Complex FinTech Partnership Required for Market Expansion",
-        "description": "Moving companies needed lower-cost payment processing to maintain margins, requiring sophisticated FinTech partnership with complex compliance requirements. Strategic vendor selection and regulatory execution critical for platform success.",
-        "keyProblems": [
-          "High credit card processing fees threatening customer profitability margins",
-          "Complex FinTech vendor landscape requiring strategic evaluation and selection",
-          "Stringent compliance requirements with significant regulatory execution risk",
-          "Integration complexity requiring seamless customer experience across payment methods"
-        ]
-      },
-      "approach": {
-        "title": "Strategic Vendor Selection + Compliance Excellence Framework",
-        "description": "Conducted comprehensive FinTech vendor evaluation and selection process, then executed systematic compliance strategy achieving rare first-try audit success. Managed complex partnership relationship while ensuring seamless customer experience.",
-        "methodology": [
-          "Strategic Vendor Evaluation: Systematic analysis and selection of optimal FinTech partnership",
-          "Compliance Excellence Strategy: Comprehensive regulatory preparation and execution framework",
-          "Partnership Relationship Management: Direct vendor relationship oversight ensuring strategic alignment",
-          "Customer Experience Integration: Unified payment platform maintaining SmartMoving user experience"
-        ]
-      },
-      "solution": {
-        "title": "Unified Financial Services Platform with Strategic Partnership Excellence",
-        "description": "Comprehensive payment platform combining ACH processing, pre-authorization capabilities, and unified customer experience. Strategic partnership framework enabling future FinTech expansion opportunities.",
-        "keyFeatures": [
-          "ACH payment processing with strategic cost advantages for customers",
-          "Pre-authorization capabilities improving customer cash flow management", 
-          "Unified payment dashboard integrating multiple transaction types seamlessly",
-          "Compliance-ready audit trail and regulatory reporting framework",
-          "Strategic partnership foundation enabling future FinTech service expansion"
-        ]
-      },
-      "results": {
-        "primaryMetrics": [
-          {
-            "metric": "$1M+",
-            "description": "Weekly transaction volume processed through strategic partnership platform"
-          },
-          {
-            "metric": "First-Try",
-            "description": "Compliance audit success on initial attempt (rare achievement in FinTech partnerships)"
-          },
-          {
-            "metric": "$1M",
-            "description": "Revenue generated for SmartMoving through strategic partnership monetization"
-          },
-          {
-            "metric": "60%+",
-            "description": "Customer take rate improvement through strategic cost reduction"
-          },
-          {
-            "metric": "4.7/5",
-            "description": "Customer satisfaction with integrated payment experience"
-          }
-        ],
-        "businessImpact": "Established FinTech partnership capability creating new revenue stream while solving critical customer cost challenges. Strategic framework enables future financial services expansion.",
-        "customerFeedback": "Moving companies reported substantial cost savings while customers appreciated expanded payment options and improved transaction experience."
-      },
-      "learnings": [
-        "FinTech partnerships require strategic vendor selection beyond just technical capabilities",
-        "Compliance excellence demands systematic preparation and attention to regulatory detail",
-        "Strategic partnership success requires direct relationship management and ongoing alignment",
-        "Payment platform improvements can simultaneously drive revenue and customer satisfaction"
-      ],
-      "technologies": ["ACH Processing", "Payment Platform APIs", "Azure Financial Compliance", "Strategic Partnership Integration"],
+      "technologies": ["Claude Code", "AI Prototyping", "Semantic Layer"],
       "featured": true
     },
     {
       "id": "first-student-platform-transformation",
-      "title": "Transportation Platform Revolution: Large-Scale Market Disruption",
-      "subtitle": "Leading 40+ engineer transformation delivering $20M projected revenue through strategic platform consolidation",
+      "title": "Special Needs Student Transportation Platform",
+      "subtitle": "Building a $1M platform from the ground up serving 1,000+ students across 10+ districts",
       "company": "First Student",
       "industry": "Transportation & Logistics",
       "timeline": "2021-2022",
-      "duration": "10 months strategic transformation + team leadership",
-      "heroMetric": "$1M to $20M Revenue Scale + 40+ Engineer Leadership",
-      "heroDescription": "Identified critical market consolidation opportunity and led large-scale engineering team delivering platform transformation from $1M initial to $20M projected revenue",
-      "skills": ["Platform Strategy", "Large-Scale Team Leadership", "Market Consolidation"],
+      "duration": "10 months",
+      "heroMetric": "$1M Platform + 1,000+ Students Served",
+      "heroDescription": "Hand-selected to build a new vertical from the ground up, leading a 40-person contractor team to launch a $1M special needs transportation platform serving 1,000+ students across 10+ districts.",
+      "skills": ["Platform Strategy", "Large-Scale Team Leadership", "Discovery-Led Product Development"],
       "solutionVertical": "Transportation Platform",
       "techStack": "AWS Enterprise",
-      "impactType": ["Market Disruption", "Platform Transformation", "Strategic Leadership"],
+      "impactType": ["0 to 1 Platform Build", "Team Leadership"],
       "challenge": {
-        "title": "Market Fragmentation Creating Massive Consolidation Opportunity",
-        "description": "Transportation market required 5 separate tools with $300 manual labor per operation, creating massive inefficiency compared to modern platform approaches. Competitors unable to deliver unified solution due to technical and strategic limitations.",
+        "title": "No Platform Existed for Special Needs Transportation",
+        "description": "First Student had no platform for special needs transportation. Districts were managing complex, high-stakes logistics with fragmented tools and no operational visibility.",
         "keyProblems": [
-          "Market fragmentation requiring 5 separate tools for complete transportation operations",
-          "$300 manual labor cost per dispatch operation vs. modern automation possibilities",
-          "No competitor delivering unified platform solution for transportation management",
-          "Legacy technology approaches preventing efficient scaling and customer experience"
+          "No unified platform for special needs transportation logistics",
+          "Districts relying on fragmented tools with no operational visibility",
+          "No existing relationship with district stakeholders to validate requirements"
         ]
       },
       "approach": {
-        "title": "Strategic Platform Consolidation + Large-Scale Engineering Leadership",
-        "description": "Identified market consolidation opportunity through systematic customer discovery, then led 40+ engineer team through strategic partnership with Thoughtworks to deliver modern platform transformation.",
+        "title": "Depot Visits, Pilot Districts, and a 40-Person Contractor Team",
+        "description": "Traveled to school bus depots and embedded with 3 pilot districts before writing a single requirement, then led a 40-person contractor team through full delivery with GTM alignment alongside sales and marketing.",
         "methodology": [
-          "Market Consolidation Analysis: Identified 5-tool fragmentation as strategic disruption opportunity",
-          "Strategic Partnership Execution: Leveraged Thoughtworks partnership for rapid modern development",
-          "Large-Scale Team Leadership: Managed 40+ engineers across complex platform development initiative",
-          "Customer Discovery Integration: 20+ nationwide customer interviews informing platform strategy"
-        ]
-      },
-      "solution": {
-        "title": "Unified Transportation Management Platform with Market Disruption Capabilities",
-        "description": "Comprehensive platform consolidating fragmented market tools into unified solution. Modern technology stack enabling 60% operational efficiency improvement and superior customer experience.",
-        "keyFeatures": [
-          "Unified platform consolidating 5 separate market tools into integrated solution",
-          "Modern web and mobile applications with superior user experience vs. competitors",
-          "Here Maps integration and AWS native functions for advanced operational capabilities",
-          "60% reduction in manual operations through intelligent automation and workflow optimization",
-          "Scalable platform architecture supporting nationwide transportation operations"
+          "Traveled directly to school bus depots to understand operational realities before defining requirements",
+          "Partnered with 3 pilot districts to validate the platform in real-world conditions",
+          "Led a cross-functional team of 40 contractors across engineering, operations, and external partners",
+          "Partnered with marketing and sales to define go-to-market strategy for broader district expansion"
         ]
       },
       "results": {
         "primaryMetrics": [
-          {
-            "metric": "$1M to $20M",
-            "description": "Revenue scaling from initial launch to projected 3-year growth"
-          },
-          {
-            "metric": "40+",
-            "description": "Engineers managed across strategic platform transformation initiative"
-          },
-          {
-            "metric": "60%",
-            "description": "Reduction in manual operations vs. competitor fragmented tool approaches"
-          },
-          {
-            "metric": "95%+",
-            "description": "Customer satisfaction with unified platform vs. previous fragmented solutions"
-          },
-          {
-            "metric": "5 to 1",
-            "description": "Tool consolidation creating sustainable competitive advantage"
-          }
+          { "metric": "$1M", "description": "Platform value at launch" },
+          { "metric": "40-Person", "description": "Contractor team led across engineering and operations" },
+          { "metric": "1,000+", "description": "Students served across the platform" },
+          { "metric": "10+", "description": "Districts served, including 3 pilot districts" }
         ],
-        "businessImpact": "Created new transportation business vertical through strategic market consolidation. Platform transformation established First Student as technology leader in transportation management.",
-        "customerFeedback": "Transportation managers reported dramatic operational efficiency improvements and superior technology experience compared to fragmented competitor solutions."
+        "businessImpact": "Launched a $1M platform spanning a web app and 2 mobile apps, serving 1,000+ students across 10+ districts, on time and on budget.",
+        "customerFeedback": "District administrators reported operational visibility into special needs transportation they had never had before."
       },
       "learnings": [
-        "Market fragmentation creates massive platform consolidation opportunities for strategic thinking",
-        "Large-scale engineering team leadership requires systematic partnership and strategic coordination",
-        "Modern technology stacks can provide immediate competitive advantages in traditional industries",
-        "Customer discovery at scale enables strategic platform decisions that competitors cannot replicate"
+        "Depot-level field research surfaces operational realities that stakeholder interviews alone miss",
+        "Pilot districts validate a platform in real-world conditions before broader expansion",
+        "A 0-to-1 build benefits from GTM alignment starting on day one, not after launch"
       ],
-      "technologies": ["Here Maps", "AWS Native Functions", "Modern Web Platforms", "Large-Scale Engineering Management"],
+      "technologies": ["AWS Enterprise", "Here Maps"],
       "featured": true
     }
   ],
   "summary": {
-    "totalRevenue": "$4M+",
-    "totalProjects": 4,
+    "totalRevenue": "$7M+",
+    "totalProjects": 3,
     "strategicOpportunities": "Multiple Market Categories",
-    "teamLeadership": "40+ Engineers",
+    "teamLeadership": "40+ Contractors",
     "marketCategories": "2 Created"
   }
 }
