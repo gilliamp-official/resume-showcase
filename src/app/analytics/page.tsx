@@ -40,6 +40,14 @@ export default function AnalyticsPage() {
   const [error, setError] = useState('');
   const [events, setEvents] = useState<AnalyticsEvent[]>([]);
 
+  const loadData = async () => {
+    const res = await fetch('/api/analytics');
+    if (res.ok) {
+      const data = await res.json();
+      setEvents(data.events || []);
+    }
+  };
+
   useEffect(() => {
     fetch('/api/analytics/auth')
       .then(res => {
@@ -50,14 +58,6 @@ export default function AnalyticsPage() {
       })
       .finally(() => setLoading(false));
   }, []);
-
-  const loadData = async () => {
-    const res = await fetch('/api/analytics');
-    if (res.ok) {
-      const data = await res.json();
-      setEvents(data.events || []);
-    }
-  };
 
   const handleLogin = async (e: FormEvent) => {
     e.preventDefault();
@@ -221,7 +221,7 @@ export default function AnalyticsPage() {
                   <YAxis stroke="#94a3b8" unit="%" domain={[0, 100]} />
                   <Tooltip
                     contentStyle={{ backgroundColor: '#1e293b', border: 'none', borderRadius: 8 }}
-                    formatter={(v: number) => [`${v}%`, 'Reached']}
+                    formatter={(v) => [`${v}%`, 'Reached']}
                   />
                   <Bar dataKey="pct" fill="#3b82f6" radius={[4, 4, 0, 0]} />
                 </BarChart>
@@ -263,7 +263,7 @@ export default function AnalyticsPage() {
                     outerRadius={100}
                     paddingAngle={4}
                     dataKey="value"
-                    label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                    label={({ name, percent }) => `${name} ${((percent ?? 0) * 100).toFixed(0)}%`}
                   >
                     {deviceData.map((_, index) => (
                       <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />

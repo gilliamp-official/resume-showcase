@@ -2,7 +2,7 @@
 
 import { useState, ReactNode, MouseEvent } from 'react'
 import {
-  ArrowDown, Mail, Linkedin, TrendingUp, Users, Award,
+  ArrowDown, Mail, TrendingUp, Users, Award,
   GraduationCap, Zap, Shield, Video, Bus,
   ChevronDown, ChevronUp, BarChart2, Download,
 } from 'lucide-react'
@@ -13,6 +13,16 @@ const NAVY       = '#1a2b4a'
 const AMBER      = '#d97706'
 const AMBER_DARK = '#b45309'
 const OFF_WHITE  = '#f8f7f4'
+
+// lucide-react dropped brand/logo icons (LinkedIn included) in v1 — inlined here
+// rather than pulling in a whole icon library for one glyph.
+function LinkedinIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.558V9h3.556v11.452z" />
+    </svg>
+  )
+}
 
 interface OutcomeItem  { label: string; value: string }
 interface ExtraLink    { href: string; label: string }
@@ -276,7 +286,7 @@ export default function Home() {
       title: 'Senior Product Manager',
       company: 'SmartMoving Software',
       period: 'Jan 2024 – Jan 2026',
-      detail: 'Built an Inc. Award-winning analytics platform from scratch. Validated a $1.2M opportunity with 100% beta retention. Helped drive $6M ARR growth through customer-led discovery and cross-functional execution.',
+      detail: 'Built an Inc. Award-winning analytics platform from scratch with 100% beta retention. Led a strategic ICP realignment from 37% to 80% and helped drive $6M ARR growth through customer-led discovery and cross-functional execution.',
       featured: true,
     },
     {
@@ -358,8 +368,8 @@ export default function Home() {
           backgroundImage: `radial-gradient(ellipse at 25% 65%, rgba(217,119,6,0.08) 0%, transparent 55%),
                             radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.03) 0%, transparent 50%)`,
         }} />
-        <div className="relative z-10 px-6 max-w-5xl mx-auto w-full py-20 sm:py-24">
-          <div className="max-w-3xl">
+        <div className="relative z-10 px-6 w-full py-20 sm:py-24">
+          <div className="w-full">
             <p className="text-amber-400 text-xs font-semibold tracking-widest uppercase mb-6 sm:mb-8">
               Paul Gilliam · Product Leader · Teams, Strategy, and Outcomes That Scale
             </p>
@@ -370,10 +380,10 @@ export default function Home() {
               <br />
               Worth Solving.
             </h1>
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-xl mb-4">
+            <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-4">
               Not problems that look good in a roadmap. Problems validated in the field, shaped with customers, and worth paying for.
             </p>
-            <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-xl mb-10 sm:mb-12">
+            <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-10 sm:mb-12">
               I&#8217;ve spent 8+ years working the way founders do: in customer interviews, on sales calls, at trade shows, and in the data. Then I build cross-functional teams around a clear story and ship something that moves the business.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-12 sm:mb-16">
@@ -410,7 +420,7 @@ export default function Home() {
 
       {/* About */}
       <section id="section-about" className="py-20 sm:py-24 px-6 bg-white">
-        <div className="container mx-auto max-w-4xl">
+        <div className="w-full">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-12 items-start">
             <div className="md:col-span-3">
               <p className="text-xs font-semibold tracking-widest uppercase mb-5" style={{ color: AMBER }}>About</p>
@@ -444,7 +454,7 @@ export default function Home() {
 
       {/* Impact Numbers */}
       <section id="section-impact" className="py-14 px-6" style={{ backgroundColor: OFF_WHITE }}>
-        <div className="container mx-auto max-w-5xl">
+        <div className="w-full">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {impactStats.map((s, i) => (
               <div key={i} className="text-center p-5 bg-white rounded-xl border border-slate-100 shadow-sm">
@@ -458,9 +468,9 @@ export default function Home() {
 
       {/* Featured Work */}
       <section id="section-work" className="py-16 sm:py-20 px-6 bg-white">
-        <div className="container mx-auto max-w-4xl">
+        <div className="w-full">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-3" style={{ color: NAVY }}>Featured Work</h2>
-          <p className="text-center text-slate-500 mb-10 sm:mb-14 max-w-2xl mx-auto text-sm">
+          <p className="text-center text-slate-500 mb-10 sm:mb-14 text-sm">
             Products built by getting close to the customer and rallying teams around a shared vision.
           </p>
           <div className="space-y-6 sm:space-y-8">
@@ -534,7 +544,7 @@ export default function Home() {
 
       {/* Career Timeline */}
       <section id="section-timeline" className="py-16 sm:py-20 px-6" style={{ backgroundColor: OFF_WHITE }}>
-        <div className="container mx-auto max-w-3xl">
+        <div className="w-full">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-14" style={{ color: NAVY }}>Career Timeline</h2>
           <div className="space-y-4">
             {timelineJobs.map((job, i) => (
@@ -561,7 +571,7 @@ export default function Home() {
 
       {/* How I Work */}
       <section id="section-howwork" className="py-16 sm:py-20 px-6 bg-white">
-        <div className="container mx-auto max-w-4xl">
+        <div className="w-full">
           <h2 className="text-2xl font-bold text-center mb-2" style={{ color: NAVY }}>How I Work</h2>
           <p className="text-slate-500 text-center mb-10 sm:mb-12 text-sm">The frameworks, methods, and tools I reach for to build products that matter.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -584,7 +594,7 @@ export default function Home() {
 
       {/* Education */}
       <section id="section-education" className="py-14 px-6" style={{ backgroundColor: OFF_WHITE }}>
-        <div className="container mx-auto max-w-3xl">
+        <div className="w-full">
           <h2 className="text-2xl font-bold text-center mb-8" style={{ color: NAVY }}>Education</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {education.map((ed, i) => (
@@ -601,7 +611,7 @@ export default function Home() {
 
       {/* CTA */}
       <section id="section-contact" className="py-20 sm:py-24 px-6" style={{ backgroundColor: NAVY }}>
-        <div className="container mx-auto max-w-2xl">
+        <div className="w-full">
           <p className="text-xs font-semibold tracking-widest uppercase mb-6" style={{ color: AMBER }}>
             Let&#8217;s Work Together
           </p>
@@ -624,7 +634,7 @@ export default function Home() {
             </a>
             <a href="https://linkedin.com/in/pgilliam2" target="_blank" rel="noopener noreferrer"
               className="border border-slate-600 text-slate-300 px-7 py-4 rounded-full font-semibold hover:border-slate-400 hover:text-white transition-colors flex items-center justify-center gap-2 text-sm">
-              <Linkedin className="w-4 h-4" />LinkedIn
+              <LinkedinIcon className="w-4 h-4" />LinkedIn
             </a>
           </div>
           <div className="border-t border-slate-700 pt-6 sm:pt-8 flex flex-wrap gap-x-8 gap-y-2 text-sm text-slate-500">
